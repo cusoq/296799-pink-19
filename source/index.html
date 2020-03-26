@@ -1,12 +1,111 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  </body>
+  <title>HTML Academy: Пинк</title>
+
+  <!-- <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css"> -->
+</head>
+
+<body>
+  <header>
+    <nav class="main-nav">
+      <p class="main-nav__logo-container">
+        <a class="main-nav__logo">Pink</a>
+
+        <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
+        <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
+        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+      </p>
+
+      <ul class="main-nav__list popup popup--nav popup--show">
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="photo.html">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <p>Взгляните на жизнь иначе!
+    </p>
+
+    <!-- Блок скачивания приложения -->
+    <aside class="dounload">
+      <h2 class="visually-hidden">Блок скачивания приложения</h2>
+      <a href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+      <div>
+
+        <a href="https://www.apple.com/ru/ios/app-store/"><img src="img" width="10" height="10" alt="Логотип Apple"></a>
+        <a href="https://play.google.com/store?hl=ru&tab=w81"><img src="img" width="10" height="10" alt="Логотип Android"></a>
+        <a href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="img" width="10" height="10" alt="Логотип Windows Store"></a>
+
+      </div>
+      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </aside>
+  </header>
+  <!-- ///////////////////////////////////////////////// -->
+  <main>
+    <h1 class="visually-hidden">Сайт, посвященный клёвому приложению</h1>
+    <!-- Преимущества -->
+    <section class="preferences">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <p class="preferences__note">Устали от серости мегаполиса?</p>
+      <p class="preferences__note">Нам есть, что вам предложить!</p>
+      <p class="preferences__desciption"><b>Поднимает настроение</b> Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <p class="preferences__desciption"><b>Поднимает настроение</b> Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <p class="preferences__desciption"><b>Поднимает настроение</b> Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <div class="preferences__pics">
+        <img src="img" width="30" height="70" alt="Изображение розового экрана смартфона">
+      </div>
+    </section>
+    <!-- Отзывы  -->
+    <section class="references">
+      <h2 class="visually-hidden">Отзывы</h2>
+      <!-- Тут слайдер из трёх отзывов -->
+      <p class="references__reference1">
+        <b>Николай Петров</b>
+        <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</q>
+      </p>
+    </section>
+    <!-- Тарифы -->
+    <section class="prices">
+      <h2 class="visually-hidden">Тарифы</h2>
+      <!-- Тут слайдер из трёх тарифов -->
+      <div class="prices__standard">
+        <img src="img" width="30" height="30" alt="Тариф Стандарт">
+      </div>
+    </section>
+  </main>
+  <!-- /////////////////////////////////////////////////////////// -->
+  <footer>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+      <p class="contacts__phone">Звоните:<a href="tel:88125556666">+7 812 555-66-66</a></p>
+      <p class="contacts__phone">Пишите:<a href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+      <p class="contacts__phone">Приезжайте в гости:<a href="https://yandex.ru/maps/-/CKuy420G">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a></p>
+      <div class="contacts__map">
+        <!-- Тут карта с адресом -->
+        <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323118%2C59.938635&sll=37.635499%2C55.744859&sspn=0.605621%2C0.194049&utm_medium=mapframe&utm_source=maps&z=16.39" -->
+        <!-- style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKuy420~" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>
