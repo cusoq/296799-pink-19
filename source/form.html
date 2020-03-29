@@ -51,13 +51,155 @@
   <!-- /////////////////////////////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////// -->
   <main>
-    <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    <!-- //////////////////////////////////////////////////////////// -->
+    <section class="feedback">
+      <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <!-- //////////////////////////////////////////////////////////// -->
+      <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      <!-- ///////////////////////////////////////////////////////////////////// -->
+      <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
+        <!-- Форма авторизации: -->
 
-    <!-- ///////////////////////////////////////////////////////////////////// -->
+        <fieldset class="feedback__container feedback__container--name">
+          <!-- <legend class="leader leader--formtitle leader--name">Представьтесь:</legend> -->
+          <p class="feedback__input-container">
+            <label class="feedback-field__description" for="surname">Фамилия:</label>
+            <input class="feedback-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию <sup>&#9913;</sup>" required>
+          </p>
+          <p class="feedback__input-container">
+            <label class="feedback-field__description" for="name">Имя:</label>
+            <input class="feedback-field" type="text" id="name" name="name" placeholder="Введите ваше имя *<sup>&#9913;</sup>" required>
+          </p>
+          <p class="feedback__input-container">
+            <label class="feedback-field__description" for="patronymic">Отчество:</label>
+            <input class="feedback-field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+          </p>
+        </fieldset>
 
-    <!-- ////////////////////////////////////////////////////////////////// -->
 
+        <!-- ////////////////////////////////////////////////////////////////// -->
+        <!-- Форма достижений: -->
+
+        <fieldset class="feedback__container feedback__container--sights">
+          <legend class="leader leader--formtitle leader--sights">Ваши безбашенные
+            достижения в путешествии</legend>
+          <!-- /////////////////////////////////// -->
+          <div class="feedback__input-wrapper feedback__input-wrapper--change">
+
+            <p class="feedback__input-container feedback__input-container--change feedback__input-container--shark">
+              <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="shark" id="shark" checked>
+              <label class="feedback-field__description feedback-field__description--checkbox" for="shark" tabindex="0">Сделал селфи с акулой</label>
+            </p>
+            <!-- ///////////////////////////////// -->
+
+            <p class="feedback__input-container feedback__input-container--change feedback__input-container--beach">
+              <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
+              <label class="feedback-field__description feedback-field__description--checkbox" for="beach" tabindex="0">Обгорел на пляже</label>
+            </p>
+            <!-- ////////////////////////////////////////// -->
+
+            <p class="feedback__input-container  feedback__input-container--change feedback__input-container--chack">
+              <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="chack" id="chack">
+              <label class="feedback-field__description feedback-field__description--checkbox" for="chack" tabindex="0">Видел Чака Норриса</label>
+            </p>
+            <!-- //////////////////////////////////////////////////// -->
+
+            <p class="feedback__input-container feedback__input-container--change feedback__input-container--shop">
+              <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="shop" id="shop">
+              <label class="feedback-field__description feedback-field__description--checkbox" for="shop" tabindex="0">Накупил сувениров</label>
+            </p>
+            <!-- ////////////////////////////////////////////////////////// -->
+
+            <p class="feedback__input-container feedback__input-container--change feedback__input-container--tower">
+              <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
+              <label class="feedback-field__description feedback-field__description--checkbox" for="tower" tabindex="0">Удержал башню</label>
+            </p>
+            <!-- ////////////////////////////////////////////////////////////////// -->
+
+            <p class="feedback__input-container feedback__input-container--change feedback__input-container--hotel">
+              <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
+              <label class="feedback-field__description feedback-field__description--checkbox" for="hotel" tabindex="0">Разгромил отель</label>
+            </p>
+          </div>
+        </fieldset>
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- Форма контактов: -->
+
+        <fieldset class="feedback__container feedback__container--formcontact">
+          <!-- <legend class="leader leader--formtitle leader--formcontact">Контактная информация:</legend> -->
+          <div class="feedback__input-wrapper feedback__input-wrapper--formcontact">
+            <p class="feedback__input-container feedback__input-container--formcontact">
+              <label class="feedback-field__description feedback-field__description--formcontact feedback-field__description--mobile" for="tel">Номер телефона</label>
+              <!-- <label class="feedback-field__description feedback-field__description--formcontact feedback-field__description--desktop" for="tel">Телефон</label> -->
+              <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
+            </p>
+            <p class="feedback__input-container feedback__input-container--formcontact">
+              <label class="feedback-field__description feedback-field__description--formcontact" for="email">адрес почты</label>
+              <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту <sup>&#9913;</sup>" required>
+            </p>
+          </div>
+        </fieldset>
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- Форма выбора платформы: -->
+
+        <fieldset class="feedback__container feedback__container--impression">
+          <legend class="leader leader--formtitle">С каким приложением
+            путешествовали?</legend>
+          <p class="feedback__input-container">
+            <input class="feedback-field visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
+            <label class="feedback-field__description feedback-field__description--radio" for="ios" tabindex="0">Pink для iOS</label>
+          </p>
+          <p class="feedback__input-container">
+            <input class="feedback-field visually-hidden" type="radio" name="platform" value="android" id="android">
+            <label class="feedback-field__description feedback-field__description--radio" for="android" tabindex="0">Pink на Android</label>
+          </p>
+          <p class="feedback__input-container">
+            <input class="feedback-field visually-hidden" type="radio" name="platform" value="windows" id="windows">
+            <label class="feedback-field__description feedback-field__description--radio" for="windows" tabindex="0">Windows Phone</label>
+          </p>
+        </fieldset>
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- Поле текстового отзыва: -->
+        <fieldset class="feedback__container  feedback__container--emotions">
+          <legend class="leader leader--formtitle leader--emotions">Опишите свои эмоции:</legend>
+          <p class="feedback__input-container">
+            <textarea class="feedback-field feedback-field--text" rows="10" cols="30" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </p>
+
+          <button class="btn feedback__btn feedback__btn--main btn--disabled">
+            Отправить форму
+          </button>
+          <span class="feedback__note">
+            <sup class="feedback__sup">&#9913;</sup> &ndash; Обязательные поля
+          </span>
+        </fieldset>
+
+      </form>
+      <!-- /////////////////////////////////////////////////////////// -->
+      <!-- Модальные окна: -->
+      <div class="popup popup--success">
+        <b class="leader">
+          Ваша заявка отправлена
+        </b>
+        <p class="paragraph paragraph--popup">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+          оповестим вас.
+        </p>
+        <button class="btn feedback__btn feedback__btn--success">
+          ЗАКРЫТЬ ОКНО
+        </button>
+      </div>
+      <div class="popup popup--fail">
+        <b class="leader">
+          Что-то пошло не так!
+        </b>
+        <p class="paragraph paragraph--popup">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="btn feedback__btn feedback__btn--failure">
+          ок
+        </button>
+      </div>
+    </section>
   </main>
   <!-- /////////////////////////////////////////////////////////////////////// -->
   <!-- /////////////////////////////////////////////////////////////////////// -->
