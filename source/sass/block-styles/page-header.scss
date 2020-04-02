@@ -1,0 +1,21 @@
+.page-header {
+  min-height: 462px;
+  background-color: bisque;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.page-header__slogan,
+.page-header__title {
+  display: block;
+  padding: 0 49px 30px 50px;
+  color: $secondary-color;
+  font-size: $font-size--huge;
+  text-align: center;
+  font-weight: 300;
+}
+
+.page-header__image {
+  vertical-align: bottom;
+}

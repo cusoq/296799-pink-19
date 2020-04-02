@@ -1,0 +1,27 @@
+.page-footer {
+  min-height: 284px;
+  padding: 0 75px;
+  background-color: tan;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: space-between;
+  outline: blue dashed 1px;
+}
+
+.page-footer__social-link {
+  display: flex;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: solid 2px red;
+  border-radius: 50%;
+}
+
+.page-footer__copy {
+  margin: 0;
+}

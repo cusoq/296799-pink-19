@@ -1,0 +1,38 @@
+.features__note {
+  display: block;
+  margin: 0;
+  background-color: plum;
+  color: $secondary-color--darken;
+  font-size: $font-size--huge;
+  font-weight: 300;
+  // font-stretch: normal;
+  // font-style: normal;
+  // line-height: normal;
+  // letter-spacing: normal;
+  text-align: center;
+}
+
+.features__desciption {
+  display: block;
+  // box-sizing: border-box;
+  margin: 0;
+  padding: 0 34px;
+  color: $secondary-color--darken;
+  font-size: $font-size;
+  font-weight: normal;
+  // font-stretch: normal;
+  // font-style: normal;
+  // line-height: 1.71;
+  // letter-spacing: normal;
+  text-align: center;
+  outline: 1px dashed green;
+}
+
+.features b {
+  color: $primary-color;
+}
+
+.features img {
+  display: block;
+  margin: 0 auto;
+}
