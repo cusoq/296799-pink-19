@@ -1,0 +1,12 @@
+.references {
+  // margin-top: -60px;
+  width: auto;
+  height: 320px;
+  background-color: tan;
+  z-index: 3;
+}
+
+.references__reference {
+  text-align: center;
+  font-size: $font-size--large;
+}
