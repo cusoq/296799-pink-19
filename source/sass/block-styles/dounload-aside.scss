@@ -1,0 +1,33 @@
+.dounload-aside {
+  box-sizing: border-box;
+  padding: 28px 18px;
+  color: $secondary-color;
+  width: 320px;
+  height: 271px;
+  background-color: $background-color;
+}
+
+.dounload-aside__link {
+  display: block;
+  margin: 0 auto;
+  width: 251px;
+  font-size: $font-size--large;
+  font-weight: bold;
+  // font-stretch: normal;
+  // font-style: normal;
+  line-height: 55px;
+  // letter-spacing: normal;
+  text-align: center;
+  border: 2px solid $secondary-color;
+  // border-radius: 5%;
+}
+
+.dounload-aside__all-links {
+  display: flex;
+  justify-content: space-between;
+  // margin: 0;
+}
+
+.dounload-aside__text {
+  // display: none;
+}

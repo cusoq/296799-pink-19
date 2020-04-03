@@ -7,315 +7,316 @@
 
   <title>HTML Academy: Пинк</title>
 
-  <!-- <link rel="preload" href="fonts/ptsans.woff2" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
-    <link rel="stylesheet" href="css/style.min.css"> -->
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="main-nav">
-      <p class="main-nav__logo-container">
-        <a class="logo logo--mobile" href="index.html">Pink</a>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__logo-container">
+          <a class="logo logo--mobile" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип"></a>
 
-        <!-- //////////////////////////////////////////////////////////////// -->
-        <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
-        <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
-      </p>
+          <!-- //////////////////////////////////////////////////////////////// -->
+          <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
+          <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+        </div>
 
-      <!-- ////////////////////////////////////////////////////////////////////////// -->
-      <!-- Блок меню -->
-      <ul class="main-nav__list popup popup--nav popup--show">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
-        </li>
-      </ul>
+        <!-- ////////////////////////////////////////////////////////////////////////// -->
+        <!-- Блок меню -->
+        <ul class="main-nav__list popup popup--nav popup--show">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+          </li>
+        </ul>
 
-    </nav>
+      </nav>
 
-    <p>Фотографии пользователей</p>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
 
 
-  </header>
-  <!-- ///////////////////////////////////////////////// -->
-  <!-- /////////////////////////////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////// -->
-  <main>
-    <h1 class="visually-hidden">Фотографии пользователей</h1>
+    </header>
+    <!-- ///////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////// -->
+
     <!-- //////////////////////////////////////////////////////////// -->
 
     <!-- ///////////////////////////////////////////////////////////////////// -->
 
     <!-- ////////////////////////////////////////////////////////////////// -->
 
-  </main>
-  <!-- /////////////////////////////////////////////////////////////////////// -->
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <!-- //////////////////////////////////////////// -->
-  <!-- Список фоток: -->
-  <ul class="photo-list">
-    <!-- /////////////////////////////////////////////// -->
-    <li class="photo-list__item">
-      <figure class="photo-list__pic photo-list__pic--first">
-        <a class="fullsize-link" href="#">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+    <main>
+      <!-- /////////////////////////////////////////////////////////////////////// -->
+      <p class="main-paragraph">Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?</p>
+      <!-- //////////////////////////////////////////// -->
+      <!-- Список фоток: -->
+      <ul class="photo-list">
+        <!-- /////////////////////////////////////////////// -->
+        <li class="photo-list__item">
+          <figure class="photo-list__pic photo-list__pic--first">
+            <a class="fullsize-link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <!-- <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x"> -->
 
-            <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-            <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Панорама дня">
-          </picture>
-        </a>
-        <!-- <figcaption class="photo-list__name">
+                <!-- <img class="features__pic" src="img/panorama-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Панорама дня"> -->
+                <img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+              </picture>
+            </a>
+            <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
-      </figure>
+          </figure>
 
-      <div class="photo-list__auth-wrapper">
-        <b>Анна</b><span>(5 минут назад)</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor </p>
-        <a class="photo-list__like" href="#"></a>
-        <span class="photo-list__rate">
-          Нравится:215
-        </span>
-      </div>
-    </li>
-    <!-- ////////////////////////////////////////////////////// -->
-    <li class="photo-list__item">
-      <figure class="photo-list__pic photo-list__pic--second">
-        <a class="fullsize-link" href="#">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+          <div class="photo-list__auth-wrapper">
+            <b>Анна</b><span>(5 минут назад)</span>
+            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a class="photo-list__like" href="#"></a>
+            <span class="photo-list__rate">
+              Нравится:215
+            </span>
+          </div>
+        </li>
+        <!-- ////////////////////////////////////////////////////// -->
+        <li class="photo-list__item">
+          <figure class="photo-list__pic photo-list__pic--second">
+            <a class="fullsize-link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <!-- <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x"> -->
 
-            <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-            <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Машина">
-          </picture>
-        </a>
-        <!-- <figcaption class="photo-list__name">
+                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Машина"> -->
+<img class="features__pic" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
+              </picture>
+            </a>
+            <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
-      </figure>
+          </figure>
 
-      <div class="photo-list__auth-wrapper">
-        <b>Анна</b><span>(5 минут назад)</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor </p>
-        <a class="photo-list__like" href="#"></a>
-        <span class="photo-list__rate">
-          Нравится:215
-        </span>
-      </div>
-    </li>
-    <!-- ////////////////////////////////////////////////////// -->
-    <li class="photo-list__item">
-      <figure class="photo-list__pic photo-list__pic--third">
-        <a class="fullsize-link" href="#">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+          <div class="photo-list__auth-wrapper">
+            <b>Левон</b><span>(5 часов назад)</span>
+            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="photo-list__like" href="#"></a>
+            <span class="photo-list__rate">
+              Нравится:356
+            </span>
+          </div>
+        </li>
+        <!-- ////////////////////////////////////////////////////// -->
+        <li class="photo-list__item">
+          <figure class="photo-list__pic photo-list__pic--third">
+            <a class="fullsize-link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <!-- <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x"> -->
 
-            <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-            <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
-          </picture>
-        </a>
-        <!-- <figcaption class="photo-list__name">
+                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+<img class="features__pic" src="img/photo-drumset-mobile@1x.jpg" width="320" height="137" alt="Драмсет">
+              </picture>
+            </a>
+            <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
-      </figure>
+          </figure>
 
-      <div class="photo-list__auth-wrapper">
-        <b>Анна</b><span>(5 минут назад)</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor </p>
-        <a class="photo-list__like" href="#"></a>
-        <span class="photo-list__rate">
-          Нравится:215
-        </span>
-      </div>
-    </li>
-    <!-- ////////////////////////////////////////////////////// -->
-    <li class="photo-list__item">
-      <figure class="photo-list__pic photo-list__pic--fouth">
-        <a class="fullsize-link" href="#">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+          <div class="photo-list__auth-wrapper">
+            <b>Антон</b><span>(12 часов назад)</span>
+            <p>Соседи будут рады!</p>
+            <a class="photo-list__like" href="#"></a>
+            <span class="photo-list__rate">
+              Нравится:666
+            </span>
+          </div>
+        </li>
+        <!-- ////////////////////////////////////////////////////// -->
+        <li class="photo-list__item">
+          <figure class="photo-list__pic photo-list__pic--fouth">
+            <a class="fullsize-link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <!-- <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x"> -->
 
-            <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-            <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
-          </picture>
-        </a>
-        <!-- <figcaption class="photo-list__name">
+                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+<img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+              </picture>
+            </a>
+            <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
-      </figure>
+          </figure>
 
-      <div class="photo-list__auth-wrapper">
-        <b>Анна</b><span>(5 минут назад)</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor </p>
-        <a class="photo-list__like" href="#"></a>
-        <span class="photo-list__rate">
-          Нравится:215
-        </span>
-      </div>
-    </li>
-    <!-- ////////////////////////////////////////////////////// -->
-    <li class="photo-list__item">
-      <figure class="photo-list__pic photo-list__pic--fifth">
-        <a class="fullsize-link" href="#">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+          <div class="photo-list__auth-wrapper">
+            <b>Борис</b><span>(20 часов назад)</span>
+            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="photo-list__like" href="#"></a>
+            <span class="photo-list__rate">
+              Нравится:215
+            </span>
+          </div>
+        </li>
+        <!-- ////////////////////////////////////////////////////// -->
+        <li class="photo-list__item">
+          <figure class="photo-list__pic photo-list__pic--fifth">
+            <a class="fullsize-link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <!-- <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x"> -->
 
-            <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-            <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
-          </picture>
-        </a>
-        <!-- <figcaption class="photo-list__name">
+                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+<img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+              </picture>
+            </a>
+            <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
-      </figure>
+          </figure>
 
-      <div class="photo-list__auth-wrapper">
-        <b>Анна</b><span>(5 минут назад)</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor </p>
-        <a class="photo-list__like" href="#"></a>
-        <span class="photo-list__rate">
-          Нравится:215
-        </span>
-      </div>
-    </li>
-    <!-- ////////////////////////////////////////////////////// -->
-    <li class="photo-list__item">
-      <figure class="photo-list__pic photo-list__pic--sixth">
-        <a class="fullsize-link" href="#">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+          <div class="photo-list__auth-wrapper">
+            <b>Сергей</b><span>(25 часов назад)</span>
+            <p>Самая кубанская в мире!</p>
+            <a class="photo-list__like" href="#"></a>
+            <span class="photo-list__rate">
+              Нравится: 4
+            </span>
+          </div>
+        </li>
+        <!-- ////////////////////////////////////////////////////// -->
+        <li class="photo-list__item">
+          <figure class="photo-list__pic photo-list__pic--sixth">
+            <a class="fullsize-link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <!-- <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x"> -->
 
-            <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-            <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
-          </picture>
-        </a>
-        <!-- <figcaption class="photo-list__name">
+                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+<img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+              </picture>
+            </a>
+            <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
-      </figure>
+          </figure>
 
-      <div class="photo-list__auth-wrapper">
-        <b>Анна</b><span>(5 минут назад)</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor </p>
-        <a class="photo-list__like" href="#"></a>
-        <span class="photo-list__rate">
-          Нравится:215
-        </span>
-      </div>
-    </li>
-    <!-- ////////////////////////////////////////////////////// -->
-    <li class="photo-list__item">
-      <figure class="photo-list__pic photo-list__pic--seventh">
-        <a class="fullsize-link" href="#">
-          <picture>
-            <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+          <div class="photo-list__auth-wrapper">
+            <b>Максим</b><span>(40 часов назад)</span>
+            <p>Где снег-то?</p>
+            <a class="photo-list__like" href="#"></a>
+            <span class="photo-list__rate">
+              Нравится:150
+            </span>
+          </div>
+        </li>
+        <!-- ////////////////////////////////////////////////////// -->
+        <li class="photo-list__item">
+          <figure class="photo-list__pic photo-list__pic--seventh">
+            <a class="fullsize-link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
-            <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <!-- <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x"> -->
 
-            <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-            <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
-          </picture>
-        </a>
-        <!-- <figcaption class="photo-list__name">
+                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+<img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+              </picture>
+            </a>
+            <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
-      </figure>
+          </figure>
 
-      <div class="photo-list__auth-wrapper">
-        <b>Анна</b><span>(5 минут назад)</span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor </p>
-        <a class="photo-list__like" href="#"></a>
-        <span class="photo-list__rate">
-          Нравится:215
-        </span>
-      </div>
-    </li>
-  </ul>
-  <!-- ////////////////////////////////////////////////////// -->
-  <p class="paragraph">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </p>
-  <!-- /////////////////////////////////////////////////////////////////////// -->
-  <!-- Блок с видосом: -->
+          <div class="photo-list__auth-wrapper">
+            <b>Надежда</b><span>(45 часов назад)</span>
+            <p>Всем GM и взаимные лайки!</p>
+            <a class="photo-list__like" href="#"></a>
+            <span class="photo-list__rate">
+              Нравится:2560
+            </span>
+          </div>
+        </li>
+      </ul>
+      <!-- ////////////////////////////////////////////////////// -->
+      <p class="main-paragraph">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <!-- /////////////////////////////////////////////////////////////////////// -->
+      <!-- Блок с видосом: -->
 
-  <div class="page__video video">
+      <div class="page__video video">
 
-    <ul class="video__icons">
-      <li><img src="img" alt="Обрезка"> </li>
-      <li><img src="img" alt="Заливка"> </li>
-      <li><img src="img" alt="Яркость"> </li>
-    </ul>
-    <div class="video__scale">
-      <div class="video__toggle" style="margin-left: 25%">
-      </div>
-    </div>
-    <!-- <button class="video__btn video__btn--play">
+        <ul class="video__icons">
+          <li><img src="img" alt="Обрезка"> </li>
+          <li><img src="img" alt="Заливка"> </li>
+          <li><img src="img" alt="Яркость"> </li>
+        </ul>
+        <div class="video__scale">
+          <div class="video__toggle" style="margin-left: 25%">
+          </div>
+        </div>
+        <!-- <button class="video__btn video__btn--play">
       Play<svg class="video__btn-icon" width="16" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-replay"></use></svg>
     </button> -->
-    <!-- <button class="video__btn video__btn--subtitles">
+        <!-- <button class="video__btn video__btn--subtitles">
       Subtitles<svg class="video__btn-icon" width="32" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-subtitles"></use></svg>
     </button> -->
-    <!-- <button class="video__btn video__btn--fullscreen">
+        <!-- <button class="video__btn video__btn--fullscreen">
       Fullscreen<svg class="video__btn-icon" width="20" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-fullscreen"></use></svg>
     </button> -->
-  </div>
-  <button>Запостить</button>
-  <button>Отмена</button>
-  <!-- /////////////////////////////////////////////////////////// -->
+      </div>
+      <button>Запостить</button>
+      <button>Отмена</button>
+    </main>
+    <!-- /////////////////////////////////////////////////////////// -->
 
-  <footer class="page-footer">
-    <a class="logo" href="index.html">Pink</a>
-    <div>
-      <ul class="page-footer__social">
-        <li><a href="#" class="page-footer__social-link--tw" title="Наш Твиттер"></a></li>
-        <li><a href="#" class="page-footer__social-link--fb" title="Наш фейсбук"></a></li>
-        <li><a href="#" class="page-footer__social-link--yt" title="Наш Ютуб"></a></li>
-      </ul>
-    </div>
-    <p class="page-footer__copy">
-      <span class="page-footer__copy-text">Разработано</span>
-      <a class="page-footer__copy-logo" href="https://htmlacademy.ru"><img src="img" width="15" height="20" title="Логотип разработчика"></a>
-    </p>
-  </footer>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="146" height="40" title="Логотип"></a>
+      <div class="page-footer__social">
+
+        <a href="#" class="page-footer__social-link" title="Наш Твиттер"><img src="img/icon-twitter.svg" width="18" height="15" title="Логотип Твиттера"></a>
+        <a href="#" class="page-footer__social-link" title="Наш фейсбук"><img src="img/icon-facebook.svg" width="9" height="19" title="Логотип фейсбука"></a>
+        <a href="#" class="page-footer__social-link" title="Наш Ютуб"><img src="img/icon-youtube.svg" width="15" height="14" title="Логотип Ютуба"></a>
+
+      </div>
+      <p class="page-footer__copy">
+        <span class="page-footer__copy-text">Разработано</span>
+        <a class="page-footer__copy-logo" href="https://htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" title="Логотип разработчика"></a>
+      </p>
+    </footer>
+  </div>
 </body>
 
 </html>

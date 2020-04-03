@@ -7,76 +7,88 @@
 
   <title>HTML Academy: Пинк</title>
 
-  <!-- <link rel="preload" href="fonts/ptsans.woff2" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
-    <link rel="stylesheet" href="css/style.min.css"> -->
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="main-nav">
-      <p class="main-nav__logo-container">
-        <span class="logo logo--mobile">Pink</span>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__logo-container">
+          <span class="logo logo--mobile"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип"></span>
 
-        <!-- //////////////////////////////////////////////////////////////// -->
-        <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
-        <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
-      </p>
+          <!-- //////////////////////////////////////////////////////////////// -->
+  <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
+  <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
+  <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+  </div>
 
-      <!-- ////////////////////////////////////////////////////////////////////////// -->
-      <!-- Блок меню -->
-      <ul class="main-nav__list popup popup--nav popup--show">
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__link--current">Главная</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="photo.html">Фотографии</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
-        </li>
-      </ul>
+  <!-- ////////////////////////////////////////////////////////////////////////// -->
+  <!-- Блок меню -->
+  <ul class="main-nav__list popup popup--nav popup--show">
+    <li class="main-nav__item">
+      <a class="main-nav__link main-nav__link--current">Главная</a>
+    </li>
+    <li class="main-nav__item">
+      <a class="main-nav__link" href="photo.html">Фотографии</a>
+    </li>
+    <li class="main-nav__item">
+      <a class="main-nav__link" href="form.html">Конкурс</a>
+    </li>
+    <li class="main-nav__item">
+      <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+    </li>
+  </ul>
 
-    </nav>
+  </nav>
 
-    <p>Взгляните на жизнь иначе!
-    </p>
+  <p class="page-header__slogan">Взгляните на жизнь иначе!</p>
 
-    <!-- Блок скачивания приложения -->
-    <aside class="dounload">
-      <h2 class="visually-hidden">Блок скачивания приложения</h2>
-      <a href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-      <div>
 
-        <a href="https://www.apple.com/ru/ios/app-store/"><img src="https://via.placeholder.com/10x10" width="10" height="10" alt="Логотип Apple"></a>
-        <a href="https://play.google.com/store?hl=ru&tab=w81"><img src="https://via.placeholder.com/10x10" width="10" height="10" alt="Логотип Android"></a>
-        <a href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="https://via.placeholder.com/10x10" width="10" height="10" alt="Логотип Windows Store"></a>
-
-      </div>
-      <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-      </p>
-    </aside>
+  <img class="page-header__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="изображение Айфона-5 в руке">
+  <!-- srcset="img/iphone-5-in-hand-png@2x.png 2x,
+                 img/iphone-5-in-hand-png@3x.png 3x"
+         class="iphone-5-in-hand-png"> -->
+  <!-- jpg -->
+  <!-- <img src="img/iphone-5-in-hand-png.jpg"
+         srcset="img/iphone-5-in-hand-png@2x.jpg 2x,
+                 img/iphone-5-in-hand-png@3x.jpg 3x"
+         class="iphone-5-in-hand-png"> -->
   </header>
   <!-- ///////////////////////////////////////////////// -->
   <!-- /////////////////////////////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////// -->
   <main>
+    <!-- Блок скачивания приложения -->
+    <aside class="dounload-aside">
+      <h2 class="visually-hidden">Блок скачивания приложения</h2>
+      <a class="dounload-aside__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+      <div class="dounload-aside__all-links">
+
+        <a href="https://www.apple.com/ru/ios/app-store/"><img src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple"></a>
+        <a href="https://play.google.com/store?hl=ru&tab=w81"><img src="img/logo-android.svg" width="43" height="47" alt="Логотип Android"></a>
+        <a href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Windows Store"></a>
+
+      </div>
+      <p class="dounload-aside__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
+    </aside>
     <h1 class="visually-hidden">Сайт, посвященный клёвому приложению</h1>
     <!-- //////////////////////////////////////////////////////////// -->
     <!-- Преимущества -->
-    <section class="preferences">
+    <section class="features">
       <h2 class="visually-hidden">Преимущества</h2>
-      <p class="preferences__note">Устали от серости мегаполиса?</p>
-      <p class="preferences__note">Нам есть, что вам предложить!</p>
-      <p class="preferences__desciption"><b>Поднимает настроение</b>Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      <p class="preferences__desciption"><b>Меняет мир вокруг</b>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      <p class="preferences__desciption"><b>Заводит новых друзей</b>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      <div class="preferences__pics">
-        <img src="https://via.placeholder.com/30x30" width="30" height="70" alt="Изображение розового экрана смартфона">
+      <p class="features__note">Устали от серости мегаполиса?</p>
+      <p class="features__note">Нам есть, что вам предложить!</p>
+      <p class="features__desciption"><b>Поднимает настроение</b><br>Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <p class="features__desciption"><b>Меняет мир вокруг</b><br>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      <p class="features__desciption"><b>Заводит новых друзей</b><br>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      <div class="features__pics">
+        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение розового экрана смартфона">
       </div>
     </section>
     <!-- ///////////////////////////////////////////////////////////////////// -->
@@ -86,7 +98,7 @@
       <!-- Тут слайдер из трёх отзывов -->
       <p class="references__reference1">
         <b>Николай Петров</b>
-        <q>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</q>
+        <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
       </p>
     </section>
     <!-- ////////////////////////////////////////////////////////////////// -->
@@ -116,6 +128,7 @@
       </div>
     </section>
   </footer>
-</body>
+  </div>
+  </body>
 
 </html>
