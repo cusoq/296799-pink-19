@@ -29,7 +29,7 @@
 
         <!-- ////////////////////////////////////////////////////////////////////////// -->
         <!-- Блок меню -->
-        <ul class="main-nav__list popup popup--nav popup--show">
+        <ul class="main-nav__list  popup--nav popup--show">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -52,17 +52,17 @@
     <!-- ///////////////////////////////////////////////// -->
     <!-- /////////////////////////////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////////// -->
-    <main>
+    <main class="main-form">
       <section class="feedback">
 
         <!-- //////////////////////////////////////////////////////////// -->
-        <p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="main-form__paragraph paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <!-- ///////////////////////////////////////////////////////////////////// -->
         <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
           <!-- Форма авторизации: -->
 
           <fieldset class="feedback__container feedback__container--name">
-            <!-- <legend class="leader leader--formtitle leader--name">Представьтесь:</legend> -->
+            <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--name">Представьтесь:</legend> -->
             <p class="feedback__input-container">
               <label class="feedback-field__description" for="surname">Фамилия:</label>
               <input class="feedback-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию <sup>&#9913;</sup>" required>
@@ -82,7 +82,7 @@
           <!-- Форма достижений: -->
 
           <fieldset class="feedback__container feedback__container--sights">
-            <legend class="leader leader--formtitle leader--sights">Ваши безбашенные
+            <legend class="feedback__leader feedback__leader--formtitle feedback__leader--sights">Ваши безбашенные
               достижения в путешествии</legend>
             <!-- /////////////////////////////////// -->
             <div class="feedback__input-wrapper feedback__input-wrapper--change">
@@ -127,7 +127,7 @@
           <!-- Форма контактов: -->
 
           <fieldset class="feedback__container feedback__container--formcontact">
-            <!-- <legend class="leader leader--formtitle leader--formcontact">Контактная информация:</legend> -->
+            <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--formcontact">Контактная информация:</legend> -->
             <div class="feedback__input-wrapper feedback__input-wrapper--formcontact">
               <p class="feedback__input-container feedback__input-container--formcontact">
                 <label class="feedback-field__description feedback-field__description--formcontact feedback-field__description--mobile" for="tel">Номер телефона</label>
@@ -144,7 +144,7 @@
           <!-- Форма выбора платформы: -->
 
           <fieldset class="feedback__container feedback__container--impression">
-            <legend class="leader leader--formtitle">С каким приложением
+            <legend class="feedback__leader feedback__leader--formtitle">С каким приложением
               путешествовали?</legend>
             <p class="feedback__input-container">
               <input class="feedback-field visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
@@ -162,24 +162,24 @@
           <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
           <!-- Поле текстового отзыва: -->
           <fieldset class="feedback__container  feedback__container--emotions">
-            <legend class="leader leader--formtitle leader--emotions">Опишите свои эмоции:</legend>
+            <legend class="feedback__leader feedback__leader--formtitle feedback__leader--emotions">Опишите свои эмоции:</legend>
             <p class="feedback__input-container">
               <textarea class="feedback-field feedback-field--text" rows="10" cols="30" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
-
+          </fieldset>
+<div class="feedback__submit-wrapper"feedback__submit-wrapper>
             <button class="btn feedback__btn feedback__btn--main btn--disabled">
               Отправить форму
             </button>
             <span class="feedback__note">
               <sup class="feedback__sup">&#9913;</sup> &ndash; Обязательные поля
             </span>
-          </fieldset>
-
+</div>
         </form>
         <!-- /////////////////////////////////////////////////////////// -->
         <!-- Модальные окна: -->
-        <div class="popup popup--success">
-          <b class="leader">
+        <div class="popup popup__form popup__form--success">
+          <b>
             Ваша заявка отправлена
           </b>
           <p class="paragraph paragraph--popup">
@@ -190,8 +190,8 @@
             ЗАКРЫТЬ ОКНО
           </button>
         </div>
-        <div class="popup popup--fail">
-          <b class="leader">
+        <div class="popup popup__form popup__form--fail">
+          <b>
             Что-то пошло не так!
           </b>
           <p class="paragraph paragraph--popup">
