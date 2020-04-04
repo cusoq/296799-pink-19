@@ -1,0 +1,38 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 395px;
+}
+
+.contacts__title {
+  margin: 0;
+  font-size: $font-size--huge;
+  font-weight: 300;
+  text-align: center;
+  color: $secondary-color--darken;
+}
+
+.contacts__action {
+  font-size: $font-size--large;
+  font-weight: 700;
+  text-align: center;
+  color: $secondary-color--darken;
+}
+
+.contacts__action-link {
+  font-size: $font-size--huge;
+  font-weight: 300;
+  text-align: center;
+  color: $main-color;
+}
+
+.contacts__map {
+  width: 320px;
+  min-height: 219px;
+  margin-top: auto;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%, cover;
+  background-position: 45% 100%, center;
+}

@@ -1,0 +1,15 @@
+.video {
+  display: flex;
+  flex-direction: column;
+}
+
+.video__options {
+  margin-top: 40px;
+  flex-basis: auto;
+  outline: pink 2px dotted;
+}
+
+.video__scale {
+  flex-basis: 80px;
+  outline: blue 2px dotted;
+}
