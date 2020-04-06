@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <title>HTML Academy: Пинк</title>
 
   <link rel="preload" href="fonts/opensans.woff2" as="font">
@@ -19,7 +18,13 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo-container">
-          <a class="logo logo--mobile" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип"></a>
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1000px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+            </picture>
+          </a>
 
           <!-- //////////////////////////////////////////////////////////////// -->
           <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
@@ -66,10 +71,10 @@
         Видите, как не хватает ваших?</p>
       <!-- //////////////////////////////////////////// -->
       <!-- Список фоток: -->
-      <ul class="main-photo__photo-list photo-list">
+      <ul class="main-photo__photo-list">
         <!-- /////////////////////////////////////////////// -->
         <li class="main-photo__photo-item">
-          <figure class="photo-list__pic photo-list__pic--first">
+          <figure class="main-photo-list__pic main-photo-list__pic--first">
             <a class="fullsize-link" href="#">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
@@ -79,7 +84,9 @@
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
                 <!-- <img class="features__pic" src="img/panorama-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Панорама дня"> -->
-                <img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+                <img class="features__pic" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+                <!-- ПРОСТАВИТЬ РАЗМЕРЫ!!!! -->
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">

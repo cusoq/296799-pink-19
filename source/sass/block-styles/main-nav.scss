@@ -1,17 +1,28 @@
 .main-nav__logo-container {
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   margin: 0 0 1px 0;
   padding: 22px 20px 22px 20px;
   min-height: 69px;
-  background-color: $background-color;
+  background-color: $secondary-color--darken;
   box-shadow: 0 1px 0 0 $primary-color;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 660px;
+    height: 110px;
+    background-color: rgba(40, 54, 69, 0.3);
+  }
 }
 
-// .main-nav__item {
-//
-// }
+.main-nav__logo {
+  width: 147px;
+  height: 40px;
+  outline: yellow 1px dotted;
+}
 
 .main-nav__link {
+  display: block;
   color: $secondary-color;
   font-size: $font-size--large;
   text-align: center;
@@ -19,7 +30,6 @@
   font-weight: 700;
   line-height: 63px;
 
-  display: block;
   min-width: 320px;
   margin-bottom: 1px;
   height: 63px;

@@ -19,7 +19,13 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo-container">
-          <span class="logo logo--mobile"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип"></span>
+          <span class="logo logo--mobile">
+            <picture>
+              <source media="(min-width: 1000px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+            </picture>
+          </span>
 
           <!-- //////////////////////////////////////////////////////////////// -->
   <!-- Кнопка раскрытия-закрытия мобильного меню:     -->

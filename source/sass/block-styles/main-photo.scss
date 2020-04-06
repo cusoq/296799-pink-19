@@ -1,16 +1,42 @@
-// .main-photo__paragraph {
-//   color: $secondary-color--darken;
-//   font-size: $font-size;
-//   font-weight: 400;
-//   // font-stretch: normal;
-//   // font-style: normal;
-//   line-height: 2.14;
-//   // letter-spacing: normal;
-//   text-align: center;
-// }
+.main-photo__paragraph {
+  display: block;
+  min-height: 228px;
+  background: plum;
+}
+
+.main-photo__photo-list {
+  width: 280px;
+  margin: 0 -30px 0 20px;
+  background-color: lime;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+  }
+}
 
 .main-photo__photo-item {
   outline: 1px dotted blue;
+  background: bisque;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 300px;
+    margin: 0 20px 20px 0;
+  }
+}
+
+
+.main-photo__photo-item:first-child {
+  @media (min-width: $breakpoint-tablet) {
+    flex-basis: 620px;
+    min-height: 630px;
+    margin: 0 0 20px 0;
+  }
+}
+
+.main-photo__photo-item:first-child .main-photo-list__pic {
+  margin: 0 -20px;
 }
 
 .main-photo__video {

@@ -4,9 +4,27 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
+
+  @media (min-width: $breakpoint-tablet) {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+  }
 }
 
-.page-header__slogan,
+.page-header__slogan {
+  display: block;
+  padding: 0 49px 30px 50px;
+  color: $secondary-color;
+  font-size: $font-size--huge;
+  text-align: center;
+  font-weight: 300;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size--vast;
+  }
+}
+
 .page-header__title {
   display: block;
   padding: 0 49px 30px 50px;
@@ -14,6 +32,10 @@
   font-size: $font-size--huge;
   text-align: center;
   font-weight: 300;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size--enormous;
+  }
 }
 
 .page-header__image {
