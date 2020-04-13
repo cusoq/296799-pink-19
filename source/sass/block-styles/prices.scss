@@ -1,5 +1,9 @@
 .prices {
   width: 320px;
-  height: 506px;
+  min-height: 506px;
   background-color: lime;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: auto;
+  }
 }

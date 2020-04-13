@@ -19,7 +19,13 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo-container">
-          <a class="logo logo--mobile" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип"></a>
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1000px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+            </picture>
+          </a>
 
           <!-- //////////////////////////////////////////////////////////////// -->
           <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
@@ -56,7 +62,7 @@
       <section class="feedback">
 
         <!-- //////////////////////////////////////////////////////////// -->
-        <p class="main-form__paragraph paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="main-form__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <!-- ///////////////////////////////////////////////////////////////////// -->
         <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
           <!-- Форма авторизации: -->
@@ -64,15 +70,15 @@
           <fieldset class="feedback__container feedback__container--name">
             <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--name">Представьтесь:</legend> -->
             <p class="feedback__input-container">
-              <label class="feedback-field__description" for="surname">Фамилия:</label>
+              <label class="feedback__field-description feedback__leader" for="surname">Фамилия:</label>
               <input class="feedback-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию <sup>&#9913;</sup>" required>
             </p>
             <p class="feedback__input-container">
-              <label class="feedback-field__description" for="name">Имя:</label>
+              <label class="feedback__field-description" for="name">Имя:</label>
               <input class="feedback-field" type="text" id="name" name="name" placeholder="Введите ваше имя *<sup>&#9913;</sup>" required>
             </p>
             <p class="feedback__input-container">
-              <label class="feedback-field__description" for="patronymic">Отчество:</label>
+              <label class="feedback__field-description" for="patronymic">Отчество:</label>
               <input class="feedback-field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
@@ -89,37 +95,37 @@
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--shark">
                 <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="shark" id="shark" checked>
-                <label class="feedback-field__description feedback-field__description--checkbox" for="shark" tabindex="0">Сделал селфи с акулой</label>
+                <label class="feedback__field-description feedback__field-description--checkbox" for="shark" tabindex="0">Сделал селфи с акулой</label>
               </p>
               <!-- ///////////////////////////////// -->
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--beach">
                 <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
-                <label class="feedback-field__description feedback-field__description--checkbox" for="beach" tabindex="0">Обгорел на пляже</label>
+                <label class="feedback__field-description feedback__field-description--checkbox" for="beach" tabindex="0">Обгорел на пляже</label>
               </p>
               <!-- ////////////////////////////////////////// -->
 
               <p class="feedback__input-container  feedback__input-container--change feedback__input-container--chack">
                 <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="chack" id="chack">
-                <label class="feedback-field__description feedback-field__description--checkbox" for="chack" tabindex="0">Видел Чака Норриса</label>
+                <label class="feedback__field-description feedback__field-description--checkbox" for="chack" tabindex="0">Видел Чака Норриса</label>
               </p>
               <!-- //////////////////////////////////////////////////// -->
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--shop">
                 <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="shop" id="shop">
-                <label class="feedback-field__description feedback-field__description--checkbox" for="shop" tabindex="0">Накупил сувениров</label>
+                <label class="feedback__field-description feedback__field-description--checkbox" for="shop" tabindex="0">Накупил сувениров</label>
               </p>
               <!-- ////////////////////////////////////////////////////////// -->
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--tower">
                 <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
-                <label class="feedback-field__description feedback-field__description--checkbox" for="tower" tabindex="0">Удержал башню</label>
+                <label class="feedback__field-description feedback__field-description--checkbox" for="tower" tabindex="0">Удержал башню</label>
               </p>
               <!-- ////////////////////////////////////////////////////////////////// -->
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--hotel">
                 <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
-                <label class="feedback-field__description feedback-field__description--checkbox" for="hotel" tabindex="0">Разгромил отель</label>
+                <label class="feedback__field-description feedback__field-description--checkbox" for="hotel" tabindex="0">Разгромил отель</label>
               </p>
             </div>
           </fieldset>
@@ -130,12 +136,12 @@
             <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--formcontact">Контактная информация:</legend> -->
             <div class="feedback__input-wrapper feedback__input-wrapper--formcontact">
               <p class="feedback__input-container feedback__input-container--formcontact">
-                <label class="feedback-field__description feedback-field__description--formcontact feedback-field__description--mobile" for="tel">Номер телефона</label>
-                <!-- <label class="feedback-field__description feedback-field__description--formcontact feedback-field__description--desktop" for="tel">Телефон</label> -->
+                <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
+                <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
                 <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
               </p>
               <p class="feedback__input-container feedback__input-container--formcontact">
-                <label class="feedback-field__description feedback-field__description--formcontact" for="email">адрес почты</label>
+                <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
                 <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту <sup>&#9913;</sup>" required>
               </p>
             </div>
@@ -148,15 +154,15 @@
               путешествовали?</legend>
             <p class="feedback__input-container">
               <input class="feedback-field visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
-              <label class="feedback-field__description feedback-field__description--radio" for="ios" tabindex="0">Pink для iOS</label>
+              <label class="feedback__field-description feedback__field-description--radio" for="ios" tabindex="0">Pink для iOS</label>
             </p>
             <p class="feedback__input-container">
               <input class="feedback-field visually-hidden" type="radio" name="platform" value="android" id="android">
-              <label class="feedback-field__description feedback-field__description--radio" for="android" tabindex="0">Pink на Android</label>
+              <label class="feedback__field-description feedback__field-description--radio" for="android" tabindex="0">Pink на Android</label>
             </p>
             <p class="feedback__input-container">
               <input class="feedback-field visually-hidden" type="radio" name="platform" value="windows" id="windows">
-              <label class="feedback-field__description feedback-field__description--radio" for="windows" tabindex="0">Windows Phone</label>
+              <label class="feedback__field-description feedback__field-description--radio" for="windows" tabindex="0">Windows Phone</label>
             </p>
           </fieldset>
           <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->

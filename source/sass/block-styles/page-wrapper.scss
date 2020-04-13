@@ -2,12 +2,14 @@
   display: block;
   width: 320px;
   margin: 0 auto;
+
   outline: red 2px dotted;
-  // @media (min-width: $breakpoint-tablet) {
-  //   width: $breakpoint-tablet;
-  // }
-  //
-  // @media (min-width: $breakpoint-desktop) {
-  //   width: 1200px;
-  // }
+
+  @media (min-width: $breakpoint-tablet) {
+    width: $breakpoint-tablet;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 1200px;
+  }
 }

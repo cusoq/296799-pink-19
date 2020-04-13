@@ -1,17 +1,69 @@
-.main-nav__logo-container {
-  box-sizing: border-box;
-  margin: 0 0 1px 0;
-  padding: 22px 20px 22px 20px;
-  min-height: 69px;
-  background-color: $background-color;
-  box-shadow: 0 1px 0 0 $primary-color;
+.main-nav {
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-// .main-nav__item {
-//
-// }
+.main-nav__logo-container {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 0 1px 0;
+  padding: 20px 20px 20px 20px;
+  min-height: 66px;
+  background-color: $secondary-color--darken;
+  box-shadow: 0 1px 0 0 $primary-color;
+  outline: yellow 3px dotted;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 660px;
+    height: 110px;
+    background-color: $secondary-color--darken;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 150px;
+  }
+}
+
+.main-nav__logo img {
+  outline: green 3px dotted;
+  width: 75px;
+  height: 22px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $breakpoint-desktop) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 110px;
+    width: 75%;
+    outline: plum 3px dotted;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: $breakpoint-desktop) {
+    margin: auto 0 auto 20px;
+    outline: green 3px dotted;
+  }
+}
 
 .main-nav__link {
+  display: block;
   color: $secondary-color;
   font-size: $font-size--large;
   text-align: center;
@@ -19,10 +71,20 @@
   font-weight: 700;
   line-height: 63px;
 
-  display: block;
   min-width: 320px;
   margin-bottom: 1px;
   height: 63px;
   background-color: #283645;
   box-shadow: 0 1px 0 0 $primary-color, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+
+  @media (min-width: $breakpoint-desktop) {
+    min-width: auto;
+    height: auto;
+    outline: 1px tomato dashed;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-weight: normal;
+    line-height: 1;
+    white-space: nowrap;
+  }
 }
