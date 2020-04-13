@@ -1,14 +1,15 @@
 .page-header {
   min-height: 462px;
   background-color: bisque;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: 0 bottom, 0 bottom;
 
   @media (min-width: $breakpoint-tablet) {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    min-height: 729px;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: 0 bottom, 0 bottom;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -20,14 +21,20 @@
 
 .page-header__slogan {
   display: block;
-  padding: 0 49px 30px 50px;
+  padding: 20px 40px 315px 40px;
   color: $secondary-color;
   font-size: $font-size--huge;
   text-align: center;
   font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
 
   @media (min-width: $breakpoint-tablet) {
+    box-sizing: border-box;
     font-size: $font-size--vast;
+    padding: 90px 40px 390px 45px;
+    outline: 5px dashed tomato;
+    width: 320px;
   }
 }
 
@@ -43,8 +50,4 @@
     font-size: $font-size--enormous;
     line-height: 1.2;
   }
-}
-
-.page-header__image {
-  vertical-align: bottom;
 }

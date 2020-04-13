@@ -1,10 +1,17 @@
 .dounload-aside {
   box-sizing: border-box;
-  padding: 28px 18px;
+  padding: 28px 0;
   color: $secondary-color;
   width: 320px;
   height: 271px;
   background-color: $secondary-color--darken;
+  outline: 2px dotted plum;
+
+  @media (min-width: $breakpoint-tablet) {
+    position: absolute;
+    top: -371px;
+    background-color: transparent;
+  }
 }
 
 .dounload-aside__link {
@@ -13,10 +20,7 @@
   width: 251px;
   font-size: $font-size--large;
   font-weight: bold;
-  // font-stretch: normal;
-  // font-style: normal;
   line-height: 55px;
-  // letter-spacing: normal;
   text-align: center;
   border: 2px solid $secondary-color;
   // border-radius: 5%;
@@ -25,9 +29,17 @@
 .dounload-aside__all-links {
   display: flex;
   justify-content: space-between;
-  // margin: 0;
 }
 
 .dounload-aside__text {
-  // display: none;
+  font-size: $font-size;
+  font-weight: 300;
+  line-height: 1.71;
+  text-align: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0;
+    font-size: $font-size--large;
+    line-height: 1.33;
+  }
 }

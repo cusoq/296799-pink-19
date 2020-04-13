@@ -19,7 +19,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo-container">
-          <span class="logo logo--mobile">
+          <span class="main-nav__logo">
             <picture>
               <source media="(min-width: 1000px)" srcset="img/logo-pink-white-desktop.svg">
               <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
@@ -28,116 +28,132 @@
           </span>
 
           <!-- //////////////////////////////////////////////////////////////// -->
-  <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
-  <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
-  <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
-  </div>
+          <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
+          <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+        </div>
 
-  <!-- ////////////////////////////////////////////////////////////////////////// -->
-  <!-- Блок меню -->
-  <ul class="main-nav__list popup popup--nav popup--show">
-    <li class="main-nav__item">
-      <a class="main-nav__link main-nav__link--current">Главная</a>
-    </li>
-    <li class="main-nav__item">
-      <a class="main-nav__link" href="photo.html">Фотографии</a>
-    </li>
-    <li class="main-nav__item">
-      <a class="main-nav__link" href="form.html">Конкурс</a>
-    </li>
-    <li class="main-nav__item">
-      <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
-    </li>
-  </ul>
+        <!-- ////////////////////////////////////////////////////////////////////////// -->
+        <!-- Блок меню -->
+        <ul class="main-nav__list popup popup--nav popup--show">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--current">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
+          </li>
+        </ul>
 
-  </nav>
+      </nav>
 
-  <p class="page-header__slogan">Взгляните на жизнь иначе!</p>
+      <p class="page-header__slogan">Взгляните на жизнь иначе!</p>
 
+    </header>
+    <!-- ///////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////// -->
+    <main class="main-page">
+      <h1 class="visually-hidden">Сайт, посвященный клёвому приложению</h1>
 
-  <img class="page-header__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="изображение Айфона-5 в руке">
-  <!-- srcset="img/iphone-5-in-hand-png@2x.png 2x,
-                 img/iphone-5-in-hand-png@3x.png 3x"
-         class="iphone-5-in-hand-png"> -->
-  <!-- jpg -->
-  <!-- <img src="img/iphone-5-in-hand-png.jpg"
-         srcset="img/iphone-5-in-hand-png@2x.jpg 2x,
-                 img/iphone-5-in-hand-png@3x.jpg 3x"
-         class="iphone-5-in-hand-png"> -->
-  </header>
-  <!-- ///////////////////////////////////////////////// -->
-  <!-- /////////////////////////////////////////////////////// -->
-  <!-- //////////////////////////////////////////////////////////////// -->
-  <main>
-    <!-- Блок скачивания приложения -->
-    <aside class="dounload-aside">
-      <h2 class="visually-hidden">Блок скачивания приложения</h2>
-      <a class="dounload-aside__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-      <div class="dounload-aside__all-links">
+      <!-- Блок скачивания приложения -->
+      <aside class="dounload-aside">
+        <h2 class="visually-hidden">Блок скачивания приложения</h2>
+        <a class="dounload-aside__link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <div class="dounload-aside__all-links">
 
-        <a href="https://www.apple.com/ru/ios/app-store/"><img src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple"></a>
-        <a href="https://play.google.com/store?hl=ru&tab=w81"><img src="img/logo-android.svg" width="43" height="47" alt="Логотип Android"></a>
-        <a href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Windows Store"></a>
+          <a href="https://www.apple.com/ru/ios/app-store/"><img src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple"></a>
+          <a href="https://play.google.com/store?hl=ru&tab=w81"><img src="img/logo-android.svg" width="43" height="47" alt="Логотип Android"></a>
+          <a href="https://www.microsoft.com/ru-ru/store/apps/windows"><img src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Windows Store"></a>
+
+        </div>
+        <p class="dounload-aside__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </aside>
+      <!-- //////////////////////////////////////////////////////////// -->
+      <!-- Преимущества -->
+      <p class="main-page__note">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</p>
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="features__desciption-wrapper">
+          <p class="features__desciption"><b>Поднимает настроение</b><br>Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          <p class="features__desciption"><b>Меняет мир вокруг</b><br>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <p class="features__desciption"><b>Заводит новых друзей</b><br>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+        <div class="features__pics">
+          <picture>
+            <source media="(min-width: 1000px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+            <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение розового экрана смартфона">
+          </picture>
+        </div>
+      </section>
+      <!-- ///////////////////////////////////////////////////////////////////// -->
+      <div class="main-page__effect">
+        <h2>Эффект<br> на 24 часа!</h2>
+        <p>Британские ученые провели исследования и доказали,
+          что положительный эффект<br> от использования приложения длится<br> целые сутки!</p><br>
+        <span>Узнать больше об исследовании</span>
+      </div>
+      <!-- Отзывы  -->
+      <section class="references">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <!-- Тут слайдер из трёх отзывов -->
+        <p class="references__reference paragraph">
+          <b>Николай Петров</b><br>
+          <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+        </p>
+      </section>
+      <!-- ////////////////////////////////////////////////////////////////// -->
+      <!-- Тарифы -->
+      <section class="prices">
+        <h2 class="visually-hidden">Тарифы</h2>
+        <!-- Тут слайдер из трёх тарифов -->
+        <div class="prices__standard">
+          <!-- table -->
+        </div>
+      </section>
+      <!-- /////////////////////////////////////////////////////////////////////// -->
+      <!-- /////////////////////////////////////////////////////////////////////// -->
+      <!-- /////////////////////////////////////////////////////////// -->
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+        <span class="contacts__action">Звоните:</span>
+        <a class="contacts__action-link" href="tel:88125556666">+7 812 555-66-66</a>
+        <span class="contacts__action">Пишите:</span>
+        <a class="contacts__action-link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <span class="contacts__action">Приезжайте в гости:</span>
+        <a class="contacts__action-link" href="https://yandex.ru/maps/-/CKuy420G">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+        <div class="contacts__map">
+          <!-- Тут карта с адресом -->
+          <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323118%2C59.938635&sll=37.635499%2C55.744859&sspn=0.605621%2C0.194049&utm_medium=mapframe&utm_source=maps&z=16.39" -->
+          <!-- style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKuy420~" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
+        </div>
+      </section>
+
+    </main>
+    <footer class="page-footer page-footer--main">
+      <a class="page-footer__logo" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="146" height="40" title="Логотип"></a>
+      <div class="page-footer__social">
+
+        <a href="#" class="page-footer__social-link" title="Наш Твиттер"><img src="img/icon-twitter.svg" width="18" height="15" title="Логотип Твиттера"></a>
+        <a href="#" class="page-footer__social-link" title="Наш фейсбук"><img src="img/icon-facebook.svg" width="9" height="19" title="Логотип фейсбука"></a>
+        <a href="#" class="page-footer__social-link" title="Наш Ютуб"><img src="img/icon-youtube.svg" width="15" height="14" title="Логотип Ютуба"></a>
 
       </div>
-      <p class="dounload-aside__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      <p class="page-footer__copy">
+        <span class="page-footer__copy-text">Разработано</span>
+        <a class="page-footer__copy-logo" href="https://htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" title="Логотип разработчика"></a>
       </p>
-    </aside>
-    <h1 class="visually-hidden">Сайт, посвященный клёвому приложению</h1>
-    <!-- //////////////////////////////////////////////////////////// -->
-    <!-- Преимущества -->
-    <section class="features">
-      <h2 class="visually-hidden">Преимущества</h2>
-      <p class="features__note">Устали от серости мегаполиса?</p>
-      <p class="features__note">Нам есть, что вам предложить!</p>
-      <p class="features__desciption paragraph"><b>Поднимает настроение</b><br>Приложение поможет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      <p class="features__desciption paragraph"><b>Меняет мир вокруг</b><br>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      <p class="features__desciption paragraph"><b>Заводит новых друзей</b><br>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      <div class="features__pics">
-        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение розового экрана смартфона">
-      </div>
-    </section>
-    <!-- ///////////////////////////////////////////////////////////////////// -->
-    <!-- Отзывы  -->
-    <section class="references">
-      <h2 class="visually-hidden">Отзывы</h2>
-      <!-- Тут слайдер из трёх отзывов -->
-      <p class="references__reference paragraph">
-        <b>Николай Петров</b><br>
-        <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
-      </p>
-    </section>
-    <!-- ////////////////////////////////////////////////////////////////// -->
-    <!-- Тарифы -->
-    <section class="prices">
-      <h2 class="visually-hidden">Тарифы</h2>
-      <!-- Тут слайдер из трёх тарифов -->
-      <div class="prices__standard">
-        <!-- table -->
-      </div>
-    </section>
-  <!-- /////////////////////////////////////////////////////////////////////// -->
-  <!-- /////////////////////////////////////////////////////////////////////// -->
-  <!-- /////////////////////////////////////////////////////////// -->
-
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-      <span class="contacts__action">Звоните:</span>
-      <a class="contacts__action-link" href="tel:88125556666">+7 812 555-66-66</a>
-      <span class="contacts__action">Пишите:</span>
-      <a class="contacts__action-link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      <span class="contacts__action">Приезжайте в гости:</span>
-      <a class="contacts__action-link" href="https://yandex.ru/maps/-/CKuy420G">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
-      <div class="contacts__map">
-        <!-- Тут карта с адресом -->
-        <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323118%2C59.938635&sll=37.635499%2C55.744859&sspn=0.605621%2C0.194049&utm_medium=mapframe&utm_source=maps&z=16.39" -->
-        <!-- style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKuy420~" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div> -->
-      </div>
-    </section>
-
-  </main>
+    </footer>
   </div>
-  </body>
+</body>
 
 </html>

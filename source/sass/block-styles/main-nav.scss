@@ -10,8 +10,8 @@
   justify-content: space-between;
   box-sizing: border-box;
   margin: 0 0 1px 0;
-  padding: 22px 20px 22px 20px;
-  min-height: 69px;
+  padding: 20px 20px 20px 20px;
+  min-height: 66px;
   background-color: $secondary-color--darken;
   box-shadow: 0 1px 0 0 $primary-color;
   outline: yellow 3px dotted;
@@ -19,7 +19,7 @@
   @media (min-width: $breakpoint-tablet) {
     width: 660px;
     height: 110px;
-    background-color: rgba(40, 54, 69, 0.3);
+    background-color: $secondary-color--darken;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -29,8 +29,13 @@
 
 .main-nav__logo img {
   outline: green 3px dotted;
-  width: 147px;
-  height: 40px;
+  width: 75px;
+  height: 22px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 147px;
+    height: 40px;
+  }
 }
 
 .main-nav__toggle {

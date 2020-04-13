@@ -15,6 +15,14 @@
   }
 }
 
+.page-footer--main {
+  display: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+  }
+}
+
 .page-footer__social {
   display: flex;
   justify-content: space-between;
