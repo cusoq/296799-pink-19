@@ -76,8 +76,7 @@
 
     <main class="main-photo">
       <!-- /////////////////////////////////////////////////////////////////////// -->
-      <p class="main-photo__paragraph">Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?</p>
+      <p class="main-photo__paragraph">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <!-- //////////////////////////////////////////// -->
       <!-- Список фоток: -->
       <ul class="main-photo__photo-list">
@@ -294,16 +293,36 @@
       <!-- Блок с видосом: -->
 
       <div class="main-photo__video video">
-        <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Кадр из видео">
+        <img class="video__pic" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Кадр из видео">
+<div class="video__inner-wrapper"
         <div class="video__options">
-          <img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезка">
-          <img src="img/icon-editor-fill.svg" width="48" height="43" alt="Заливка">
-          <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
-        </div>
-        <div class="video__scale">
-          <div class="video__toggle" style="margin-left: 25%">
+          <!-- ////Контролы/////////////////////////////////////// -->
+          <!-- Обрезка -->
+          <div class="video__control video__control--crop">
+            <img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезка">
+            <div class="video__control-scale video__control-scale--corp">
+              <div class="video__toggle video__toggle--corp" style="margin-left: 25%">
+              </div>
+            </div>
+          </div>
+          <!-- Заливка     -->
+          <div class="video__control video__control--fill">
+            <img src="img/icon-editor-fill.svg" width="48" height="43" alt="Заливка">
+            <div class="video__control-scale video__control-scale--fill">
+              <div class="video__toggle video__toggle--fill" style="margin-left: 25%">
+              </div>
+            </div>
+          </div>
+          <!-- Контраст -->
+          <div class="video__control video__control--contrast">
+            <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
+            <div class="video__control-scale video__control-scale--contrast">
+              <div class="video__toggle video__toggle--contrast" style="margin-left: 25%">
+              </div>
+            </div>
           </div>
         </div>
+
         <!-- <button class="video__btn video__btn--play">
       Play<svg class="video__btn-icon" width="16" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-replay"></use></svg>
     </button> -->
@@ -313,11 +332,12 @@
         <!-- <button class="video__btn video__btn--fullscreen">
       Fullscreen<svg class="video__btn-icon" width="20" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-fullscreen"></use></svg>
     </button> -->
+        <div class="main-photo__buttons">
+          <button>Запостить</button>
+          <button>Отмена</button>
+        </div>
       </div>
-      <div class="main-photo__buttons">
-        <button>Запостить</button>
-        <button>Отмена</button>
-      </div>
+    </div>
     </main>
     <!-- /////////////////////////////////////////////////////////// -->
 

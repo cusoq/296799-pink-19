@@ -1,15 +1,64 @@
 .video {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 511px;
+    padding: 57px 25px 54px 20px;
+  }
+}
+
+.video__inner-wrapper {
+  display: flex;
+  justify-content: space-around;
+  outline: 2px blue solid;
+  position: relative;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0 0 auto auto;
+    flex-direction: column;
+    position: inherit;
+    // height: 190px;
+  }
 }
 
 .video__options {
+  display: flex;
   margin-top: 40px;
-  flex-basis: auto;
-  outline: pink 2px dotted;
+  outline: red 4px dotted;
+
+
 }
 
-.video__scale {
-  flex-basis: 80px;
-  outline: blue 2px dotted;
+.video__control {
+  outline: 5px pink dashed;
+  margin: auto 0;
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    }
+}
+
+.video__control-scale {
+  display: none;
+  background-color: tan;
+  width: 240px;
+  height: 25px;
+
+  &--corp {
+    display: block;
+    position: absolute;
+    top: 135%;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+    width: 202px;
+
+    &--corp {
+      display: block;
+      position: inherit;
+    }
+  }
 }

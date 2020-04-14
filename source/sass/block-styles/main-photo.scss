@@ -73,9 +73,14 @@
 .main-photo__video {
   box-sizing: border-box;
   width: 320px;
-  height: 556px;
+  min-height: 757px;
   padding: 20px;
   background-color: aqua;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+    width: 660px;
+  }
 }
 
 .main-photo__buttons {
@@ -83,10 +88,16 @@
   box-sizing: border-box;
   flex-direction: column;
   justify-content: space-between;
-  width: 320px;
+  width: auto;
   height: 201px;
+  margin: auto 0 0 0;
   padding: 30px 20px;
   background-color: khaki;
+
+  // @media (min-width: $breakpoint-tablet) {
+  //   position: absolute;
+  //   top: 20%;
+  // }
 }
 
 .main-photo__buttons button {
