@@ -80,6 +80,7 @@
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     width: 660px;
+    min-height: 511px;
   }
 }
 
@@ -94,10 +95,10 @@
   padding: 30px 20px;
   background-color: khaki;
 
-  // @media (min-width: $breakpoint-tablet) {
-  //   position: absolute;
-  //   top: 20%;
-  // }
+  @media (min-width: $breakpoint-tablet) {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .main-photo__buttons button {
@@ -109,4 +110,10 @@
   line-height: 55px;
   text-align: center;
   border: 2px solid red;
+
+  @media (min-width: $breakpoint-tablet) {
+    // width: inherit;
+    padding: 0;
+    margin-top: auto;
+  }
 }

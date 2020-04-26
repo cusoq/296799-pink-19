@@ -29,13 +29,22 @@
 
           <!-- //////////////////////////////////////////////////////////////// -->
           <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
-          <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+          <button class="main-nav__btn main-nav__btn--open" type="button">Раскрыть список меню</button>
+          <!-- <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button> -->
         </div>
 
         <!-- ////////////////////////////////////////////////////////////////////////// -->
         <!-- Блок меню -->
-        <ul class="main-nav__list  popup--nav popup--show">
+        <ul class="main-nav__list popup">
+          <li class="main-nav__logo-container main-nav__logo-container--popup">
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+              </picture>
+            </a>
+            <button class="main-nav__btn main-nav__btn--close" type="button">Закрыть</button>
+          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -134,7 +143,7 @@
 
           <fieldset class="feedback__container feedback__container--formcontact">
             <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--formcontact">Контактная информация:</legend> -->
-            <div class="feedback__input-wrapper feedback__input-wrapper--formcontact">
+            <!-- <div class="feedback__input-wrapper feedback__input-wrapper--formcontact"> -->
               <p class="feedback__input-container feedback__input-container--formcontact">
                 <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
                 <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
@@ -144,12 +153,12 @@
                 <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
                 <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту <sup>&#9913;</sup>" required>
               </p>
-            </div>
+            <!-- </div> -->
           </fieldset>
           <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
           <!-- Форма выбора платформы: -->
 
-          <fieldset class="feedback__container feedback__container--impression">
+          <fieldset class="feedback__container feedback__container--os">
             <legend class="feedback__leader feedback__leader--formtitle">С каким приложением
               путешествовали?</legend>
             <p class="feedback__input-container">
@@ -227,6 +236,7 @@
       </p>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

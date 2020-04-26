@@ -1,7 +1,12 @@
 .main-nav {
   @media (min-width: $breakpoint-desktop) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    // width: 1200px;
+    // position: absolute;
+    // top: 0;
+    // left: 191px;
+    // background-color: rgba(1, 1, 1, 0.6);
   }
 }
 
@@ -9,26 +14,35 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  width: 320px;
   margin: 0 0 1px 0;
   padding: 20px 20px 20px 20px;
   min-height: 66px;
-  background-color: $secondary-color--darken;
+  // background-color: rgba(1, 1, 1, 0.6);
   box-shadow: 0 1px 0 0 $primary-color;
   outline: yellow 3px dotted;
+
+  &--popup {
+    background-color: $secondary-color--darken;
+
+    @media (min-width: $breakpoint-desktop) {
+      display: none;
+    }
+  }
 
   @media (min-width: $breakpoint-tablet) {
     width: 660px;
     height: 110px;
-    background-color: $secondary-color--darken;
+    // background-color: $secondary-color--darken;
   }
 
   @media (min-width: $breakpoint-desktop) {
     width: 150px;
+    outline: green 3px dotted;
   }
 }
 
 .main-nav__logo img {
-  outline: green 3px dotted;
   width: 75px;
   height: 22px;
 
@@ -38,13 +52,17 @@
   }
 }
 
-.main-nav__toggle {
+.main-nav__btn {
   @media (min-width: $breakpoint-desktop) {
     display: none;
   }
 }
 
 .main-nav__list {
+  display: block;
+  // у попап-модификатора абсолютное позиционирование см. .popup--show
+  top: 0;
+
   @media (min-width: $breakpoint-desktop) {
     display: flex;
     justify-content: space-between;

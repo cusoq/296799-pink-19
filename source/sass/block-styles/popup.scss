@@ -1,3 +1,16 @@
+.popup {
+  display: none;
+
+  &--show {
+    position: absolute;
+    display: block;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: inherit;
+  }
+}
+
 .popup__form {
   display: none;
 }

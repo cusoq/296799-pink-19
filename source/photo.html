@@ -28,13 +28,21 @@
 
           <!-- //////////////////////////////////////////////////////////////// -->
           <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
-          <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+          <button class="main-nav__btn main-nav__btn--open" type="button">Раскрыть список меню</button>
         </div>
 
         <!-- ////////////////////////////////////////////////////////////////////////// -->
         <!-- Блок меню -->
-        <ul class="main-nav__list popup popup--nav popup--show">
+        <ul class="main-nav__list popup">
+          <li class="main-nav__logo-container main-nav__logo-container--popup">
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+              </picture>
+            </a>
+            <button class="main-nav__btn main-nav__btn--close" type="button">Закрыть</button>
+          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -44,15 +52,6 @@
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <!-- <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li><li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li><li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li></li><li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li> -->
           <li class="main-nav__item">
             <a class="main-nav__link" href="https://htmlacademy.ru/intensive/htmlcss">Html Academy</a>
           </li>
@@ -64,13 +63,6 @@
 
 
     </header>
-    <!-- ///////////////////////////////////////////////// -->
-    <!-- /////////////////////////////////////////////////////// -->
-    <!-- //////////////////////////////////////////////////////////////// -->
-
-    <!-- //////////////////////////////////////////////////////////// -->
-
-    <!-- ///////////////////////////////////////////////////////////////////// -->
 
     <!-- ////////////////////////////////////////////////////////////////// -->
 
@@ -91,10 +83,10 @@
 
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-                <!-- <img class="features__pic" src="img/panorama-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Панорама дня"> -->
+                <!-- <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Панорама дня"> -->
                 <source media="(min-width: 1000px)" srcset="img/panorama-desktop@1x.jpg">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-                <img class="features__pic" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
                 <!-- ПРОСТАВИТЬ РАЗМЕРЫ!!!! -->
               </picture>
             </a>
@@ -123,8 +115,8 @@
 
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Машина"> -->
-                <img class="features__pic" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
+                <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Машина"> -->
+                <img class="main-photo__pic" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
@@ -152,8 +144,8 @@
 
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="features__pic" src="img/photo-drumset-mobile@1x.jpg" width="320" height="137" alt="Драмсет">
+                <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+                <img class="main-photo__pic" src="img/photo-drumset-mobile@1x.jpg" width="320" height="137" alt="Драмсет">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
@@ -181,8 +173,8 @@
 
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
@@ -210,8 +202,8 @@
 
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
@@ -239,8 +231,8 @@
 
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
@@ -268,8 +260,8 @@
 
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
-                <!-- <img class="features__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="features__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
+                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
@@ -292,52 +284,64 @@
       <!-- /////////////////////////////////////////////////////////////////////// -->
       <!-- Блок с видосом: -->
 
+      <!-- ??????????????????????????????????????????????????????????? -->
       <div class="main-photo__video video">
         <img class="video__pic" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Кадр из видео">
-<div class="video__inner-wrapper"
-        <div class="video__options">
-          <!-- ////Контролы/////////////////////////////////////// -->
-          <!-- Обрезка -->
-          <div class="video__control video__control--crop">
-            <img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезка">
-            <div class="video__control-scale video__control-scale--corp">
-              <div class="video__toggle video__toggle--corp" style="margin-left: 25%">
-              </div>
-            </div>
-          </div>
-          <!-- Заливка     -->
-          <div class="video__control video__control--fill">
-            <img src="img/icon-editor-fill.svg" width="48" height="43" alt="Заливка">
-            <div class="video__control-scale video__control-scale--fill">
-              <div class="video__toggle video__toggle--fill" style="margin-left: 25%">
-              </div>
-            </div>
-          </div>
-          <!-- Контраст -->
-          <div class="video__control video__control--contrast">
-            <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
-            <div class="video__control-scale video__control-scale--contrast">
-              <div class="video__toggle video__toggle--contrast" style="margin-left: 25%">
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- <button class="video__btn video__btn--play">
+        <!-- ////////////////////////////////////////////////////////////////// -->
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div class="video__inner-wrapper">
+          <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+          <div class="video__options">
+            <!-- ////Контролы/////////////////////////////////////// -->
+            <!-- Обрезка -->
+            <div class="video__control video__control--crop">
+              <!-- <img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезка">
+              <div class="video__control-scale video__control-scale--corp">
+                <div class="video__toggle video__toggle--corp" style="margin-left: 25%">
+                </div>
+              </div> -->
+            </div>
+            <!-- Заливка     -->
+            <div class="video__control video__control--fill">
+              <!-- <img src="img/icon-editor-fill.svg" width="48" height="43" alt="Заливка">
+              <div class="video__control-scale video__control-scale--fill">
+                <div class="video__toggle video__toggle--fill" style="margin-left: 25%">
+                </div>
+              </div> -->
+            </div>
+            <!-- Контраст -->
+            <div class="video__control video__control--contrast">
+              <!-- <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
+              <div class="video__control-scale video__control-scale--contrast">
+                <div class="video__toggle video__toggle--contrast" style="margin-left: 25%">
+                </div>
+              </div> -->
+            </div>
+            <!-- ///////////////////////////////// -->
+          </div>
+          <!-- video__options%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+          <!-- <button class="video__btn video__btn--play">
       Play<svg class="video__btn-icon" width="16" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-replay"></use></svg>
     </button> -->
-        <!-- <button class="video__btn video__btn--subtitles">
+          <!-- <button class="video__btn video__btn--subtitles">
       Subtitles<svg class="video__btn-icon" width="32" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-subtitles"></use></svg>
     </button> -->
-        <!-- <button class="video__btn video__btn--fullscreen">
+          <!-- <button class="video__btn video__btn--fullscreen">
       Fullscreen<svg class="video__btn-icon" width="20" height="20" ><use xlink:href="img/sprite.svg#s-icon-video-fullscreen"></use></svg>
     </button> -->
-        <div class="main-photo__buttons">
-          <button>Запостить</button>
-          <button>Отмена</button>
+          <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+          <div class="main-photo__buttons">
+            <button>Запостить</button>
+            <button>Отмена</button>
+          </div>
+          <!-- main-photo__buttons<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
         </div>
+        <!--video__inner-wrapper >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
       </div>
-    </div>
+      <!-- main-photo__video video?????????????????????? -->
     </main>
     <!-- /////////////////////////////////////////////////////////// -->
 
@@ -356,6 +360,7 @@
       </p>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
