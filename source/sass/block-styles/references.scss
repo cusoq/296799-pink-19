@@ -1,12 +1,58 @@
 .references {
   // margin-top: -60px;
   width: auto;
-  height: 320px;
+  min-height: 320px;
   background-color: tan;
   z-index: 3;
+
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 230px;
+  }
 }
 
-.references__reference b {
+.references__reference {
+  display: flex;
+  flex-direction: column;
+}
+
+.references__user-name {
   text-align: center;
   font-size: $font-size--large;
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size--big;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    font-size: $font-size--huge;
+  }
+}
+
+.references__user-data {
+  outline: 2px yellow dotted;
+  display: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+    font-size: $font-size;
+    color: $secondary-color--darken;
+    text-align: center;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size--large;
+  }
+}
+
+.references__text {
+  color: $secondary-color--darken;
+  text-align: center;
+
+  @media (min-width: $breakpoint-tablet) {
+    order: -1;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size--large;
+  }
 }

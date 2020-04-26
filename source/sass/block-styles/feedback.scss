@@ -25,17 +25,17 @@
     }
 
     @media (min-width: $breakpoint-desktop) {
-      flex-basis: 637px;
+      flex-basis: 50%;
     }
   }
 
-  &--impression {
+  &--os {
     @media (min-width: $breakpoint-tablet) {
       order: -2;
     }
 
     @media (min-width: $breakpoint-desktop) {
-      flex-basis: 431px;
+      flex-basis: 50%;
       margin-left: auto;
     }
   }
@@ -44,7 +44,17 @@
     @media (min-width: $breakpoint-tablet) {
       order: -1;
     }
+
+    @media (min-width: $breakpoint-desktop) {
+      background-color: pink;
+      box-sizing: border-box;
+    }
   }
+}
+
+.feedback__input-container--formcontact {
+  width: 40%;
+  display: inline-block;
 }
 
 

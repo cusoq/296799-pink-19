@@ -10,13 +10,13 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
-  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="css/style.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="page-wrapper">
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <nav class="main-nav">
         <div class="main-nav__logo-container">
           <span class="main-nav__logo">
@@ -29,13 +29,22 @@
 
           <!-- //////////////////////////////////////////////////////////////// -->
           <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
-          <button class="main-nav__toggle main-nav__toggle--open visually-hidden" type="button">Раскрыть список меню</button>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button>
+          <button class="main-nav__btn main-nav__btn--open" type="button">Раскрыть список меню</button>
+          <!-- <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button> -->
         </div>
 
         <!-- ////////////////////////////////////////////////////////////////////////// -->
         <!-- Блок меню -->
-        <ul class="main-nav__list popup popup--nav popup--show">
+        <ul class="main-nav__list popup">
+          <li class="main-nav__logo-container main-nav__logo-container--popup">
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
+              </picture>
+            </a>
+            <button class="main-nav__btn main-nav__btn--close" type="button">Закрыть</button>
+          </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">Главная</a>
           </li>
@@ -53,14 +62,6 @@
       </nav>
 
       <p class="page-header__slogan">Взгляните на жизнь иначе!</p>
-
-    </header>
-    <!-- ///////////////////////////////////////////////// -->
-    <!-- /////////////////////////////////////////////////////// -->
-    <!-- //////////////////////////////////////////////////////////////// -->
-    <main class="main-page">
-      <h1 class="visually-hidden">Сайт, посвященный клёвому приложению</h1>
-
       <!-- Блок скачивания приложения -->
       <aside class="dounload-aside">
         <h2 class="visually-hidden">Блок скачивания приложения</h2>
@@ -75,6 +76,14 @@
         <p class="dounload-aside__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </aside>
+    </header>
+    <!-- ///////////////////////////////////////////////// -->
+    <!-- /////////////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////// -->
+    <main class="main-page">
+      <h1 class="visually-hidden">Сайт, посвященный клёвому приложению</h1>
+
+
       <!-- //////////////////////////////////////////////////////////// -->
       <!-- Преимущества -->
       <p class="main-page__note">Устали от серости мегаполиса?<br>Нам есть, что вам<br>предложить!</p>
@@ -87,9 +96,15 @@
         </div>
         <div class="features__pics">
           <picture>
-            <source media="(min-width: 1000px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 1000px)" srcset="img/iphone-screen-1-desktop@1x.png">
             <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-            <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение розового экрана смартфона">
+            <img class="features__pic" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение розового экрана смартфона">
+          </picture>
+          <picture>
+            <img class="features__pic--desktop-pic" src="img/iphone-screen-2-desktop@1x.png" width="268" height="481" alt="Изображение розового экрана смартфона">
+          </picture>
+          <picture>
+            <img class="features__pic--desktop-pic" src="img/iphone-screen-3-desktop@1x.png" width="268" height="481" alt="Изображение розового экрана смартфона">
           </picture>
         </div>
       </section>
@@ -104,9 +119,10 @@
       <section class="references">
         <h2 class="visually-hidden">Отзывы</h2>
         <!-- Тут слайдер из трёх отзывов -->
-        <p class="references__reference paragraph">
-          <b>Николай Петров</b><br>
-          <q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+        <p class="references__reference">
+          <b class="references__user-name">Николай Петров</b><br>
+          <span class="references__user-data">25 лет, водитель трамвая</span>
+          <q class="references__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
         </p>
       </section>
       <!-- ////////////////////////////////////////////////////////////////// -->
@@ -125,12 +141,20 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__title">Остались вопросы? Свяжитесь с нами!</p>
-        <span class="contacts__action">Звоните:</span>
-        <a class="contacts__action-link" href="tel:88125556666">+7 812 555-66-66</a>
-        <span class="contacts__action">Пишите:</span>
-        <a class="contacts__action-link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        <span class="contacts__action">Приезжайте в гости:</span>
-        <a class="contacts__action-link" href="https://yandex.ru/maps/-/CKuy420G">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+        <div class="contacts__inner-container">
+          <span class="contacts__action">Звоните:</span>
+          <a class="contacts__action-link" href="tel:88125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__inner-container contacts__inner-container--link">
+          <span class="contacts__action">Пишите:</span>
+          <a class="contacts__action-link" href="email:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__inner-container">
+          <span class="contacts__action">Приезжайте в гости:</span>
+          <a class="contacts__action-link" href="https://yandex.ru/maps/-/CKuy420G">ул. Большая<br>
+            Конюшенная, 19/8
+          </a>
+        </div>
         <div class="contacts__map">
           <!-- Тут карта с адресом -->
           <!-- <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323118%2C59.938635&sll=37.635499%2C55.744859&sspn=0.605621%2C0.194049&utm_medium=mapframe&utm_source=maps&z=16.39" -->
@@ -154,6 +178,7 @@
       </p>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

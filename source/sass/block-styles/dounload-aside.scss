@@ -1,6 +1,6 @@
 .dounload-aside {
   box-sizing: border-box;
-  padding: 28px 0;
+  padding: 28px 32px;
   color: $secondary-color;
   width: 320px;
   height: 271px;
@@ -8,8 +8,6 @@
   outline: 2px dotted plum;
 
   @media (min-width: $breakpoint-tablet) {
-    position: absolute;
-    top: -371px;
     background-color: transparent;
   }
 }
