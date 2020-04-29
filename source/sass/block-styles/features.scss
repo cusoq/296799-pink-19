@@ -1,10 +1,14 @@
 .features {
   outline: lime 2px dotted;
+  background-color: $secondary-color--fogged;
+  padding-top: 78px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -10%;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     flex-direction: row-reverse;
-    background-color: $secondary-color--fogged;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -33,16 +37,13 @@
   box-sizing: border-box;
   min-width: 270px;
   margin: 0;
-  padding: 0 34px;
+  padding: 0 34px 30px 34px;
   color: $secondary-color--darken;
-  // font-size: $font-size;
-  // font-weight: normal;
-  // // font-stretch: normal;
-  // // font-style: normal;
-  // // line-height: 1.71;
-  // // letter-spacing: normal;
+  font-size: $font-size;
+  font-weight: normal;
+  line-height: 1.71;
+
   text-align: center;
-  outline: 1px dashed blue;
 
   @media (min-width: $breakpoint-tablet) {
     text-align: left;
@@ -56,27 +57,23 @@
 
 .features b {
   color: $primary-color;
+  font-size: $font-size--large;
+  line-height: 2.3;
 }
 
 .features__pics {
+  padding-top: 10px;
   display: flex;
   margin: 0 auto;
   justify-content: center;
-}
-
-.features__pic--desktop-pic {
-  display: none;
-
-  @media (min-width: $breakpoint-desktop) {
-    display: block;
-    outline: 3px orange dashed;
-  }
+  background-color: aqua;
+  overflow: hidden;
 }
 
 .features__pic {
   display: block;
-  margin: 0 auto -60px auto;
-  outline: 3px aqua dashed;
+  margin: 0 auto -40px auto;
+  outline: 3px red dashed;
 
   @media (min-width: $breakpoint-tablet) {
     width: 268px;
@@ -87,5 +84,14 @@
     display: block;
     width: 268px;
     height: 278px;
+  }
+}
+
+.features__pic--desktop-pic {
+  display: none;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
+    outline: 3px orange dashed;
   }
 }

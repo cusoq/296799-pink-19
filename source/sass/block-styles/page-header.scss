@@ -3,7 +3,6 @@
   background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 30%, transparent 30% 40%), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0, 0 top;
-  // min-height: 490px;
 
   &--showed-menu {
     margin-top: 255px;
@@ -51,7 +50,7 @@
   line-height: 1.2;
   margin: 0;
   min-height: 328px;
-  outline: 5px dashed lime;
+  // outline: 5px dashed lime;
 
   @media (min-width: $breakpoint-tablet) {
     box-sizing: border-box;
