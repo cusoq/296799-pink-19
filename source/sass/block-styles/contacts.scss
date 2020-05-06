@@ -62,14 +62,25 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 320px;
-  min-height: 219px;
-  margin-top: auto;
-  background-image: url("../img/bg-map-mobile@1x.png");
+  min-height: 200px;
+  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 100%, cover;
-  background-position: 44% 105%, center;
+  background-position: 44% 0, center 100%;
   background-color: plum;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 48%;
+    left: 45%;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
