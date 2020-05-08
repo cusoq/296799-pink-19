@@ -2,6 +2,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
   width: 320px;
   min-height: 395px;
   outline: 4px dashed tomato;
@@ -18,6 +19,7 @@
   margin: 0;
   font-size: $font-size--huge;
   font-weight: 300;
+  line-height: 1.2;
   text-align: center;
   color: $secondary-color--darken;
 

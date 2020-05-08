@@ -3,15 +3,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 46px;
-  left: 40%;
+  width: 55px;
+  left: 42%;
 
   &--references {
-    bottom: 10%;
+    bottom: -24px;
+    z-index: 1;
   }
 
   &--prices {
-    bottom: 25%;
+    bottom: 9%;
   }
 }
 

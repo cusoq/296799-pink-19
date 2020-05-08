@@ -4,6 +4,10 @@
   &--show {
     position: absolute;
     display: block;
+
+    @media (min-width: $breakpoint-desktop) {
+      position: relative;
+    }
   }
 
   @media (min-width: $breakpoint-desktop) {

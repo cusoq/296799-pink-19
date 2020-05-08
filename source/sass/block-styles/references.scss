@@ -1,9 +1,9 @@
 .references {
   position: relative;
-  margin-top: 40px;
+  margin-top: 45px;
   width: auto;
-  min-height: 320px;
-  background-color: tan;
+  min-height: 240px;
+  // background-color: tan;
 
   @media (min-width: $breakpoint-tablet) {
     min-height: 230px;
