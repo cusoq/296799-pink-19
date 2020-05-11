@@ -2,7 +2,7 @@
   position: relative;
   width: 320px;
   min-height: 380px;
-  padding-top: 159px;
+  padding: 159px 0 0 0;
   background-color: $secondary-color--fogged;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -11,20 +11,22 @@
 
   @media (min-width: $breakpoint-tablet) {
     width: auto;
+    min-height: 295px;
+    padding: 130px 0 0 0;
   }
 }
 
 .prices__table {
   width: 938px;
-  min-height: 216px;
+  // min-height: 216px;
   box-sizing: border-box;
   margin: 0 0 0 -165.5%;
   border-collapse: collapse;
   table-layout: fixed;
 
   @media (min-width: $breakpoint-tablet) {
-    width: 616px;
-    min-height: 210px;
+    width: 610px;
+    // min-height: 100px;
     margin: 0 auto;
   }
 
@@ -105,9 +107,9 @@
 .prices__cell {
   box-sizing: border-box;
   width: 276px;
-  min-height: 59px;
+  // min-height: 59px;
   border: 2px solid $secondary-color--fogged;
-  padding: 12px 22px;
+  padding: 12px 16px;
   background-color: $secondary-color;
   font-size: 14px;
   line-height: 2.14;
@@ -116,7 +118,8 @@
 
   @media (min-width: $breakpoint-tablet) {
     width: 153px;
-    min-height: 45px;
+    // min-height: 40px;
+    line-height: 1;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -155,9 +158,9 @@
   float: left;
   line-height: 2.5;
 
-
   @media (min-width: $breakpoint-tablet) {
     display: none;
+    line-height: 1.5;
   }
 }
 .prices__price {

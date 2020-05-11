@@ -20,7 +20,6 @@
 
   @media (min-width: $breakpoint-desktop) {
     padding: 0 130px;
-    // background-image: url("../img/bg-back-desktop@1x.jpg");
     background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 25%, transparent 25% 40%), url("../img/bg-back-desktop@1x.jpg");
     margin-bottom: 30px;
   }
@@ -33,13 +32,13 @@
 
   @media (min-width: $breakpoint-tablet) {
     background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 15%, transparent 15% 40%), url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: 0 0, 0 bottom, 50% top;
+    background-position: 0 0, 42% bottom, 50% top;
     min-height: 730px;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 15%, transparent 15% 40%), url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: 0 015 96% bottom, 50% top;
+    background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 13.5%, transparent 13.5% 40%), url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-position: 0 0, 96% bottom, 50% top;
     min-height: 855px;
   }
 }
@@ -59,7 +58,8 @@
   @media (min-width: $breakpoint-tablet) {
     box-sizing: border-box;
     font-size: $font-size--vast;
-    // padding: 110px 40px 10px 45px;
+    padding: 95px 40px 1px 55px;
+    min-height: 228px;
     outline: 5px dashed tomato;
     // min-height: 220px;
     width: 320px;

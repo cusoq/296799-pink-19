@@ -1,7 +1,7 @@
 .main-nav {
   @media (min-width: $breakpoint-desktop) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -14,7 +14,11 @@
   margin: 0 0 1px 0;
   padding: 20px 20px 20px 20px;
   min-height: 66px;
-  // outline: yellow 3px dotted;
+  outline: yellow 3px dotted;
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 20px 20px 20px 0;
+  }
 
   &--popup {
     background-color: $secondary-color--darken;
@@ -32,8 +36,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    width: 150px;
-    outline: green 3px dotted;
+    width: 360px;
   }
 }
 
@@ -58,14 +61,12 @@
     flex-wrap: wrap;
     min-height: 110px;
     width: 75%;
-    // outline: plum 3px dotted;
   }
 }
 
 .main-nav__item {
   @media (min-width: $breakpoint-desktop) {
-    margin: auto 0 auto 20px;
-    // outline: green 3px dotted;
+    margin: auto 0;
   }
 }
 
@@ -104,7 +105,6 @@
   height: 22px;
   background-color: #283645;
   background-image: url("../img/icon-menu-burger.svg");
-  // background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-width: $breakpoint-desktop) {

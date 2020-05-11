@@ -9,10 +9,18 @@
   &--references {
     bottom: -24px;
     z-index: 1;
+
+    @media (min-width: $breakpoint-tablet) {
+      left: 45%;
+    }
   }
 
   &--prices {
     bottom: 9%;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: none;
+    }
   }
 }
 

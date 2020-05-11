@@ -25,7 +25,7 @@
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--vast;
-    padding: 0 70px;
+    padding: 0 70px 14px 70px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -39,8 +39,14 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: 25px auto;
+  margin: 0 auto;
+  padding-top: 33px;
   outline: 2px dotted plum;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 50%;
+    margin: 0 auto 10px auto;
+  }
 
   &--link {
     @media (min-width: $breakpoint-desktop) {
@@ -53,18 +59,25 @@
   font-size: $font-size--large;
   font-weight: 700;
   text-align: center;
+  line-height: 1.2;
   color: $secondary-color--darken;
+
+  @media (min-width: $breakpoint-tablet) {
+    line-height: 1.5;
+  }
 }
 
 .contacts__action-link {
   font-size: $font-size--huge;
   font-weight: 300;
   text-align: center;
+  line-height: 1.2;
   color: $main-color;
 }
 
 .contacts__map {
   position: relative;
+  margin-top: 40px;
   width: 320px;
   min-height: 200px;
   background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");

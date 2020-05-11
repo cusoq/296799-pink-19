@@ -6,7 +6,7 @@
   // background-color: tan;
 
   @media (min-width: $breakpoint-tablet) {
-    min-height: 230px;
+    min-height: 210px;
   }
 }
 
@@ -20,9 +20,11 @@
   text-align: center;
   font-size: $font-size--large;
   line-height: 1;
+  padding: 0 0 20px 0;
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--big;
+    padding: 40px 0 15px 0;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -39,9 +41,10 @@
     font-size: $font-size;
     color: $secondary-color--darken;
     text-align: center;
+    line-height: 1;
   }
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: $breakpoint-desktop) {
     font-size: $font-size--large;
   }
 }
@@ -54,6 +57,7 @@
 
   @media (min-width: $breakpoint-tablet) {
     order: -1;
+    line-height: 1.7;
   }
 
   @media (min-width: $breakpoint-tablet) {
