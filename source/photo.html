@@ -68,14 +68,14 @@
 
     <main class="main-photo">
       <!-- /////////////////////////////////////////////////////////////////////// -->
-      <p class="main-photo__paragraph">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="main-photo__paragraph">Взгляните на фотографии, которые выкладывают пользователи!<br> Видите, как не хватает ваших?</p>
       <!-- //////////////////////////////////////////// -->
       <!-- Список фоток: -->
       <ul class="main-photo__photo-list">
         <!-- /////////////////////////////////////////////// -->
         <li class="main-photo__photo-item">
-          <figure class="main-photo-list__pic main-photo-list__pic--first">
-            <a class="fullsize-link" href="#">
+          <figure class="main-photo-list__pic">
+            <a href="#">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
@@ -86,7 +86,7 @@
                 <!-- <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Панорама дня"> -->
                 <source media="(min-width: 1000px)" srcset="img/panorama-desktop@1x.jpg">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg"  width="320" height="137" alt="Панорама дня">
                 <!-- ПРОСТАВИТЬ РАЗМЕРЫ!!!! -->
               </picture>
             </a>
@@ -95,19 +95,17 @@
         </figcaption> -->
           </figure>
 
-          <div class="photo-list__auth-wrapper">
-            <b>Анна</b><span>(5 минут назад)</span>
-            <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <a class="photo-list__like" href="#"></a>
-            <span class="photo-list__rate">
-              Нравится:215
-            </span>
+          <div class="main-photo__public-wrapper public">
+            <b>Анна</b><span class="public__time">(5 минут назад)</span>
+            <p class="public__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a class="public__like" href="#">Нравится:</a>
+            <span class="public__rate">215</span>
           </div>
         </li>
         <!-- ////////////////////////////////////////////////////// -->
         <li class="main-photo__photo-item">
-          <figure class="photo-list__pic photo-list__pic--second">
-            <a class="fullsize-link" href="#">
+          <figure class="main-photo-list__pic">
+            <a href="#">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
@@ -116,6 +114,8 @@
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
                 <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Машина"> -->
+                <source media="(min-width: 1000px)" srcset="img/photo-car-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
                 <img class="main-photo__pic" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
               </picture>
             </a>
@@ -123,20 +123,18 @@
 
         </figcaption> -->
           </figure>
-
-          <div class="photo-list__auth-wrapper">
-            <b>Левон</b><span>(5 часов назад)</span>
-            <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <a class="photo-list__like" href="#"></a>
-            <span class="photo-list__rate">
-              Нравится:356
-            </span>
+          <div class="main-photo__public-wrapper public">
+            <b>Левон</b><span class="public__time">(5 часов назад)</span>
+            <p class="public__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="public__like" href="#">Нравится:</a>
+            <span class="public__rate">356</span>
           </div>
+
         </li>
         <!-- ////////////////////////////////////////////////////// -->
         <li class="main-photo__photo-item">
-          <figure class="photo-list__pic photo-list__pic--third">
-            <a class="fullsize-link" href="#">
+          <figure class="main-photo-list__pic">
+            <a href="#">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
@@ -145,27 +143,27 @@
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
                 <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="main-photo__pic" src="img/photo-drumset-mobile@1x.jpg" width="320" height="137" alt="Драмсет">
+                <source media="(min-width: 1000px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                <img class="main-photo__pic" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Драмсет">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
           </figure>
-
-          <div class="photo-list__auth-wrapper">
-            <b>Антон</b><span>(12 часов назад)</span>
-            <p>Соседи будут рады!</p>
-            <a class="photo-list__like" href="#"></a>
-            <span class="photo-list__rate">
-              Нравится:666
-            </span>
+          <div class="main-photo__public-wrapper public">
+            <b>Антон</b><span class="public__time">(12 часов назад)</span>
+            <p class="public__text">Соседи будут рады!</p>
+            <a class="public__like" href="#">Нравится:</a>
+            <span class="public__rate">666</span>
           </div>
+
         </li>
         <!-- ////////////////////////////////////////////////////// -->
         <li class="main-photo__photo-item">
-          <figure class="photo-list__pic photo-list__pic--fouth">
-            <a class="fullsize-link" href="#">
+          <figure class="main-photo-list__pic">
+            <a href="#">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
@@ -174,27 +172,26 @@
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
                 <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
-              </picture>
+                <source media="(min-width: 1000px)" srcset="img/photo-window-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                <img class="main-photo__pic" src="img/photo-window-mobile@1x.jpg" width="320" height="137" alt="Окно"> </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
           </figure>
-
-          <div class="photo-list__auth-wrapper">
-            <b>Борис</b><span>(20 часов назад)</span>
-            <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <a class="photo-list__like" href="#"></a>
-            <span class="photo-list__rate">
-              Нравится:215
-            </span>
+          <div class="main-photo__public-wrapper public">
+            <b>Борис</b><span class="public__time">(20 часов назад)</span>
+            <p class="public__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a class="public__like" href="#">Нравится:</a>
+            <span class="public__rate">215</span>
           </div>
+
         </li>
         <!-- ////////////////////////////////////////////////////// -->
         <li class="main-photo__photo-item">
-          <figure class="photo-list__pic photo-list__pic--fifth">
-            <a class="fullsize-link" href="#">
+          <figure class="main-photo-list__pic">
+            <a href="#">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
@@ -203,27 +200,27 @@
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
                 <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <source media="(min-width: 1000px)" srcset="img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                <img class="main-photo__pic" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
           </figure>
-
-          <div class="photo-list__auth-wrapper">
-            <b>Сергей</b><span>(25 часов назад)</span>
-            <p>Самая кубанская в мире!</p>
-            <a class="photo-list__like" href="#"></a>
-            <span class="photo-list__rate">
-              Нравится: 4
-            </span>
+          <div class="main-photo__public-wrapper public">
+            <b>Сергей</b><span class="public__time">(25 часов назад)</span>
+            <p class="public__text">Самая кубанская в мире!</p>
+            <a class="public__like" href="#">Нравится:</a>
+            <span class="public__rate">4</span>
           </div>
+
         </li>
         <!-- ////////////////////////////////////////////////////// -->
         <li class="main-photo__photo-item">
-          <figure class="photo-list__pic photo-list__pic--sixth">
-            <a class="fullsize-link" href="#">
+          <figure class="main-photo-list__pic">
+            <a href="#">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
@@ -232,27 +229,27 @@
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
                 <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <source media="(min-width: 1000px)" srcset="img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                <img class="main-photo__pic" src="img/photo-pov-mobile@1x.jpg" width="320" height="137" alt="Гора">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
           </figure>
-
-          <div class="photo-list__auth-wrapper">
-            <b>Максим</b><span>(40 часов назад)</span>
-            <p>Где снег-то?</p>
-            <a class="photo-list__like" href="#"></a>
-            <span class="photo-list__rate">
-              Нравится:150
-            </span>
+          <div class="main-photo__public-wrapper public">
+            <b>Максим</b><span class="public__time">(40 часов назад)</span>
+            <p class="public__text">Где снег-то?</p>
+            <a class="public__like" href="#">Нравится:</a>
+            <span class="public__rate">150</span>
           </div>
+
         </li>
         <!-- ////////////////////////////////////////////////////// -->
         <li class="main-photo__photo-item">
-          <figure class="photo-list__pic photo-list__pic--seventh">
-            <a class="fullsize-link" href="#">
+          <figure class="main-photo-list__pic">
+            <a href="#">
               <picture>
                 <!-- <source type="image/webp" media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x"> -->
@@ -261,22 +258,22 @@
                 <!-- <source media="(min-width: 1000px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x"> -->
                 <!-- <img class="main-photo__pic" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы"> -->
-                <img class="main-photo__pic" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама дня">
+                <source media="(min-width: 1000px)" srcset="img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                <img class="main-photo__pic" src="img/photo-wing-mobile@1x.jpg" width="320" height="137" alt="Крыло самолёта">
               </picture>
             </a>
             <!-- <figcaption class="photo-list__name">
 
         </figcaption> -->
           </figure>
-
-          <div class="photo-list__auth-wrapper">
-            <b>Надежда</b><span>(45 часов назад)</span>
-            <p>Всем GM и взаимные лайки!</p>
-            <a class="photo-list__like" href="#"></a>
-            <span class="photo-list__rate">
-              Нравится:2560
-            </span>
+          <div class="main-photo__public-wrapper public">
+            <b>Надежда</b><span class="public__time">(45 часов назад)</span>
+            <p class="public__text">Всем GM и взаимные лайки!</p>
+            <a class="public__like" href="#">Нравится:</a>
+            <span class="public__rate">2560</span>
           </div>
+
         </li>
       </ul>
       <!-- ////////////////////////////////////////////////////// -->

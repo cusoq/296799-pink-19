@@ -1,14 +1,14 @@
 .main-photo__paragraph {
-  background: plum;
+  // background: plum;
   margin: 0;
-  padding: 40px 25px 25px;
+  padding: 45px 20px 25px;
   box-sizing: border-box;
+  min-height: 185px;
   color: $secondary-color--darken;
   font-size: $font-size;
   font-weight: 400;
-  line-height: 2.14;
+  line-height: 2.15;
   text-align: center;
-  min-height: 180px;
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--large;
@@ -37,8 +37,8 @@
 }
 
 .main-photo__photo-item {
-  outline: 1px dotted blue;
-  background: bisque;
+  // outline: 5px dotted magenta;
+  background: beige;
 
   @media (min-width: $breakpoint-tablet) {
     flex-basis: 300px;
@@ -62,12 +62,38 @@
   }
 }
 
+.main-photo-list__pic {
+  margin: 0;
+}
+
 .main-photo__photo-item:first-child .main-photo-list__pic {
+  position: relative;
   margin: 0 -20px;
+
+  &::after {
+    content: "панорама дня";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 140px;
+    height: 36px;
+    background-color: $main-color;
+    color: $secondary-color;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 3;
+    text-align: center;
+  }
 
   @media (min-width: $breakpoint-desktop) {
     margin: 0 -130px;
   }
+}
+
+.main-photo__pic {
+  // width: 100%;
+  margin: 0;
 }
 
 .main-photo__video {
