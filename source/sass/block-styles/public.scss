@@ -1,5 +1,32 @@
 .public {
   outline: coral 2px dashed;
-  padding: 10px 0 0 20px;
+  padding: 10px 0 20px 20px;
+  margin-bottom: 22px;
+  color: $secondary-color--darken;
 
+}
+
+.public__time {
+  text-transform: uppercase;
+  font-size: $font-size--small;
+}
+
+.public__text {
+  margin: 0;
+  line-height: 1.75;
+}
+
+.public__like {
+  display: block;
+  padding: 10px 0 1px 32px;
+  outline: magenta dotted 2px;
+  color: $main-color;
+  font-size: $font-size--small;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: left;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 5%;
+  background-position: 1% 70%;
 }

@@ -1,5 +1,4 @@
 .main-photo__paragraph {
-  // background: plum;
   margin: 0;
   padding: 45px 20px 25px;
   box-sizing: border-box;
@@ -12,7 +11,14 @@
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--large;
-    padding: 40px 45px 25px;
+    padding: 92px 45px 75px;
+    line-height: 1.7;
+  }
+}
+
+.main-photo__paragraph br {
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
   }
 }
 
@@ -84,6 +90,11 @@
     text-transform: uppercase;
     line-height: 3;
     text-align: center;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 660px;
+    height: 509px;
   }
 
   @media (min-width: $breakpoint-desktop) {
