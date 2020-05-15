@@ -1,3 +1,7 @@
+.main-photo {
+  overflow: hidden;
+}
+
 .main-photo__paragraph {
   margin: 0;
   padding: 45px 20px 25px;
@@ -69,6 +73,7 @@
 }
 
 .main-photo-list__pic {
+  // outline: 3px aqua solid;
   margin: 0;
 }
 
@@ -90,11 +95,18 @@
     text-transform: uppercase;
     line-height: 3;
     text-align: center;
+
+    @media (min-width: $breakpoint-tablet) {
+      top: 11%;
+      left: 7%;
+    }
   }
 
   @media (min-width: $breakpoint-tablet) {
-    width: 660px;
+    outline: dashed 3px coral;
+    width: 700px;
     height: 509px;
+    margin: 0 40px 0 -40px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -103,7 +115,8 @@
 }
 
 .main-photo__pic {
-  // width: 100%;
+  width: 100%;
+  height: auto;
   margin: 0;
 }
 
@@ -117,7 +130,7 @@
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     width: 660px;
-    min-height: 511px;
+    min-height: 509px;
   }
 }
 

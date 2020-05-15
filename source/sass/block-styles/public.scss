@@ -1,9 +1,19 @@
 .public {
-  outline: coral 2px dashed;
+  outline: aqua 2px dashed;
   padding: 10px 0 20px 20px;
   margin-bottom: 22px;
   color: $secondary-color--darken;
+}
 
+.public--top {
+  @media (min-width: $breakpoint-tablet) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    width: 600px;
+    margin: 0 30px 0 0;
+    // background-color: $secondary-color--darken;
+  }
 }
 
 .public__time {
@@ -14,6 +24,12 @@
 .public__text {
   margin: 0;
   line-height: 1.75;
+}
+
+.public__text--top {
+  @media (min-width: $breakpoint-tablet) {
+    order: 1;
+  }
 }
 
 .public__like {
@@ -28,5 +44,11 @@
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-size: 5%;
-  background-position: 1% 70%;
+  background-position: 0 80%;
+}
+
+.public__like--top {
+  @media (min-width: $breakpoint-tablet) {
+    margin-left: auto;
+  }
 }
