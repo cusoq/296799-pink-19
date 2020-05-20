@@ -18,11 +18,19 @@
     padding: 92px 45px 75px;
     line-height: 1.7;
   }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 92px 45px 88px;
+  }
 }
 
 .main-photo__paragraph br {
   @media (min-width: $breakpoint-tablet) {
     display: none;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
   }
 }
 
@@ -75,6 +83,10 @@
 .main-photo-list__pic {
   // outline: 3px aqua solid;
   margin: 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 300px;
+  }
 }
 
 .main-photo__photo-item:first-child .main-photo-list__pic {
@@ -98,7 +110,11 @@
 
     @media (min-width: $breakpoint-tablet) {
       top: 11%;
-      left: 7%;
+      left: 74.5%;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+      left: 77.5%;
     }
   }
 
@@ -111,6 +127,8 @@
 
   @media (min-width: $breakpoint-desktop) {
     margin: 0 -130px;
+    width: 1200px;
+    height: 506px;
   }
 }
 

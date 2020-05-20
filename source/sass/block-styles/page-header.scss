@@ -20,8 +20,9 @@
 
   @media (min-width: $breakpoint-desktop) {
     padding: 0 130px;
-    background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 25%, transparent 25% 40%), url("../img/bg-back-desktop@1x.jpg");
-    margin-bottom: 30px;
+    background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 28%, transparent 28% 40%), url("../img/bg-back-desktop@1x.jpg");
+    // margin-bottom: 30px;
+    min-height: 395px;
   }
 }
 
@@ -83,6 +84,6 @@
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--enormous;
-    padding: 69px 45px 45px 45px;
+    padding: 65px 45px 45px 45px;
   }
 }
