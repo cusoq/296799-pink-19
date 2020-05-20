@@ -55,13 +55,19 @@
 }
 
 .main-photo__photo-item {
-  // outline: 5px dotted magenta;
   background: beige;
 
   @media (min-width: $breakpoint-tablet) {
     flex-basis: 300px;
     min-height: 455px;
     margin: 0 20px 20px 0;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    // flex-basis: 940px;
+    outline: 5px dotted magenta;
+    min-height: 555px;
+    margin: 0 20px 50px 0;
   }
 }
 
@@ -81,11 +87,15 @@
 }
 
 .main-photo-list__pic {
-  // outline: 3px aqua solid;
+  // outline: 4px magenta solid;
   margin: 0;
 
   @media (min-width: $breakpoint-tablet) {
     height: 300px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    min-height: 400px;
   }
 }
 
@@ -128,7 +138,7 @@
   @media (min-width: $breakpoint-desktop) {
     margin: 0 -130px;
     width: 1200px;
-    height: 506px;
+    min-height: 500px;
   }
 }
 
