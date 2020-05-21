@@ -6,10 +6,10 @@
 
   &--showed-menu {
     margin-top: 255px;
-// Вернуть хедер на место, если произошёл переход на десктоп в момент открытого попап-меню
-      @media (min-width: $breakpoint-desktop) {
-        margin: 0;
-      }
+    // Вернуть хедер на место, если произошёл переход на десктоп в момент открытого попап-меню
+    @media (min-width: $breakpoint-desktop) {
+      margin: 0;
+    }
   }
 
   @media (min-width: $breakpoint-tablet) {
