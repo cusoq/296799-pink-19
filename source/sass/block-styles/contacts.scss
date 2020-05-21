@@ -2,6 +2,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
   width: 320px;
   min-height: 395px;
   outline: 4px dashed tomato;
@@ -18,12 +19,13 @@
   margin: 0;
   font-size: $font-size--huge;
   font-weight: 300;
+  line-height: 1.2;
   text-align: center;
   color: $secondary-color--darken;
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--vast;
-    padding: 0 70px;
+    padding: 0 70px 14px 70px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -37,8 +39,14 @@
   display: flex;
   flex-direction: column;
   width: 320px;
-  margin: 25px auto;
+  margin: 0 auto;
+  padding-top: 33px;
   outline: 2px dotted plum;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 50%;
+    margin: 0 auto 10px auto;
+  }
 
   &--link {
     @media (min-width: $breakpoint-desktop) {
@@ -51,25 +59,43 @@
   font-size: $font-size--large;
   font-weight: 700;
   text-align: center;
+  line-height: 1.2;
   color: $secondary-color--darken;
+
+  @media (min-width: $breakpoint-tablet) {
+    line-height: 1.5;
+  }
 }
 
 .contacts__action-link {
   font-size: $font-size--huge;
   font-weight: 300;
   text-align: center;
+  line-height: 1.2;
   color: $main-color;
 }
 
 .contacts__map {
+  position: relative;
+  margin-top: 40px;
   width: 320px;
-  min-height: 219px;
-  margin-top: auto;
-  background-image: url("../img/bg-map-mobile@1x.png");
+  min-height: 200px;
+  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: 100%, cover;
-  background-position: 44% 105%, center;
+  background-position: 44% 0, center 100%;
   background-color: plum;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 48%;
+    left: 45%;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;

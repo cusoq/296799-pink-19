@@ -1,32 +1,54 @@
 .dounload-aside {
   box-sizing: border-box;
-  padding: 28px 32px;
+  padding: 28px 0;
   color: $secondary-color;
   width: 320px;
-  height: 271px;
+  min-height: 271px;
   background-color: $secondary-color--darken;
-  outline: 2px dotted plum;
 
   @media (min-width: $breakpoint-tablet) {
     background-color: transparent;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    min-height: 300px;
+    padding: 22px 0;
   }
 }
 
 .dounload-aside__link {
   display: block;
-  margin: 0 auto;
-  width: 251px;
+  margin: 0 20px 30px 20px;
   font-size: $font-size--large;
   font-weight: bold;
-  line-height: 55px;
+  line-height: 50px;
   text-align: center;
   border: 2px solid $secondary-color;
-  // border-radius: 5%;
+  border-radius: 55px;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 0 0 30px 20px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0 20px 65px 0;
+    font-size: 21px;
+  }
 }
 
 .dounload-aside__all-links {
   display: flex;
   justify-content: space-between;
+  margin: 10px 57px 0 58px;
+  align-items: baseline;
+
+  @media (min-width: $breakpoint-tablet) {
+    margin: 48px 50px 0 65px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 48px 70px 0 45px;
+  }
 }
 
 .dounload-aside__text {
@@ -34,10 +56,16 @@
   font-weight: 300;
   line-height: 1.71;
   text-align: center;
+  padding: 16px 20px 0 20px;
+  margin: 0;
 
   @media (min-width: $breakpoint-tablet) {
-    margin: 0;
     font-size: $font-size--large;
     line-height: 1.33;
+    padding: 30px 10px 0 15px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 50px 10px 0 0;
   }
 }

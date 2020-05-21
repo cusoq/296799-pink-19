@@ -1,29 +1,28 @@
 .main-nav {
   @media (min-width: $breakpoint-desktop) {
     display: flex;
-    justify-content: space-around;
-    // width: 1200px;
-    // position: absolute;
-    // top: 0;
-    // left: 191px;
-    // background-color: rgba(1, 1, 1, 0.6);
+    justify-content: space-between;
   }
 }
 
 .main-nav__logo-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   box-sizing: border-box;
   width: 320px;
   margin: 0 0 1px 0;
   padding: 20px 20px 20px 20px;
   min-height: 66px;
-  // background-color: rgba(1, 1, 1, 0.6);
-  box-shadow: 0 1px 0 0 $primary-color;
-  outline: yellow 3px dotted;
+  // outline: yellow 3px dotted;
+
+  // @media (min-width: $breakpoint-desktop) {
+  //   padding: 20px 20px 20px 0;
+  // }
 
   &--popup {
     background-color: $secondary-color--darken;
+    box-shadow: 0 1px 0 0 $primary-color;
 
     @media (min-width: $breakpoint-desktop) {
       display: none;
@@ -37,8 +36,14 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    width: 150px;
-    outline: green 3px dotted;
+    width: 360px;
+    padding: 20px 20px 20px 0;
+  }
+}
+
+.main-nav__logo {
+  @media (min-width: $breakpoint-tablet) {
+    height: 100%;
   }
 }
 
@@ -49,12 +54,7 @@
   @media (min-width: $breakpoint-tablet) {
     width: 147px;
     height: 40px;
-  }
-}
-
-.main-nav__btn {
-  @media (min-width: $breakpoint-desktop) {
-    display: none;
+    padding-top: 6px;
   }
 }
 
@@ -69,14 +69,12 @@
     flex-wrap: wrap;
     min-height: 110px;
     width: 75%;
-    outline: plum 3px dotted;
   }
 }
 
 .main-nav__item {
   @media (min-width: $breakpoint-desktop) {
-    margin: auto 0 auto 20px;
-    outline: green 3px dotted;
+    margin: auto 0;
   }
 }
 
@@ -88,7 +86,6 @@
   text-transform: uppercase;
   font-weight: 700;
   line-height: 63px;
-
   min-width: 320px;
   margin-bottom: 1px;
   height: 63px;
@@ -104,5 +101,27 @@
     font-weight: normal;
     line-height: 1;
     white-space: nowrap;
+  }
+}
+
+.main-nav__btn {
+  font-size: 0;
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  width: 46px;
+  height: 22px;
+  background-color: #283645;
+  background-image: url("../img/icon-menu-burger.svg");
+  background-size: contain;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: none;
+  }
+
+  &--close {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-menu-cross.svg");
   }
 }

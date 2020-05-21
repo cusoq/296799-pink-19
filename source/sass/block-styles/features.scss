@@ -1,30 +1,42 @@
 .features {
-  outline: lime 2px dotted;
+  outline: lime 5px dotted;
+  background-color: $secondary-color--fogged;
+  padding-top: 78px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -10%;
 
   @media (min-width: $breakpoint-tablet) {
+    padding-top: 0;
     display: flex;
     flex-direction: row-reverse;
-    background-color: $secondary-color--fogged;
+    margin-top: 50px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     flex-direction: column-reverse;
-    width: 940px;
-    margin: 0 auto;
+    // width: 940px;
+    margin: 75px 0 0 0;
+    padding: 0 130px 0 135px;
+    background-position: 0 0;
   }
 }
 
 .features__desciption-wrapper {
   @media (min-width: $breakpoint-tablet) {
     width: 360px;
-    height: 481px;
+    min-height: 481px;
     margin-left: auto;
+    padding-top: 65px;
   }
 
   @media (min-width: $breakpoint-desktop) {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin: 0 -30px;
+    width: 100%;
+    min-height: 230px;
+    padding-top: 28px;
   }
 }
 
@@ -33,50 +45,64 @@
   box-sizing: border-box;
   min-width: 270px;
   margin: 0;
-  padding: 0 34px;
+  padding: 0 34px 30px 34px;
   color: $secondary-color--darken;
-  // font-size: $font-size;
-  // font-weight: normal;
-  // // font-stretch: normal;
-  // // font-style: normal;
-  // // line-height: 1.71;
-  // // letter-spacing: normal;
+  font-size: $font-size;
+  font-weight: normal;
+  line-height: 1.71;
   text-align: center;
-  outline: 1px dashed blue;
 
   @media (min-width: $breakpoint-tablet) {
     text-align: left;
   }
 
   @media (min-width: $breakpoint-desktop) {
+    box-sizing: border-box;
     text-align: center;
-    padding: 64px;
+    width: 200px;
+    margin: 0 10px 0 40px;
+    padding: 0 15px 15px 15px;
+    font-size: $font-size--large;
+    // background-color: aqua;
+    // outline: 1px red dashed;
   }
 }
 
 .features b {
   color: $primary-color;
-}
-
-.features__pics {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.features__pic--desktop-pic {
-  display: none;
+  font-size: $font-size--large;
+  line-height: 2.3;
 
   @media (min-width: $breakpoint-desktop) {
     display: block;
-    outline: 3px orange dashed;
+    font-size: $font-size--giant;
+    line-height: 1;
+  }
+}
+
+.features__pics {
+  padding-top: 10px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  overflow: hidden;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding-top: 0;
+    margin: 0 auto 0 20px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    height: 330px;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
 .features__pic {
   display: block;
-  margin: 0 auto -60px auto;
-  outline: 3px aqua dashed;
+  margin: 0 auto -40px auto;
 
   @media (min-width: $breakpoint-tablet) {
     width: 268px;
@@ -85,7 +111,20 @@
 
   @media (min-width: $breakpoint-desktop) {
     display: block;
-    width: 268px;
-    height: 278px;
+    margin: 0;
+    width: 290px;
+    height: 300px;
+  }
+}
+
+.features__pic--desktop-pic {
+  display: none;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
+    outline: 3px orange dashed;
+    margin: 0;
+    width: 290px;
+    height: 300px;
   }
 }

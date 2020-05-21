@@ -71,7 +71,7 @@
       <section class="feedback">
 
         <!-- //////////////////////////////////////////////////////////// -->
-        <p class="main-form__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="main-form__paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="main-form__paragraph-advansed">Пожалуйста, заполните форму ниже:</span></p>
         <!-- ///////////////////////////////////////////////////////////////////// -->
         <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
           <!-- Форма авторизации: -->
@@ -144,15 +144,15 @@
           <fieldset class="feedback__container feedback__container--formcontact">
             <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--formcontact">Контактная информация:</legend> -->
             <!-- <div class="feedback__input-wrapper feedback__input-wrapper--formcontact"> -->
-              <p class="feedback__input-container feedback__input-container--formcontact">
-                <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
-                <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
-                <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
-              </p>
-              <p class="feedback__input-container feedback__input-container--formcontact">
-                <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
-                <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту <sup>&#9913;</sup>" required>
-              </p>
+            <p class="feedback__input-container feedback__input-container--formcontact">
+              <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
+              <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
+              <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
+            </p>
+            <p class="feedback__input-container feedback__input-container--formcontact">
+              <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
+              <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту <sup>&#9913;</sup>" required>
+            </p>
             <!-- </div> -->
           </fieldset>
           <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
@@ -222,7 +222,12 @@
     <!-- /////////////////////////////////////////////////////////////////////// -->
     <!-- /////////////////////////////////////////////////////////// -->
     <footer class="page-footer">
-      <a class="page-footer__logo" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="146" height="40" title="Логотип"></a>
+      <a class="page-footer__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1000px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
+        </picture>
+      </a>
       <div class="page-footer__social">
 
         <a href="#" class="page-footer__social-link" title="Наш Твиттер"><img src="img/icon-twitter.svg" width="18" height="15" title="Логотип Твиттера"></a>
