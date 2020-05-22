@@ -25,7 +25,7 @@
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--vast;
-    padding: 0 70px 14px 70px;
+    padding: 5px 70px 14px 70px;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -40,11 +40,12 @@
   flex-direction: column;
   width: 320px;
   margin: 0 auto;
-  padding-top: 33px;
+  padding: 33px 0 0 0;
   outline: 2px dotted plum;
 
   @media (min-width: $breakpoint-tablet) {
     width: 50%;
+    padding: 25px 0 10px 0;
     margin: 0 auto 10px auto;
   }
 
@@ -63,7 +64,7 @@
   color: $secondary-color--darken;
 
   @media (min-width: $breakpoint-tablet) {
-    line-height: 1.5;
+    line-height: 1.8;
   }
 }
 
@@ -95,12 +96,20 @@
     height: 36px;
     background-image: url("../img/icon-map-marker.svg");
     background-repeat: no-repeat;
+
+    @media (min-width: $breakpoint-tablet) {
+      top: 52%;
+      left: 47%;
+    }
   }
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
-    min-height: 440px;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
+    min-height: 375px;
+    margin-top: 10px;
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
+    background-size: 100%, auto;
+    background-position: 0 0, 50% 73%;
   }
 
   @media (min-width: $breakpoint-desktop) {

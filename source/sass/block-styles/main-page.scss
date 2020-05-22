@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    padding-top: 40px;
+    padding-top: 65px;
   }
 }
 
@@ -90,6 +90,7 @@
   line-height: 3.9;
   text-align: left;
   color: $main-color;
+  text-decoration: underline;
 
   @media (min-width: $breakpoint-desktop) {
     font-size: $font-size--large;
