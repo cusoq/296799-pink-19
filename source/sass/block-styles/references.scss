@@ -3,10 +3,19 @@
   margin-top: 45px;
   width: auto;
   min-height: 240px;
-  // background-color: tan;
 
   @media (min-width: $breakpoint-tablet) {
     min-height: 210px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    position: relative;
+    margin-top: 0;
+    min-height: 410px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-color: aqua;
   }
 }
 
@@ -21,6 +30,7 @@
   font-size: $font-size--large;
   line-height: 1;
   padding: 0 0 20px 0;
+  outline: 3px dotted blue;
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--big;
@@ -29,6 +39,7 @@
 
   @media (min-width: $breakpoint-desktop) {
     font-size: $font-size--huge;
+    padding: 40px 0 10px 0;
   }
 }
 
@@ -60,7 +71,37 @@
     line-height: 1.7;
   }
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: $breakpoint-desktop) {
     font-size: $font-size--large;
+    outline: 3px dotted magenta;
+    padding: 185px 257px 0 255px;
+  }
+}
+
+.references__slider-control {
+  display: none;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    outline: 3px dashed coral;
+
+    &--left {
+      background-image: url("../img/icon-review-arrow-left.svg");
+      background-repeat: no-repeat;
+      background-position: 30% 45%;
+      left: 10%;
+    }
+
+    &--right {
+      background-image: url("../img/icon-review-arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: 70% 45%;
+      right: 10%;
+    }
   }
 }

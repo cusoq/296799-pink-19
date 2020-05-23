@@ -14,6 +14,12 @@
     min-height: 290px;
     padding: 130px 0 0 0;
   }
+
+  @media (min-width: $breakpoint-desktop) {
+    min-height: 380px;
+    padding: 150px 0 0 0;
+    background-color: tomato;
+  }
 }
 
 .prices__table {
@@ -29,7 +35,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    width: 938px;
+    width: 935px;
   }
 }
 
@@ -51,7 +57,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    width: 233px;
+    width: 235px;
     padding: 14px 22px;
     font-size: 18px;
   }
@@ -129,9 +135,9 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    width: 233px;
-    padding: 16px 22px;
-    min-height: 58px;
+    width: 235px;
+    padding: 16px 20px;
+    // min-height: 58px;
   }
 }
 
