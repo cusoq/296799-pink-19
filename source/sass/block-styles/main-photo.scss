@@ -34,6 +34,31 @@
   }
 }
 
+.main-photo__paragraph--video {
+  padding: 20px 20px 15px;
+  min-height: 155px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 45px 20px 15px;
+    min-height: 175px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 5px 20px 15px;
+    min-height: 130px;
+  }
+}
+
+.main-photo__paragraph--video br {
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+  }
+
+  // @media (min-width: $breakpoint-desktop) {
+  //   display: block;
+  // }
+}
+
 .main-photo__photo-list {
   width: 280px;
   margin: 0 20px;
@@ -152,13 +177,17 @@
   box-sizing: border-box;
   width: 320px;
   min-height: 757px;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   background-color: aqua;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     width: 660px;
     min-height: 509px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 940px;
   }
 }
 
@@ -170,28 +199,39 @@
   width: auto;
   height: 201px;
   margin: auto 0 0 0;
-  padding: 30px 20px;
+  padding: 40px 0;
   background-color: khaki;
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
-    padding: 0;
+    padding: 40px 12px 0 8px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    padding: 60px 0 0 0;
   }
 }
 
 .main-photo__buttons button {
-  margin: 0 auto;
-  width: 100%;
-  color: red;
+  box-sizing: border-box;
+  margin: 0;
+  width: 280px;
+  color: $main-color;
   font-size: $font-size--large;
   font-weight: bold;
-  line-height: 55px;
+  line-height: 50px;
   text-align: center;
-  border: 2px solid red;
+  border: 2px solid $main-color;
+  border-radius: 50px;
 
   @media (min-width: $breakpoint-tablet) {
-    // width: inherit;
+    width: 260px;
     padding: 0;
     margin-top: auto;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 180px;
   }
 }

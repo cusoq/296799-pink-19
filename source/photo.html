@@ -277,14 +277,18 @@
         </li>
       </ul>
       <!-- ////////////////////////////////////////////////////// -->
-      <p class="main-photo__paragraph paragraph">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="main-photo__paragraph main-photo__paragraph--video">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       <!-- /////////////////////////////////////////////////////////////////////// -->
       <!-- Блок с видосом: -->
 
       <!-- ??????????????????????????????????????????????????????????? -->
       <div class="main-photo__video video">
-        <img class="video__pic" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Кадр из видео">
-
+        <!-- <img class="video__pic" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Кадр из видео"> -->
+        <picture>
+          <source media="(min-width: 1000px)" srcset="img/photo-road-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+          <img class="main-photo__pic" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Кадр из видео">
+        </picture>
         <!-- ////////////////////////////////////////////////////////////////// -->
         <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
         <div class="video__inner-wrapper">
@@ -293,27 +297,27 @@
             <!-- ////Контролы/////////////////////////////////////// -->
             <!-- Обрезка -->
             <div class="video__control video__control--crop">
-              <!-- <img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезка">
+              <!-- <img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезка"> -->
               <div class="video__control-scale video__control-scale--corp">
-                <div class="video__toggle video__toggle--corp" style="margin-left: 25%">
+                <div class="video__toggle video__toggle--corp" style="margin-left: 80%">
                 </div>
-              </div> -->
+              </div>
             </div>
             <!-- Заливка     -->
             <div class="video__control video__control--fill">
-              <!-- <img src="img/icon-editor-fill.svg" width="48" height="43" alt="Заливка">
+              <!-- <img src="img/icon-editor-fill.svg" width="48" height="43" alt="Заливка"> -->
               <div class="video__control-scale video__control-scale--fill">
-                <div class="video__toggle video__toggle--fill" style="margin-left: 25%">
+                <div class="video__toggle video__toggle--fill" style="margin-left: 15%">
                 </div>
-              </div> -->
+              </div>
             </div>
             <!-- Контраст -->
             <div class="video__control video__control--contrast">
-              <!-- <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
+              <!-- <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст"> -->
               <div class="video__control-scale video__control-scale--contrast">
-                <div class="video__toggle video__toggle--contrast" style="margin-left: 25%">
+                <div class="video__toggle video__toggle--contrast" style="margin-left: 48%">
                 </div>
-              </div> -->
+              </div>
             </div>
             <!-- ///////////////////////////////// -->
           </div>
