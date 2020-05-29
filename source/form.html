@@ -79,12 +79,12 @@
           <fieldset class="feedback__container feedback__container--name">
             <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--name">Представьтесь:</legend> -->
             <p class="feedback__input-container">
-              <label class="feedback__field-description feedback__leader" for="surname">Фамилия:</label>
-              <input class="feedback-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию <sup>&#9913;</sup>" required>
+              <label class="feedback__field-description" for="surname">Фамилия:</label>
+              <input class="feedback-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
             </p>
             <p class="feedback__input-container">
               <label class="feedback__field-description" for="name">Имя:</label>
-              <input class="feedback-field" type="text" id="name" name="name" placeholder="Введите ваше имя *<sup>&#9913;</sup>" required>
+              <input class="feedback-field" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
             </p>
             <p class="feedback__input-container">
               <label class="feedback__field-description" for="patronymic">Отчество:</label>
@@ -97,7 +97,7 @@
           <!-- Форма достижений: -->
 
           <fieldset class="feedback__container feedback__container--sights">
-            <legend class="feedback__leader feedback__leader--formtitle feedback__leader--sights">Ваши безбашенные
+            <legend class="feedback__leader feedback__leader--sights">Ваши безбашенные<br>
               достижения в путешествии</legend>
             <!-- /////////////////////////////////// -->
             <div class="feedback__input-wrapper feedback__input-wrapper--change">
@@ -151,7 +151,7 @@
             </p>
             <p class="feedback__input-container feedback__input-container--formcontact">
               <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
-              <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту <sup>&#9913;</sup>" required>
+              <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту *" required>
             </p>
             <!-- </div> -->
           </fieldset>
@@ -159,8 +159,7 @@
           <!-- Форма выбора платформы: -->
 
           <fieldset class="feedback__container feedback__container--os">
-            <legend class="feedback__leader feedback__leader--formtitle">С каким приложением
-              путешествовали?</legend>
+            <legend class="feedback__leader feedback__leader--os">С каким приложением путешествовали?</legend>
             <p class="feedback__input-container">
               <input class="feedback-field visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
               <label class="feedback__field-description feedback__field-description--radio" for="ios" tabindex="0">Pink для iOS</label>
@@ -177,7 +176,7 @@
           <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
           <!-- Поле текстового отзыва: -->
           <fieldset class="feedback__container  feedback__container--emotions">
-            <legend class="feedback__leader feedback__leader--formtitle feedback__leader--emotions">Опишите свои эмоции:</legend>
+            <legend class="feedback__leader feedback__leader--emotions">Опишите свои эмоции:</legend>
             <p class="feedback__input-container">
               <textarea class="feedback-field feedback-field--text" rows="10" cols="30" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
@@ -187,7 +186,7 @@
               Отправить форму
             </button>
             <span class="feedback__note">
-              <sup class="feedback__sup">&#9913;</sup> &ndash; Обязательные поля
+              <sup class="feedback__sup">&#9913;</sup> &mdash; Обязательные поля
             </span>
           </div>
         </form>

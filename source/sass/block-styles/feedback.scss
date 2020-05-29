@@ -1,4 +1,8 @@
 .feedback__form {
+  // padding-top: 20px;
+  background-color: plum;
+  // outline-color: red;
+
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     flex-direction: column;
@@ -13,13 +17,17 @@
 
 .feedback__container {
   outline: 2px gray solid;
-  margin-bottom: 20px;
+  position: relative;
+  background-color: tan;
+  outline: none;
 
   @media (min-width: $breakpoint-desktop) {
     flex-basis: 100%;
   }
 
   &--name {
+    padding: 5px 0 25px 0;
+
     @media (min-width: $breakpoint-tablet) {
       order: -3;
     }
@@ -30,6 +38,9 @@
   }
 
   &--os {
+    padding: 15px 0 30px 48px;
+    background-color: transparent;
+
     @media (min-width: $breakpoint-tablet) {
       order: -2;
     }
@@ -41,6 +52,10 @@
   }
 
   &--formcontact {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0 25px 0;
+
     @media (min-width: $breakpoint-tablet) {
       order: -1;
     }
@@ -52,27 +67,133 @@
   }
 }
 
-.feedback__input-container--formcontact {
-  width: 40%;
-  display: inline-block;
+.feedback__container--sights {
+  background-color: transparent;
+  margin-top: 20px;
+  padding: 15px 0 20px 50px;
 }
 
+.feedback__container--emotions {
+  padding: 12px 0 20px 0;
+}
 
-.feedback__leader {
+.feedback__input-container {
+  display: flex;
+  flex-direction: column;
+  outline: 3px dotted coral;
+  margin: 0;
+}
+
+.feedback__input-container--formcontact {
+  // display: inline-block;
+
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 40%;
+  }
+}
+
+.feedback__field-description {
   font-size: $font-size;
   font-weight: normal;
-  // line-height: 1.29;
+  padding: 0 0 0 40px;
+  line-height: 2.14;
+  text-transform: uppercase;
+  text-align: left;
+  color: $main-color;
+  // background-color: aqua;
+}
+
+.feedback__field-description--checkbox {
+  color: $secondary-color--darken;
+  text-transform: inherit;
+  font-size: 18px;
+  line-height: 4.6;
+}
+
+.feedback__field-description--radio {
+  padding: 0 0 0 40px;
+  color: $secondary-color--darken;
+  text-transform: inherit;
+  font-size: 18px;
+  line-height: 4.2;
+}
+
+.feedback__leader {
+  width: 100%;
+  font-size: $font-size;
+  font-weight: normal;
+  padding: 15px 25px 0 25px;
+  line-height: 1.4;
   text-transform: uppercase;
   text-align: center;
   color: $main-color;
+  background-color: transparent;
+  outline: dashed 2px magenta;
+
+  &--os {
+    padding: 35px 20px 0 15px;
+  }
+
+  &--emotions {
+    padding: 33px 20px 0 20px;
+    background-color: white;
+  }
+
 }
 // осторожно, каскад! переопределяем цвет лейблов
 // в филдсете с именами
 
+.feedback-field {
+  background-color: lime;
+  box-sizing: border-box;
+  width: 278px;
+  height: 61px;
+  font-size: 18px;
+  line-height: 1.67;
+  padding: 0 0 0 20px;
+  margin: 5px 0 20px 20px;
+  border: 2px solid gray;
+
+  &--text {
+    width: 278px;
+    height: 200px;
+    padding: 15px 0 0 20px;
+  }
+}
+
 .feedback__submit-wrapper {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  background-color: aqua;
-  min-height: 120px;
+  flex-direction: column;
+  background-color: pink;
+  min-height: 150px;
+}
+
+.feedback__btn {
+  box-sizing: border-box;
+  width: 276px;
+  height: 59px;
+  margin: 10px auto 36px auto;
+  background-color: #2aab6d;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-transform: uppercase;
+}
+
+.feedback__note {
+  outline: 2px dotted magenta;
+  font-size: 14px;
+  line-height: 2.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $secondary-color--darken;
+}
+
+.feedback__sup {
+  color: $main-color;
+  font-size: 14px;
 }
