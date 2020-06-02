@@ -3,7 +3,7 @@
 }
 
 .main-form__paragraph {
-  // background: plum;
+  background: plum;
   margin: 0 0 35px 0;
   padding: 45px 15px 0 15px;
   box-sizing: border-box;
@@ -15,10 +15,16 @@
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--large;
-    padding: 40px 45px 25px;
+    // padding: 40px 45px 25px;
+    padding: 92px 50px 24px;
+    line-height: 1.7;
   }
 }
 
 .main-form__paragraph-advansed {
   display: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+  }
 }

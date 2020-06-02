@@ -16,7 +16,7 @@
 }
 
 .feedback__container {
-  outline: 2px gray solid;
+  // outline: 2px gray solid;
   position: relative;
   background-color: tan;
   outline: none;
@@ -30,6 +30,7 @@
 
     @media (min-width: $breakpoint-tablet) {
       order: -3;
+      padding: 5px 0 5px 0;
     }
 
     @media (min-width: $breakpoint-desktop) {
@@ -43,6 +44,11 @@
 
     @media (min-width: $breakpoint-tablet) {
       order: -2;
+      box-sizing: border-box;
+      width: 94%;
+      margin: 0 auto;
+      padding: 22px 0 30px 48px;
+      border: 2px solid black;
     }
 
     @media (min-width: $breakpoint-desktop) {
@@ -58,6 +64,11 @@
 
     @media (min-width: $breakpoint-tablet) {
       order: -1;
+      box-sizing: border-box;
+      width: 94%;
+      margin: 0 auto;
+      padding: 22px 0 30px 48px;
+      border: 2px solid black;
     }
 
     @media (min-width: $breakpoint-desktop) {
@@ -82,12 +93,20 @@
   flex-direction: column;
   outline: 3px dotted coral;
   margin: 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.feedback__input-container--name {
+  @media (min-width: $breakpoint-tablet) {
+    min-height: 115px;
+  }
 }
 
 .feedback__input-container--formcontact {
-  // display: inline-block;
-
-
   @media (min-width: $breakpoint-tablet) {
     width: 40%;
   }
@@ -101,10 +120,14 @@
   text-transform: uppercase;
   text-align: left;
   color: $main-color;
-  // background-color: aqua;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 0 0 0 20px;
+  }
 }
 
 .feedback__field-description--checkbox {
+  position: relative;
   color: $secondary-color--darken;
   text-transform: inherit;
   font-size: 18px;
@@ -112,11 +135,17 @@
 }
 
 .feedback__field-description--radio {
+  position: relative;
   padding: 0 0 0 40px;
   color: $secondary-color--darken;
   text-transform: inherit;
   font-size: 18px;
   line-height: 4.2;
+  cursor: pointer;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 0 0 0 70px;
+  }
 }
 
 .feedback__leader {
@@ -131,15 +160,31 @@
   background-color: transparent;
   outline: dashed 2px magenta;
 
+  &--formcontact {
+    display: none;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: block;
+      padding: 5px;
+      width: auto;
+    }
+
+
+  }
+
   &--os {
     padding: 35px 20px 0 15px;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding: 5px;
+      width: auto;
+    }
   }
 
   &--emotions {
     padding: 33px 20px 0 20px;
     background-color: white;
   }
-
 }
 // осторожно, каскад! переопределяем цвет лейблов
 // в филдсете с именами
@@ -155,12 +200,79 @@
   margin: 5px 0 20px 20px;
   border: 2px solid gray;
 
+  @media (min-width: $breakpoint-tablet) {
+    width: 100%;
+    margin: 5px 20px 20px 20px;
+  }
+
   &--text {
     width: 278px;
     height: 200px;
     padding: 15px 0 0 20px;
   }
 }
+
+// Кастомные чекбоксы
+
+.feedback__field-description--checkbox::before {
+  position: absolute;
+  content: "";
+  top: 23px;
+  left: -28px;
+  box-sizing: border-box;
+  width: 37px;
+  height: 37px;
+  border-radius: 10%;
+  border: 2px solid yellow;
+}
+
+.feedback__field[type="checkbox"]:checked + .feedback__field-description--checkbox::after {
+  position: absolute;
+  content: "";
+  top: 32px;
+  left: -20px;
+  width: 24px;
+  height: 16px;
+  box-sizing: border-box;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+}
+
+.feedback__field-description--radio::before {
+  position: absolute;
+  content: "";
+  top: 18px;
+  left: -28px;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  // background-color: tan;
+  border: 2px solid yellow;
+
+  @media (min-width: $breakpoint-tablet) {
+    top: 20px;
+    left: 13px;
+  }
+}
+
+.feedback__field[type="radio"]:checked + .feedback__field-description--radio::after {
+  position: absolute;
+  content: "";
+  top: 28px;
+  left: -19px;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: magenta;
+
+  @media (min-width: $breakpoint-tablet) {
+    top: 30px;
+    left: 22px;
+  }
+}
+
 
 .feedback__submit-wrapper {
   width: 100%;

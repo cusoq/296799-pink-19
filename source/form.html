@@ -78,15 +78,15 @@
 
           <fieldset class="feedback__container feedback__container--name">
             <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--name">Представьтесь:</legend> -->
-            <p class="feedback__input-container">
+            <p class="feedback__input-container feedback__input-container--name">
               <label class="feedback__field-description" for="surname">Фамилия:</label>
               <input class="feedback-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
             </p>
-            <p class="feedback__input-container">
+            <p class="feedback__input-container feedback__input-container--name">
               <label class="feedback__field-description" for="name">Имя:</label>
               <input class="feedback-field" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
             </p>
-            <p class="feedback__input-container">
+            <p class="feedback__input-container feedback__input-container--name">
               <label class="feedback__field-description" for="patronymic">Отчество:</label>
               <input class="feedback-field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </p>
@@ -103,37 +103,37 @@
             <div class="feedback__input-wrapper feedback__input-wrapper--change">
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--shark">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="shark" id="shark" checked>
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="shark" id="shark" checked>
                 <label class="feedback__field-description feedback__field-description--checkbox" for="shark" tabindex="0">Сделал селфи с акулой</label>
               </p>
               <!-- ///////////////////////////////// -->
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--beach">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
                 <label class="feedback__field-description feedback__field-description--checkbox" for="beach" tabindex="0">Обгорел на пляже</label>
               </p>
               <!-- ////////////////////////////////////////// -->
 
               <p class="feedback__input-container  feedback__input-container--change feedback__input-container--chack">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="chack" id="chack">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="chack" id="chack">
                 <label class="feedback__field-description feedback__field-description--checkbox" for="chack" tabindex="0">Видел Чака Норриса</label>
               </p>
               <!-- //////////////////////////////////////////////////// -->
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--shop">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="shop" id="shop">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="shop" id="shop">
                 <label class="feedback__field-description feedback__field-description--checkbox" for="shop" tabindex="0">Накупил сувениров</label>
               </p>
               <!-- ////////////////////////////////////////////////////////// -->
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--tower">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
                 <label class="feedback__field-description feedback__field-description--checkbox" for="tower" tabindex="0">Удержал башню</label>
               </p>
               <!-- ////////////////////////////////////////////////////////////////// -->
 
               <p class="feedback__input-container feedback__input-container--change feedback__input-container--hotel">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
                 <label class="feedback__field-description feedback__field-description--checkbox" for="hotel" tabindex="0">Разгромил отель</label>
               </p>
             </div>
@@ -142,7 +142,7 @@
           <!-- Форма контактов: -->
 
           <fieldset class="feedback__container feedback__container--formcontact">
-            <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--formcontact">Контактная информация:</legend> -->
+            <legend class="feedback__leader feedback__leader--formcontact">Контактная информация:</legend>
             <!-- <div class="feedback__input-wrapper feedback__input-wrapper--formcontact"> -->
             <p class="feedback__input-container feedback__input-container--formcontact">
               <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
@@ -161,15 +161,15 @@
           <fieldset class="feedback__container feedback__container--os">
             <legend class="feedback__leader feedback__leader--os">С каким приложением путешествовали?</legend>
             <p class="feedback__input-container">
-              <input class="feedback-field visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
+              <input class="feedback__field feedback__field--radio visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
               <label class="feedback__field-description feedback__field-description--radio" for="ios" tabindex="0">Pink для iOS</label>
             </p>
             <p class="feedback__input-container">
-              <input class="feedback-field visually-hidden" type="radio" name="platform" value="android" id="android">
+              <input class="feedback__field feedback__field--radio visually-hidden" type="radio" name="platform" value="android" id="android">
               <label class="feedback__field-description feedback__field-description--radio" for="android" tabindex="0">Pink на Android</label>
             </p>
             <p class="feedback__input-container">
-              <input class="feedback-field visually-hidden" type="radio" name="platform" value="windows" id="windows">
+              <input class="feedback__field feedback__field--radio visually-hidden" type="radio" name="platform" value="windows" id="windows">
               <label class="feedback__field-description feedback__field-description--radio" for="windows" tabindex="0">Windows Phone</label>
             </p>
           </fieldset>
