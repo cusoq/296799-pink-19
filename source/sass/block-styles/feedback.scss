@@ -1,7 +1,5 @@
 .feedback__form {
-  // padding-top: 20px;
   background-color: plum;
-  // outline-color: red;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
@@ -14,9 +12,11 @@
     }
   }
 }
+//////////////////////////////////
+////////////////////////////////////
+// Свойства филдсетов:
 
 .feedback__container {
-  // outline: 2px gray solid;
   position: relative;
   background-color: tan;
   outline: none;
@@ -24,57 +24,18 @@
   @media (min-width: $breakpoint-desktop) {
     flex-basis: 100%;
   }
+}
 
-  &--name {
-    padding: 5px 0 25px 0;
+.feedback__container--name {
+  padding: 5px 0 25px 0;
 
-    @media (min-width: $breakpoint-tablet) {
-      order: -3;
-      padding: 5px 0 5px 0;
-    }
-
-    @media (min-width: $breakpoint-desktop) {
-      flex-basis: 50%;
-    }
+  @media (min-width: $breakpoint-tablet) {
+    order: -3;
+    padding: 5px 0 5px 0;
   }
 
-  &--os {
-    padding: 15px 0 30px 48px;
-    background-color: transparent;
-
-    @media (min-width: $breakpoint-tablet) {
-      order: -2;
-      box-sizing: border-box;
-      width: 94%;
-      margin: 0 auto;
-      padding: 22px 0 30px 48px;
-      border: 2px solid black;
-    }
-
-    @media (min-width: $breakpoint-desktop) {
-      flex-basis: 50%;
-      margin-left: auto;
-    }
-  }
-
-  &--formcontact {
-    display: flex;
-    flex-direction: column;
-    padding: 35px 0 25px 0;
-
-    @media (min-width: $breakpoint-tablet) {
-      order: -1;
-      box-sizing: border-box;
-      width: 94%;
-      margin: 0 auto;
-      padding: 22px 0 30px 48px;
-      border: 2px solid black;
-    }
-
-    @media (min-width: $breakpoint-desktop) {
-      background-color: pink;
-      box-sizing: border-box;
-    }
+  @media (min-width: $breakpoint-desktop) {
+    flex-basis: 50%;
   }
 }
 
@@ -82,11 +43,69 @@
   background-color: transparent;
   margin-top: 20px;
   padding: 15px 0 20px 50px;
+
+  @media (min-width: $breakpoint-tablet) {
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 auto 55px;
+    padding: 15px 0 25px 100px;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+.feedback__container--os {
+  padding: 15px 0 30px 48px;
+  background-color: transparent;
+
+  @media (min-width: $breakpoint-tablet) {
+    order: -2;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 auto 50px;
+    padding: 22px 0 35px 48px;
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    flex-basis: 50%;
+    margin-left: auto;
+  }
+}
+
+.feedback__container--formcontact {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0 25px 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    order: -1;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 auto 50px;
+    padding: 35px 0 0 60px;
+    border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    background-color: pink;
+    box-sizing: border-box;
+  }
 }
 
 .feedback__container--emotions {
   padding: 12px 0 20px 0;
+
+  @media (min-width: $breakpoint-tablet) {
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 auto 55px;
+    padding: 25px 0 25px 38px;
+    border: 2px solid #e5e5e5;
+  }
 }
+//////////////////////////////////////////
+/////////////////////////////////////////
+// Свойства вспомогательных контейнеров с полями:
 
 .feedback__input-container {
   display: flex;
@@ -108,9 +127,13 @@
 
 .feedback__input-container--formcontact {
   @media (min-width: $breakpoint-tablet) {
-    width: 40%;
+    flex-direction: column-reverse;
+    padding: 0 20px 30px 0;
   }
 }
+/////////////////////////////////////
+////////////////////////////////////
+// Свойства лейблов:
 
 .feedback__field-description {
   font-size: $font-size;
@@ -147,6 +170,9 @@
     padding: 0 0 0 70px;
   }
 }
+/////////////////////////////////////////////
+////////////////////////////////////////////
+// Свойства заголовков филдсетов:
 
 .feedback__leader {
   width: 100%;
@@ -165,18 +191,24 @@
 
     @media (min-width: $breakpoint-tablet) {
       display: block;
-      padding: 5px;
+      padding: 5px 25px;
       width: auto;
     }
+  }
 
-
+  &--sights {
+    @media (min-width: $breakpoint-tablet) {
+      display: block;
+      padding: 5px 25px;
+      width: auto;
+    }
   }
 
   &--os {
     padding: 35px 20px 0 15px;
 
     @media (min-width: $breakpoint-tablet) {
-      padding: 5px;
+      padding: 5px 25px;
       width: auto;
     }
   }
@@ -184,10 +216,25 @@
   &--emotions {
     padding: 33px 20px 0 20px;
     background-color: white;
+
+    @media (min-width: $breakpoint-tablet) {
+      padding: 5px 25px;
+      width: auto;
+    }
+  }
+}
+
+.feedback__leader br {
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
   }
 }
 // осторожно, каскад! переопределяем цвет лейблов
 // в филдсете с именами
+
+///////////////////////////////////////
+//////////////////////////////////////
+// Свойства полей:
 
 .feedback-field {
   background-color: lime;
@@ -198,21 +245,46 @@
   line-height: 1.67;
   padding: 0 0 0 20px;
   margin: 5px 0 20px 20px;
-  border: 2px solid gray;
+  border: 2px solid #5e5e5e;
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
     margin: 5px 20px 20px 20px;
   }
+}
 
-  &--text {
-    width: 278px;
-    height: 200px;
-    padding: 15px 0 0 20px;
+.feedback-field--tel{
+  @media (min-width: $breakpoint-tablet) {
+    width: 93%;
+    margin: 0 0 10px 0;
+    background-image: linear-gradient(to left, $secondary-color--darken-translucent 58px, transparent 58px), url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, calc(100% - 18px) 50%;
   }
 }
 
-// Кастомные чекбоксы
+.feedback-field--email {
+  @media (min-width: $breakpoint-tablet) {
+    width: 93%;
+    margin: 0 0 10px 0;
+    background-image: linear-gradient(to left, $secondary-color--darken-translucent 58px, transparent 58px), url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0, calc(100% - 18px) 50%;
+  }
+}
+
+.feedback-field--text {
+  width: 278px;
+  height: 200px;
+  padding: 15px 0 0 20px;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 87%;
+    height: 195px;
+  }
+}
+//////////////////////////////////////////////////
+// Кастомные чекбоксы и радио:
 
 .feedback__field-description--checkbox::before {
   position: absolute;
@@ -224,6 +296,11 @@
   height: 37px;
   border-radius: 10%;
   border: 2px solid yellow;
+
+  @media (min-width: $breakpoint-tablet) {
+    top: 23px;
+    left: -40px;
+  }
 }
 
 .feedback__field[type="checkbox"]:checked + .feedback__field-description--checkbox::after {
@@ -236,6 +313,11 @@
   box-sizing: border-box;
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $breakpoint-tablet) {
+    top: 34px;
+    left: -30px;
+  }
 }
 
 .feedback__field-description--radio::before {
@@ -247,7 +329,6 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  // background-color: tan;
   border: 2px solid yellow;
 
   @media (min-width: $breakpoint-tablet) {
@@ -280,12 +361,17 @@
   flex-direction: column;
   background-color: pink;
   min-height: 150px;
+
+  @media (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+    min-height: 130px;
+  }
 }
 
 .feedback__btn {
   box-sizing: border-box;
   width: 276px;
-  height: 59px;
+  height: 63px;
   margin: 10px auto 36px auto;
   background-color: #2aab6d;
   border: none;
@@ -294,6 +380,11 @@
   font-weight: bold;
   line-height: 1.67;
   text-transform: uppercase;
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 300px;
+    margin: 15px auto 36px 20px;
+  }
 }
 
 .feedback__note {
@@ -303,6 +394,10 @@
   text-align: center;
   text-transform: uppercase;
   color: $secondary-color--darken;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 35px 20px 0 0;
+  }
 }
 
 .feedback__sup {
