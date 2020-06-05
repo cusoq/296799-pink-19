@@ -36,6 +36,10 @@
 
   @media (min-width: $breakpoint-desktop) {
     flex-basis: 50%;
+    padding: 0;
+    min-height: 300px;
+    margin-bottom: -35px;
+    outline: 4px dotted magenta;
   }
 }
 
@@ -50,6 +54,12 @@
     margin: 0 auto 55px;
     padding: 15px 0 25px 100px;
     border: 2px solid #e5e5e5;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    background-color: pink;
+    margin: 0 130px 55px 130px;
+    padding: 15px 0 25px 120px;
   }
 }
 
@@ -67,8 +77,9 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    flex-basis: 50%;
-    margin-left: auto;
+    flex-basis: 36%;
+    margin: 0 auto 0 36px;
+    padding: 22px 0 35px 48px;
   }
 }
 
@@ -88,7 +99,8 @@
 
   @media (min-width: $breakpoint-desktop) {
     background-color: pink;
-    box-sizing: border-box;
+    margin: 52px 130px 55px 130px;
+    padding: 30px 30px 0 55px;
   }
 }
 
@@ -103,6 +115,28 @@
     border: 2px solid #e5e5e5;
   }
 }
+
+///////////////////////////////
+// Служебный враппер для применения флексов внутри филдсета:
+.feedback__fielset-wrapper {
+  display: block;
+}
+
+.feedback__fielseut-wrapper--formcontact {
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.feedback__fielseut-wrapper--sights {
+  @media (min-width: $breakpoint-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 //////////////////////////////////////////
 /////////////////////////////////////////
 // Свойства вспомогательных контейнеров с полями:
@@ -123,12 +157,54 @@
   @media (min-width: $breakpoint-tablet) {
     min-height: 115px;
   }
+
+  @media (min-width: $breakpoint-desktop) {
+    min-height: auto;
+    padding: 20px 0 0 110px;
+    margin: 0 0 35px 0;
+  }
 }
 
 .feedback__input-container--formcontact {
   @media (min-width: $breakpoint-tablet) {
     flex-direction: column-reverse;
     padding: 0 20px 30px 0;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0 0 10px 0;
+    min-height: auto;
+    width: 48%;
+    margin: 0;
+    min-height: 60px;
+  }
+}
+
+.feedback__input-container--sights {
+  @media (min-width: $breakpoint-desktop) {
+    width: 30%;
+    // margin-right: 40px;
+  }
+}
+
+////////////////////////////////////////
+// Изменение порядка чекбоксов в десктопном режиме
+
+.feedback__input-container--shark {
+  @media (min-width: $breakpoint-desktop) {
+    order: -3;
+  }
+}
+
+.feedback__input-container--chack {
+  @media (min-width: $breakpoint-desktop) {
+    order: -2;
+  }
+}
+
+.feedback__input-container--tower {
+  @media (min-width: $breakpoint-desktop) {
+    order: -1;
   }
 }
 /////////////////////////////////////
@@ -155,6 +231,10 @@
   text-transform: inherit;
   font-size: 18px;
   line-height: 4.6;
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0;
+  }
 }
 
 .feedback__field-description--radio {
@@ -168,6 +248,10 @@
 
   @media (min-width: $breakpoint-tablet) {
     padding: 0 0 0 70px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 0 0 0 85px;
   }
 }
 /////////////////////////////////////////////
@@ -251,9 +335,13 @@
     width: 100%;
     margin: 5px 20px 20px 20px;
   }
+
+  @media (min-width: $breakpoint-desktop) {
+    margin: 0 35px 0 20px;
+  }
 }
 
-.feedback-field--tel{
+.feedback-field--tel {
   @media (min-width: $breakpoint-tablet) {
     width: 93%;
     margin: 0 0 10px 0;
@@ -261,6 +349,10 @@
     background-repeat: no-repeat;
     background-position: 0 0, calc(100% - 18px) 50%;
   }
+
+  // @media (min-width: $breakpoint-desktop) {
+  //   margin: 0 35px 0 20px;
+  // }
 }
 
 .feedback-field--email {
@@ -292,14 +384,18 @@
   top: 23px;
   left: -28px;
   box-sizing: border-box;
-  width: 37px;
-  height: 37px;
+  width: 38px;
+  height: 38px;
   border-radius: 10%;
   border: 2px solid yellow;
 
   @media (min-width: $breakpoint-tablet) {
     top: 23px;
     left: -40px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    left: 10px;
   }
 }
 
@@ -318,6 +414,10 @@
     top: 34px;
     left: -30px;
   }
+
+  @media (min-width: $breakpoint-desktop) {
+    left: 10px;
+  }
 }
 
 .feedback__field-description--radio::before {
@@ -326,14 +426,19 @@
   top: 18px;
   left: -28px;
   box-sizing: border-box;
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   border: 2px solid yellow;
 
   @media (min-width: $breakpoint-tablet) {
     top: 20px;
     left: 13px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    top: 19px;
+    left: 28px;
   }
 }
 
@@ -351,6 +456,11 @@
   @media (min-width: $breakpoint-tablet) {
     top: 30px;
     left: 22px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    top: 29px;
+    left: 38px;
   }
 }
 
