@@ -144,15 +144,15 @@
           <fieldset class="feedback__container feedback__container--formcontact">
             <legend class="feedback__leader feedback__leader--formcontact">Контактная информация:</legend>
             <div class="feedback__fielset-wrapper feedback__fielseut-wrapper--formcontact">
-            <p class="feedback__input-container feedback__input-container--formcontact">
-              <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
-              <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
-              <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
-            </p>
-            <p class="feedback__input-container feedback__input-container--formcontact">
-              <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
-              <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту *" required>
-            </p>
+              <p class="feedback__input-container feedback__input-container--formcontact">
+                <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
+                <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
+                <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
+              </p>
+              <p class="feedback__input-container feedback__input-container--formcontact">
+                <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
+                <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              </p>
             </div>
           </fieldset>
           <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
@@ -177,16 +177,16 @@
           <!-- Поле текстового отзыва: -->
           <fieldset class="feedback__container  feedback__container--emotions">
             <legend class="feedback__leader feedback__leader--emotions">Опишите свои эмоции:</legend>
-            <p class="feedback__input-container">
-              <textarea class="feedback-field feedback-field--text" rows="10" cols="30" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
+            <!-- <p class="feedback__input-container"> -->
+            <textarea class="feedback-field feedback-field--text" rows="10" cols="30" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <!-- </p> -->
           </fieldset>
           <div class="feedback__submit-wrapper">
             <button class="btn feedback__btn feedback__btn--main btn--disabled">
               Отправить форму
             </button>
             <span class="feedback__note">
-              <sup class="feedback__sup">&#9913;</sup> &mdash; Обязательные поля
+              <sup class="feedback__sup">&#9913;</sup> &mdash; Обязательные <span class="feedback__fullnote">для заполнения</span> поля
             </span>
           </div>
         </form>
