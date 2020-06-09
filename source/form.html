@@ -147,7 +147,7 @@
               <p class="feedback__input-container feedback__input-container--formcontact">
                 <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
                 <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
-                <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
+                <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
               </p>
               <p class="feedback__input-container feedback__input-container--formcontact">
                 <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
@@ -193,25 +193,25 @@
         <!-- /////////////////////////////////////////////////////////// -->
         <!-- Модальные окна: -->
         <div class="popup popup__form popup__form--success">
-          <b>
+          <b class="popup__message">
             Ваша заявка отправлена
           </b>
-          <p class="paragraph paragraph--popup">
-            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+          <p class="popup__paragraph popup__paragraph--success">
+            Спасибо за ваше участие, ваша заявка<br> уже поступила к нам. В ближайшее<br> время мы рассмотрим ее и<br>
             оповестим вас.
           </p>
-          <button class="btn feedback__btn feedback__btn--success">
-            ЗАКРЫТЬ ОКНО
+          <button class="popup__btn popup__btn--success">
+            Закрыть окно
           </button>
         </div>
         <div class="popup popup__form popup__form--fail">
-          <b>
-            Что-то пошло не так!
+          <b class="popup__message">
+            Что-то пошло<br> не так!
           </b>
-          <p class="paragraph paragraph--popup">
+          <p class="popup__paragraph">
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
-          <button class="btn feedback__btn feedback__btn--failure">
+          <button class="popup__btn popup__btn--fail">
             ок
           </button>
         </div>
