@@ -1,3 +1,5 @@
+'use strict';
+
 var link = document.querySelector(".main-nav__btn--open");
 var popup = document.querySelector(".main-nav__list");
 var header = document.querySelector(".page-header");

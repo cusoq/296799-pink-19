@@ -16,7 +16,7 @@
 }
 
 .popup__form {
-  display: block;
+  display: none;
   box-sizing: border-box;
   position: fixed;
   z-index: 2;
@@ -41,6 +41,10 @@
   }
 }
 
+.popup__form--shown {
+  display: block;
+}
+
 .popup__form--success {
   height: 365px;
   background-image: linear-gradient(to top, $secondary-color--fogged 158px, transparent 158px);
@@ -51,7 +55,6 @@
 
   @media (min-width: $breakpoint-desktop) {
     height: 377px;
-    // background-image: linear-gradient(to top, $secondary-color--fogged 158px, transparent 158px);
   }
 }
 
@@ -62,7 +65,6 @@
 }
 
 .popup__form--fail {
-  display: none;
   height: 289px;
 
   @media (min-width: $breakpoint-tablet) {
@@ -74,6 +76,10 @@
     background-image: linear-gradient(to top, $secondary-color--fogged 158px, transparent 158px);
   }
 }
+
+// .popup__form--fail-shown {
+//   display: block;
+// }
 
 .popup__form--fail br {
   display: none;
