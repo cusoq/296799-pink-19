@@ -43,11 +43,11 @@ var onEscCloser = function () {
   }
 }
 ////////////////////////////////////////////////////////////
-// вывод сообщения об ошибке
+// Событие инвалидности хотя бы одного из полей формы, инициация вывода сообщения об ошибке
 input.addEventListener('invalid', onError);
-// вывод сообщения об успехе
+// Событие успешной отправки формы, инициация открытия сообщения об успехе
 form.addEventListener('submit', onSubmit);
-// закрытие попапа по Click
+// Событие Click для закрытия попапа
 closerBtns.forEach(function (btn) {btn.addEventListener('click', onClickCloser)});
-// закрытие попапа по Esc
+// Событие Esc для закрытия попапа
 document.addEventListener('keydown', onEscCloser);
