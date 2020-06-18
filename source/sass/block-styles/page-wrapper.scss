@@ -3,8 +3,6 @@
   width: 320px;
   margin: 0 auto;
 
-  outline: red 2px dotted;
-
   @media (min-width: $breakpoint-tablet) {
     width: $breakpoint-tablet;
   }

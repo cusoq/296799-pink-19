@@ -15,7 +15,7 @@
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center 20%;
-    background-color: aqua;
+    background-color: $secondary-color;
   }
 }
 
@@ -30,7 +30,6 @@
   font-size: $font-size--large;
   line-height: 1;
   padding: 0 0 20px 0;
-  outline: 3px dotted blue;
 
   @media (min-width: $breakpoint-tablet) {
     font-size: $font-size--big;
@@ -44,7 +43,6 @@
 }
 
 .references__user-data {
-  outline: 2px yellow dotted;
   display: none;
 
   @media (min-width: $breakpoint-tablet) {
@@ -73,7 +71,6 @@
 
   @media (min-width: $breakpoint-desktop) {
     font-size: $font-size--large;
-    outline: 3px dotted magenta;
     padding: 185px 257px 0 255px;
   }
 }
@@ -88,7 +85,6 @@
     width: 60px;
     height: 60px;
     background-color: transparent;
-    outline: 3px dashed coral;
 
     &--left {
       background-image: url("../img/icon-review-arrow-left.svg");

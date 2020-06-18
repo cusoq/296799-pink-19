@@ -5,7 +5,6 @@
   padding-top: 40px;
   width: 320px;
   min-height: 395px;
-  // outline: 4px dashed tomato;
 
   @media (min-width: $breakpoint-tablet) {
     flex-direction: row;
@@ -14,7 +13,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    background-color: bisque;
+    background-color: $secondary-color;
     justify-content: center;
   }
 }
@@ -45,7 +44,6 @@
   width: 320px;
   margin: 0 auto;
   padding: 33px 0 0 0;
-  outline: 4px dotted plum;
 
   @media (min-width: $breakpoint-tablet) {
     width: 50%;
@@ -98,7 +96,6 @@
   background-repeat: no-repeat;
   background-size: 100%, cover;
   background-position: 44% 0, center 100%;
-  background-color: plum;
 
   &::after {
     position: absolute;

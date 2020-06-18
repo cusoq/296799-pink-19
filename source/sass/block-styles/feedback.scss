@@ -1,5 +1,5 @@
 .feedback__form {
-  background-color: plum;
+  background-color: $secondary-color;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
@@ -18,7 +18,6 @@
 
 .feedback__container {
   position: relative;
-  background-color: tan;
   outline: none;
 
   @media (min-width: $breakpoint-desktop) {
@@ -39,7 +38,6 @@
     padding: 0;
     min-height: 300px;
     margin-bottom: -35px;
-    outline: 4px dotted magenta;
   }
 }
 
@@ -53,11 +51,10 @@
     width: 94%;
     margin: 0 auto 55px;
     padding: 15px 0 25px 100px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $form-border-color;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    background-color: pink;
     margin: 0 130px 50px 130px;
     padding: 18px 0 25px 118px;
   }
@@ -73,7 +70,7 @@
     width: 94%;
     margin: 0 auto 50px;
     padding: 22px 0 35px 48px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $form-border-color;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -94,11 +91,10 @@
     width: 94%;
     margin: 0 auto 50px;
     padding: 35px 0 0 60px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $form-border-color;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    background-color: pink;
     margin: 52px 130px 55px 130px;
     padding: 30px 30px 0 55px;
   }
@@ -112,11 +108,10 @@
     width: 94%;
     margin: 0 auto 55px;
     padding: 25px 0 25px 38px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $form-border-color;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    background-color: tomato;
     margin: 0 130px 50px 130px;
     padding: 28px 60px 35px 60px;
   }
@@ -151,7 +146,6 @@
 .feedback__input-container {
   display: flex;
   flex-direction: column;
-  outline: 3px dotted coral;
   margin: 0;
 
   @media (min-width: $breakpoint-tablet) {
@@ -254,7 +248,6 @@
   text-align: center;
   color: $main-color;
   background-color: transparent;
-  outline: dashed 2px magenta;
 
   &--formcontact {
     display: none;
@@ -307,7 +300,6 @@
 // Свойства полей:
 
 .feedback__field {
-  background-color: lime;
   box-sizing: border-box;
   width: 278px;
   height: 61px;
@@ -315,7 +307,7 @@
   line-height: 1.67;
   padding: 0 0 0 20px;
   margin: 5px 0 20px 20px;
-  border: 2px solid #5e5e5e;
+  border: 2px solid $form-border-color;
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
@@ -331,9 +323,9 @@
   @media (min-width: $breakpoint-tablet) {
     width: 93%;
     margin: 0 0 10px 0;
-    background-image: linear-gradient(to left, $secondary-color--darken-translucent 58px, transparent 58px), url("../img/icon-phone.svg");
+    background-image: url("../img/icon-phone.svg"), linear-gradient(to left, $form-border-color 58px, transparent 58px);
     background-repeat: no-repeat;
-    background-position: 0 0, calc(100% - 18px) 50%;
+    background-position: calc(100% - 18px) 50%, 0 0;
   }
 }
 
@@ -341,9 +333,9 @@
   @media (min-width: $breakpoint-tablet) {
     width: 93%;
     margin: 0 0 10px 0;
-    background-image: linear-gradient(to left, $secondary-color--darken-translucent 58px, transparent 58px), url("../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $form-border-color 58px, transparent 58px);
     background-repeat: no-repeat;
-    background-position: 0 0, calc(100% - 18px) 50%;
+    background-position: calc(100% - 18px) 50%, 0 0;
   }
 }
 
@@ -375,7 +367,7 @@
   width: 38px;
   height: 38px;
   border-radius: 10%;
-  border: 2px solid yellow;
+  border: 2px solid $form-border-color;
 
   @media (min-width: $breakpoint-tablet) {
     top: 23px;
@@ -418,7 +410,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 2px solid yellow;
+  border: 2px solid $form-border-color;
 
   @media (min-width: $breakpoint-tablet) {
     top: 20px;
@@ -440,7 +432,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: magenta;
+  background-color: $main-color;
 
   @media (min-width: $breakpoint-tablet) {
     top: 30px;
@@ -457,7 +449,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: pink;
   min-height: 150px;
 
   @media (min-width: $breakpoint-tablet) {
@@ -479,7 +470,7 @@
   margin: 10px auto 36px auto;
   background-color: #2aab6d;
   border: none;
-  color: white;
+  color: $secondary-color;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -496,7 +487,6 @@
 }
 
 .feedback__note {
-  outline: 2px dotted magenta;
   font-size: 14px;
   line-height: 2.14;
   text-align: center;

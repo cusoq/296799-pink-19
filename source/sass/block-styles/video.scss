@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  outline: 2px blue solid;
   position: relative;
 
   @media (min-width: $breakpoint-tablet) {
@@ -41,21 +40,18 @@
   display: flex;
   justify-content: center;
   min-height: 155px;
-  // outline: red 4px dotted;
-  border-bottom: 2px solid magenta;
+  border-bottom: 2px solid $form-border-color;
 
   @media (min-width: $breakpoint-tablet) {
     margin: 0;
     flex-direction: column;
     width: 100%;
     min-height: 200px;
-    // background-color: coral;
     border-bottom: none;
   }
 }
 
 .video__control {
-  // outline: 3px pink dashed;
   width: 45px;
   height: 45px;
   margin: 40px 19px;
@@ -67,7 +63,7 @@
     height: 100%;
     margin: 0;
     padding-left: 42px;
-    border-bottom: 2px solid magenta;
+    border-bottom: 2px solid $form-border-color;
   }
 }
 
@@ -124,7 +120,6 @@
   position: absolute;
   top: 76%;
   left: 7%;
-  outline: 1px dotted red;
   background-image: linear-gradient(to bottom, transparent 45%, $primary-color 45% 55%, transparent 55%);
   width: 240px;
   height: 14px;

@@ -1,5 +1,4 @@
 .public {
-  outline: aqua 2px dashed;
   padding: 10px 0 20px 20px;
   margin-bottom: 22px;
   color: $secondary-color--darken;
@@ -30,7 +29,6 @@
   @media (min-width: $breakpoint-desktop) {
     width: 915px;
     min-height: auto;
-    background-color: aqua;
   }
 }
 
@@ -40,7 +38,6 @@
 
   @media (min-width: $breakpoint-tablet) {
     margin-left: 5px;
-    background-color: tan;
   }
 }
 
@@ -50,7 +47,6 @@
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
-    background-color: bisque;
     min-height: 40px;
   }
 }
@@ -68,7 +64,6 @@
 .public__like {
   display: block;
   padding: 10px 0 1px 32px;
-  outline: magenta dotted 2px;
   color: $main-color;
   font-size: $font-size--small;
   text-transform: uppercase;

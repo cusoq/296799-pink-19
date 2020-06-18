@@ -4,7 +4,7 @@
   box-sizing: border-box;
   min-height: 284px;
   padding: 42px 72px 0 72px;
-  background-color: tan;
+  background-color: $secondary-color;
 
   @media (min-width: $breakpoint-tablet) {
     flex-direction: row;
@@ -30,7 +30,6 @@
 
 .page-footer__logo {
   margin: 0 auto 35px;
-  outline: aqua dashed 1px;
 
   @media (min-width: $breakpoint-tablet) {
     margin: 0;
@@ -41,7 +40,6 @@
 .page-footer__social {
   display: flex;
   justify-content: space-between;
-  outline: blue dashed 4px;
   margin-bottom: 25px;
 
   @media (min-width: $breakpoint-tablet) {
@@ -60,7 +58,7 @@
   justify-content: center;
   width: 46px;
   height: 46px;
-  border: solid 2px red;
+  border: solid 2px $form-border-color;
   border-radius: 50%;
 }
 
@@ -68,7 +66,6 @@
   display: flex;
   min-height: 55px;
   margin: 0;
-  outline: magenta dashed 1px;
 
   @media (min-width: $breakpoint-tablet) {
     margin: 0;
@@ -77,7 +74,6 @@
 
 .page-footer__copy-text {
   margin: auto 5px auto 25px;
-  outline: aqua dashed 1px;
 
   @media (min-width: $breakpoint-desktop) {
     font-size: 18px;
@@ -90,7 +86,6 @@
 
   height: auto;
   width: 40px;
-  outline: aqua dashed 1px;
 }
 
 .page-footer__copy-logo img {

@@ -53,10 +53,6 @@
   @media (min-width: $breakpoint-tablet) {
     display: block;
   }
-
-  // @media (min-width: $breakpoint-desktop) {
-  //   display: block;
-  // }
 }
 
 .main-photo__photo-list {
@@ -76,11 +72,10 @@
   }
   // Отрицательный внешний отступ добавлен для корректного
   // переноса карточек в многострочном флекс-контейнере
-  background-color: lime;
 }
 
 .main-photo__photo-item {
-  background: beige;
+  background: $secondary-color--fogged;
 
   @media (min-width: $breakpoint-tablet) {
     flex-basis: 300px;
@@ -89,8 +84,6 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    // flex-basis: 940px;
-    outline: 5px dotted magenta;
     min-height: 555px;
     margin: 0 20px 50px 0;
   }
@@ -112,7 +105,6 @@
 }
 
 .main-photo-list__pic {
-  // outline: 4px magenta solid;
   margin: 0;
 
   @media (min-width: $breakpoint-tablet) {
@@ -154,7 +146,6 @@
   }
 
   @media (min-width: $breakpoint-tablet) {
-    outline: dashed 3px coral;
     width: 700px;
     height: 509px;
     margin: 0 40px 0 -40px;
@@ -178,7 +169,7 @@
   width: 320px;
   min-height: 757px;
   padding: 20px 20px 0 20px;
-  background-color: aqua;
+  background-color: $secondary-color--fogged;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
@@ -200,7 +191,7 @@
   height: 201px;
   margin: auto 0 0 0;
   padding: 40px 0;
-  background-color: khaki;
+  background-color: $secondary-color--fogged;
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;

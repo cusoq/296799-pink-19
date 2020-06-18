@@ -1,9 +1,4 @@
-.main-form {
-  outline: 2px dashed blue;
-}
-
 .main-form__paragraph {
-  background: plum;
   margin: 0 0 35px 0;
   padding: 45px 15px 0 15px;
   box-sizing: border-box;
@@ -21,8 +16,6 @@
 
   @media (min-width: $breakpoint-desktop) {
     padding: 92px 210px 30px;
-    // word-wrap: break-word;
-    // white-space: nowrap;
   }
 }
 
