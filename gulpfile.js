@@ -17,8 +17,9 @@ var run = require("run-sequence");
 var del = require("del");
 var sourcemap = require("gulp-sourcemaps");
 var pipeline = require("readable-stream").pipeline;
-var uglify = require('gulp-uglify');
-var htmlmin = require('gulp-htmlmin');
+var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
+var refresh = require("refresh");
 
 gulp.task("css", function() {
   return gulp.src("source/sass/style.scss")
@@ -71,15 +72,21 @@ gulp.task("html", function() {
 
 gulp.task("server", function() {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.scss", gulp.series("css"));
-  gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series("css", "refresh"));
+  gulp.watch("source/img/*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
+});
+
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
 });
 
 gulp.task("copy", function() {
