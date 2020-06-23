@@ -47,5 +47,9 @@
   ],
   "engines": {
     "node": "12.18.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "readable-stream": "^3.6.0"
   }
 }
