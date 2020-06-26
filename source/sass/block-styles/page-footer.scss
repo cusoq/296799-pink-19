@@ -62,10 +62,15 @@
   border-radius: 50%;
 }
 
+.page-footer__social-icon {
+  fill: $main-color;
+  margin: auto;
+}
+
 .page-footer__copy {
   display: flex;
-  min-height: 55px;
   margin: 0;
+  padding: 15px 0;
 
   @media (min-width: $breakpoint-tablet) {
     margin: 0;
@@ -73,7 +78,7 @@
 }
 
 .page-footer__copy-text {
-  margin: auto 5px auto 25px;
+  margin: auto 15px auto 25px;
 
   @media (min-width: $breakpoint-desktop) {
     font-size: 18px;
@@ -83,12 +88,9 @@
 }
 
 .page-footer__copy-logo {
-
-  height: auto;
-  width: 40px;
+  font-size: 0;
 }
 
-.page-footer__copy-logo img {
-  margin: 10px 0 0 0;
-  width: auto;
+.page-footer__copy-pic {
+  fill: $main-color;
 }

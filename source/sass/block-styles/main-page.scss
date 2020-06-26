@@ -33,6 +33,7 @@
 .main-page__effect {
   background-color: $secondary-color--fogged;
   display: none;
+  position: relative;
 
   @media (min-width: $breakpoint-tablet) {
     display: block;
@@ -42,6 +43,22 @@
     background-repeat: no-repeat;
     background-position: 5% 0;
     background-size: 36%;
+
+    &::before {
+      position: absolute;
+      content: "24";
+      font-size: 120px;
+      color: $main-color;
+  font-weight: bold;
+  line-height: 1.56;
+  text-align: center;
+      top: 0;
+      left: -2px;
+      width: 174px;
+      height: 174px;
+      border: 4px solid $main-color;
+      border-radius: 50%;
+    }
   }
 
   @media (min-width: $breakpoint-desktop) {
