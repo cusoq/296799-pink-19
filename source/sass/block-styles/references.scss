@@ -12,7 +12,7 @@
     position: relative;
     margin-top: 0;
     min-height: 410px;
-    background-image: url("../img/icon-quotes.svg");
+    background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-position: center 20%;
     background-color: $secondary-color;
@@ -65,12 +65,12 @@
   padding: 0 20px;
 
   @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size--large;
     order: -1;
     line-height: 1.7;
   }
 
   @media (min-width: $breakpoint-desktop) {
-    font-size: $font-size--large;
     padding: 185px 257px 0 255px;
   }
 }
@@ -81,23 +81,24 @@
   @media (min-width: $breakpoint-desktop) {
     display: block;
     position: absolute;
-    top: 50%;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
+    top: 52%;
+    fill: #dedede;
 
-    &--left {
-      background-image: url("../img/icon-review-arrow-left.svg");
-      background-repeat: no-repeat;
-      background-position: 30% 45%;
-      left: 10%;
+    &:hover,
+    &:focus {
+      fill: $secondary-color--darken;
     }
 
-    &--right {
-      background-image: url("../img/icon-review-arrow-right.svg");
-      background-repeat: no-repeat;
-      background-position: 70% 45%;
-      right: 10%;
+    &:active {
+      fill: $secondary-color--fogged;
     }
   }
+}
+
+.references__slider-control--left {
+  left: 11%;
+}
+
+.references__slider-control--right {
+  right: 11%;
 }
