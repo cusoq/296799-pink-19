@@ -322,14 +322,24 @@
             <!-- Обрезка -->
             <div class="video__control video__control--crop">
               <!-- <img src="img/icon-editor-crop.svg" width="44" height="44" alt="Обрезка"> -->
+              <svg class="video__control-pic" width="44" height="44" aria-labelledby="title">
+                <use xlink:href="img/sprite.svg#s-icon-editor-crop"></use>
+                <title id="title">Обрезка"</title>
+                </svg>
+
               <div class="video__control-scale video__control-scale--corp">
                 <div class="video__toggle video__toggle--corp" style="margin-left: 80%">
                 </div>
               </div>
             </div>
-            <!-- Заливка     -->
+            <!-- Заливка  -->
             <div class="video__control video__control--fill">
               <!-- <img src="img/icon-editor-fill.svg" width="48" height="43" alt="Заливка"> -->
+              <svg class="video__control-pic" width="48" height="54" aria-labelledby="title">
+                <use xlink:href="img/sprite.svg#s-icon-editor-fill"></use>
+                <title id="title">Заливка"</title>
+                </svg>
+
               <div class="video__control-scale video__control-scale--fill">
                 <div class="video__toggle video__toggle--fill" style="margin-left: 15%">
                 </div>
@@ -338,6 +348,11 @@
             <!-- Контраст -->
             <div class="video__control video__control--contrast">
               <!-- <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст"> -->
+              <svg class="video__control-pic video__control-pic--contrast" width="32" height="42" aria-labelledby="title">
+                <use xlink:href="img/sprite.svg#s-icon-editor-contrast"></use>
+                <title id="title">Контраст"</title>
+                </svg>
+
               <div class="video__control-scale video__control-scale--contrast">
                 <div class="video__toggle video__toggle--contrast" style="margin-left: 48%">
                 </div>
@@ -372,10 +387,15 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1000px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
-        </picture>
+        <!-- Адаптивный логотип -->
+        <svg class="page-footer__logo-pic page-footer__logo-pic--mobile" width="75" height="22" aria-labelledby="title">
+          <use xlink:href="img/sprite.svg#s-logo-pink-blue-mobile"></use>
+          <title id="title">Логотип</title>
+        </svg>
+        <svg class="page-footer__logo-pic page-footer__logo-pic--desktop" width="147" height="48" aria-labelledby="title">
+          <use xlink:href="img/sprite.svg#s-logo-pink-blue-desktop"></use>
+          <title id="title">Логотип</title>
+        </svg>
       </a>
       <div class="page-footer__social">
 

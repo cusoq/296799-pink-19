@@ -243,10 +243,15 @@
     <!-- /////////////////////////////////////////////////////////// -->
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1000px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
-        </picture>
+        <!-- Адаптивный логотип -->
+        <svg class="page-footer__logo-pic page-footer__logo-pic--mobile" width="75" height="22" aria-labelledby="title">
+          <use xlink:href="img/sprite.svg#s-logo-pink-blue-mobile"></use>
+          <title id="title">Логотип</title>
+        </svg>
+        <svg class="page-footer__logo-pic page-footer__logo-pic--desktop" width="147" height="48" aria-labelledby="title">
+          <use xlink:href="img/sprite.svg#s-logo-pink-blue-desktop"></use>
+          <title id="title">Логотип</title>
+        </svg>
       </a>
       <div class="page-footer__social">
 

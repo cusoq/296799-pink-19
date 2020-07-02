@@ -32,8 +32,43 @@
   margin: 0 auto 35px;
 
   @media (min-width: $breakpoint-tablet) {
-    margin: 0;
-    align-self: auto;
+    align-self: flex-start;
+    margin: 30px 0;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    align-self: flex-start;
+    margin: 65px 0;
+  }
+}
+
+.page-footer__logo-pic {
+  fill: #283645;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-pic--mobile {
+  display: block;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.page-footer__logo-pic--desktop {
+  display: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
   }
 }
 
@@ -58,13 +93,26 @@
   justify-content: center;
   width: 46px;
   height: 46px;
-  border: solid 2px $form-border-color;
+  border: solid 3px $form-border-color;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border: solid 3px $secondary-color--darken;
+  }
+
+  &:active {
+    border: solid 3px $form-border-color;
+  }
 }
 
 .page-footer__social-icon {
   fill: $main-color;
   margin: auto;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copy {
@@ -93,4 +141,14 @@
 
 .page-footer__copy-pic {
   fill: $main-color;
+
+  &:hover,
+  &:focus {
+    fill: $secondary-color--darken;
+  }
+
+  &:active {
+    fill: $secondary-color--darken;
+    opacity: 0.3;
+  }
 }
