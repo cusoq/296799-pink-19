@@ -85,6 +85,16 @@
   text-align: center;
   line-height: 1.2;
   color: $main-color;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color--darken;
+  }
+
+  &:active {
+    color: $secondary-color--darken;
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {

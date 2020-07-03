@@ -118,6 +118,16 @@
   color: $main-color;
   text-decoration: underline;
 
+  &:hover,
+  &:focus {
+    color: $secondary-color--darken;
+  }
+
+  &:active {
+    color: $secondary-color--darken;
+    opacity: 0.3;
+  }
+
   @media (min-width: $breakpoint-desktop) {
     font-size: $font-size--large;
     line-height: 5.2;

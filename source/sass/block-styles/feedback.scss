@@ -309,6 +309,15 @@
   margin: 5px 0 20px 20px;
   border: 2px solid $form-border-color;
 
+  &:hover,
+  &:focus {
+    border: 2px solid $secondary-color--darken;
+  }
+
+  &:active {
+    border: 2px solid $main-color;
+  }
+
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
     margin: 5px 20px 20px 20px;
@@ -326,6 +335,15 @@
     background-image: url("../img/icon-phone.svg"), linear-gradient(to left, $form-border-color 58px, transparent 58px);
     background-repeat: no-repeat;
     background-position: calc(100% - 18px) 50%, 0 0;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-phone.svg"), linear-gradient(to left, $secondary-color--darken 58px, transparent 58px);
+    }
+
+    &:active {
+        background-image: url("../img/icon-phone.svg"), linear-gradient(to left, $main-color 58px, transparent 58px);
+    }
   }
 }
 
@@ -336,6 +354,15 @@
     background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $form-border-color 58px, transparent 58px);
     background-repeat: no-repeat;
     background-position: calc(100% - 18px) 50%, 0 0;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $secondary-color--darken 58px, transparent 58px);;
+    }
+
+    &:active {
+        background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $main-color 58px, transparent 58px);
+    }
   }
 }
 
@@ -379,6 +406,15 @@
   }
 }
 
+.feedback__field[type="checkbox"]:hover + .feedback__field-description--checkbox::before,
+ .feedback__field[type="checkbox"]:focus + .feedback__field-description--checkbox::before {
+  border: 2px solid $secondary-color--darken;
+}
+
+.feedback__field[type="checkbox"]:active + .feedback__field-description--checkbox::before {
+  border: 2px solid $main-color;
+}
+
 .feedback__field[type="checkbox"]:checked + .feedback__field-description--checkbox::after {
   position: absolute;
   content: "";
@@ -412,6 +448,7 @@
   border-radius: 50%;
   border: 2px solid $form-border-color;
 
+
   @media (min-width: $breakpoint-tablet) {
     top: 20px;
     left: 13px;
@@ -434,6 +471,7 @@
   border-radius: 50%;
   background-color: $main-color;
 
+
   @media (min-width: $breakpoint-tablet) {
     top: 30px;
     left: 22px;
@@ -443,6 +481,15 @@
     top: 29px;
     left: 38px;
   }
+}
+
+.feedback__field[type="radio"]:hover + .feedback__field-description--radio::before,
+.feedback__field[type="radio"]:focus + .feedback__field-description--radio::before {
+border: 2px solid $secondary-color--darken;
+}
+
+.feedback__field[type="radio"]:active + .feedback__field-description--radio::before {
+  border: 2px solid $main-color;
 }
 
 .feedback__submit-wrapper {
@@ -475,6 +522,20 @@
   font-weight: bold;
   line-height: 1.67;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     width: 300px;

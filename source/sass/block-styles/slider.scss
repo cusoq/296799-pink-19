@@ -30,7 +30,19 @@
   border-radius: 50%;
   background-color: rgba(40, 54, 69, 0.3);
 
+  &:hover,
+  &:focus {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.2);
+  }
+
   &--current {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
     background-color: transparent;
     border: 3px solid $secondary-color--darken;
   }

@@ -204,16 +204,15 @@
   }
 }
 
-.main-photo__buttons button {
+.main-photo__button {
   box-sizing: border-box;
   margin: 0;
   width: 280px;
-  color: $main-color;
+
   font-size: $font-size--large;
   font-weight: bold;
   line-height: 50px;
   text-align: center;
-  border: 2px solid $main-color;
   border-radius: 50px;
 
   @media (min-width: $breakpoint-tablet) {
@@ -224,5 +223,38 @@
 
   @media (min-width: $breakpoint-desktop) {
     width: 180px;
+  }
+}
+
+.main-photo__button--upload {
+  color: $main-color;
+  border: 3px solid $main-color;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    background-color: $main-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $main-color;
+  }
+}
+
+.main-photo__button--cancel {
+  color: #283645;
+  border: 3px solid #283645;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #283645;
+    opacity: 0.3;
   }
 }

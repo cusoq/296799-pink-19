@@ -26,6 +26,18 @@
   border: 2px solid $secondary-color;
   border-radius: 55px;
 
+    &:hover,
+    &:focus {
+      color: $main-color;
+      background-color: $secondary-color;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+      background-color: $secondary-color;
+      opacity: 1;
+    }
+
   @media (min-width: $breakpoint-tablet) {
     margin: 0 0 30px 20px;
   }
@@ -48,6 +60,13 @@
 
   @media (min-width: $breakpoint-desktop) {
     margin: 48px 70px 0 45px;
+  }
+}
+
+.dounload-aside__all-links a {
+  &:hover,
+  &:focus {
+    opacity: 0.3;
   }
 }
 

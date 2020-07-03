@@ -118,9 +118,19 @@
   background-color: $secondary-color--darken;
   box-shadow: 0 1px 0 0 $primary-color, inset 0 1px 0 0 $menu-shadow-color;
 
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+
+  &:active {
+    color: $secondary-color;
+    opacity: 0.3;
+  }
+
   @media (min-width: $breakpoint-desktop) {
     min-width: auto;
-    height: auto;
+    height: 30px;
     background-color: transparent;
     text-transform: capitalize;
     font-weight: normal;
@@ -128,6 +138,13 @@
     white-space: nowrap;
   }
 }
+
+.main-nav__link--current {
+  @media (min-width: $breakpoint-desktop) {
+    border-bottom: 2px solid $secondary-color;
+  }
+}
+
 
 .main-nav__btn {
   font-size: 0;
