@@ -13,7 +13,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
+    "gulp-posthtml": "^3.0.5",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "4.0.x",
     "gulp-sourcemaps": "2.6.x",
@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1",
+    "jpegtran": "^1.0.6",
     "readable-stream": "^3.6.0",
     "refresh": "^1.0.1"
   }

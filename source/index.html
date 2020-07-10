@@ -24,26 +24,26 @@
         <div class="main-nav__logo-container">
           <span class="main-nav__logo">
             <!-- Адаптивный логотип -->
-              <svg class="main-nav__logo-pic main-nav__logo-pic--mobile" width="75" height="22" aria-labelledby="title">
-                <use xlink:href="img/sprite.svg#s-logo-pink-white-mobile"></use>
-                <title id="title">Логотип</title>
-              </svg>
-              <svg class="main-nav__logo-pic main-nav__logo-pic--tablet" width="147" height="48" aria-labelledby="title">
-                <use xlink:href="img/sprite.svg#s-logo-pink-white-tablet"></use>
-                <title id="title">Логотип</title>
-              </svg>
-              <svg class="main-nav__logo-pic main-nav__logo-pic--desktop" width="147" height="48" aria-labelledby="title">
-                <use xlink:href="img/sprite.svg#s-logo-pink-white-desktop"></use>
-                <title id="title">Логотип</title>
-              </svg>
+            <svg class="main-nav__logo-pic main-nav__logo-pic--mobile" width="75" height="22" aria-labelledby="title-nav__logo-mobile">
+              <use xlink:href="img/sprite.svg#s-logo-pink-white-mobile"></use>
+              <title id="title-nav__logo-mobile">Логотип</title>
+            </svg>
+            <svg class="main-nav__logo-pic main-nav__logo-pic--tablet" width="147" height="48" aria-labelledby="title-nav__logo-tablet">
+              <use xlink:href="img/sprite.svg#s-logo-pink-white-tablet"></use>
+              <title id="title-nav__logo-tablet">Логотип</title>
+            </svg>
+            <svg class="main-nav__logo-pic main-nav__logo-pic--desktop" width="147" height="48" aria-labelledby="title-nav__logo-desktop">
+              <use xlink:href="img/sprite.svg#s-logo-pink-white-desktop"></use>
+              <title id="title-nav__logo-desktop">Логотип</title>
+            </svg>
           </span>
 
           <!-- //////////////////////////////////////////////////////////////// -->
           <!-- Кнопка раскрытия мобильного меню:     -->
           <button class="main-nav__btn main-nav__btn--open" type="button">
-            <svg class="main-nav__icon" width="46" height="22" aria-labelledby="title">
+            <svg class="main-nav__icon" width="46" height="22" aria-labelledby="title-burger">
               <use xlink:href="img/sprite.svg#s-icon-menu-burger"></use>
-              <title id="title">Кнопка раскрытия меню</title>
+              <title id="title-burger">Кнопка раскрытия меню</title>
             </svg>
           </button>
         </div>
@@ -53,20 +53,20 @@
         <ul class="main-nav__list popup">
           <li class="main-nav__logo-container main-nav__logo-container--popup">
             <span class="main-nav__logo">
-              <svg class="main-nav__logo-pic main-nav__logo-pic--mobile" width="75" height="22" aria-labelledby="title">
+              <svg class="main-nav__logo-pic main-nav__logo-pic--mobile" width="75" height="22" aria-labelledby="title-nav__logo-popupmob">
                 <use xlink:href="img/sprite.svg#s-logo-pink-white-mobile"></use>
-                <title id="title">Логотип</title>
+                <title id="title-nav__logo-popupmob">Логотип</title>
               </svg>
-              <svg class="main-nav__logo-pic main-nav__logo-pic--tablet" width="147" height="48" aria-labelledby="title">
+              <svg class="main-nav__logo-pic main-nav__logo-pic--tablet" width="147" height="48" aria-labelledby="title-nav__logo-popuptab">
                 <use xlink:href="img/sprite.svg#s-logo-pink-white-tablet"></use>
-                <title id="title">Логотип</title>
+                <title id="title-nav__logo-popuptab">Логотип</title>
               </svg>
             </span>
             <!-- Кнопка закрытия модального меню -->
-            <button class="main-nav__btn main-nav__btn--close" type="button"><svg class="main-nav__icon" width="24" height="24" aria-labelledby="title">
-              <use xlink:href="img/sprite.svg#s-icon-menu-cross"></use>
-              <title id="title">Кнопка закрытия меню</title>
-            </svg></button>
+            <button class="main-nav__btn main-nav__btn--close" type="button"><svg class="main-nav__icon" width="24" height="24" aria-labelledby="title-cross">
+                <use xlink:href="img/sprite.svg#s-icon-menu-cross"></use>
+                <title id="title-cross">Кнопка закрытия меню</title>
+              </svg></button>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">Главная</a>
@@ -118,15 +118,20 @@
         </div>
         <div class="features__pics">
           <picture>
-            <source media="(min-width: 1000px)" srcset="img/iphone-screen-1-desktop@1x.png">
-            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-            <img class="features__pic" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение розового экрана смартфона">
+            <source type="image/webp" media="(min-width: 1000px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
+            <source media="(min-width: 1000px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+            <img class="features__pic" src="img/iphone-screen-mobile@1x.png 1x" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Изображение экрана смартфона">
           </picture>
           <picture>
+            <source type="image/webp" media="(min-width: 1000px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
             <img class="features__pic--desktop-pic" src="img/iphone-screen-2-desktop@1x.png" width="268" height="481" alt="Изображение розового экрана смартфона">
           </picture>
           <picture>
-            <img class="features__pic--desktop-pic" src="img/iphone-screen-3-desktop@1x.png" width="268" height="481" alt="Изображение розового экрана смартфона">
+            <source type="image/webp" media="(min-width: 1000px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+            <img class="features__pic--desktop-pic" src="img/iphone-screen-3-desktop@1x.png 1x" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="268" height="481" alt="Изображение розового экрана смартфона">
           </picture>
         </div>
       </section>
@@ -142,13 +147,13 @@
         <!-- Тут слайдер из трёх отзывов -->
 
         <!-- переключатели слайдера: -->
-        <svg class="references__slider-control references__slider-control--left" tabindex="0" width="22" height="42" aria-labelledby="title">
+        <svg class="references__slider-control references__slider-control--left" tabindex="0" width="22" height="42" aria-labelledby="title-left">
           <use xlink:href="img/sprite.svg#s-icon-review-arrow-left"></use>
-          <title id="title">Слайдер влево</title>
+          <title id="title-left">Слайдер влево</title>
         </svg>
-        <svg class="references__slider-control references__slider-control--right" tabindex="0" width="22" height="42" aria-labelledby="title">
+        <svg class="references__slider-control references__slider-control--right" tabindex="0" width="22" height="42" aria-labelledby="title-right">
           <use xlink:href="img/sprite.svg#s-icon-review-arrow-right"></use>
-          <title id="title">Слайдер вправо</title>
+          <title id="title-right">Слайдер вправо</title>
         </svg>
 
         <!-- //////////////////////////////////////////// -->
@@ -232,14 +237,14 @@
     <footer class="page-footer page-footer--main">
       <span class="page-footer__logo">
         <!-- Адаптивный логотип -->
-          <svg class="page-footer__logo-pic page-footer__logo-pic--mobile" width="75" height="22" aria-labelledby="title">
-            <use xlink:href="img/sprite.svg#s-logo-pink-blue-mobile"></use>
-            <title id="title">Логотип</title>
-          </svg>
-          <svg class="page-footer__logo-pic page-footer__logo-pic--desktop" width="147" height="48" aria-labelledby="title">
-            <use xlink:href="img/sprite.svg#s-logo-pink-blue-desktop"></use>
-            <title id="title">Логотип</title>
-          </svg>
+        <svg class="page-footer__logo-pic page-footer__logo-pic--mobile" width="75" height="22" aria-labelledby="title-logo-footer-mobile">
+          <use xlink:href="img/sprite.svg#s-logo-pink-blue-mobile"></use>
+          <title id="title-logo-footer-mobile">Логотип</title>
+        </svg>
+        <svg class="page-footer__logo-pic page-footer__logo-pic--desktop" width="147" height="48" aria-labelledby="title-logo-footer-tablet">
+          <use xlink:href="img/sprite.svg#s-logo-pink-blue-desktop"></use>
+          <title id="title-logo-footer-tablet">Логотип</title>
+        </svg>
       </span>
       <div class="page-footer__social">
 
@@ -263,9 +268,9 @@
       <p class="page-footer__copy">
         <span class="page-footer__copy-text">Разработано</span>
         <a class="page-footer__copy-logo" href="https://htmlacademy.ru">
-          Htmlacademy<svg class="page-footer__copy-pic" width="26.943" height="34" aria-labelledby="title" tabindex="0">
+          Htmlacademy<svg class="page-footer__copy-pic" width="26.943" height="34" aria-labelledby="title-dev-logo" tabindex="0">
             <use xlink:href="img/sprite.svg#s-icon-htmlacademy"></use>
-            <title id="title">Логотип разработчика</title>
+            <title id="title-dev-logo">Логотип разработчика</title>
           </svg>
         </a>
       </p>

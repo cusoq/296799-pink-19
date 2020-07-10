@@ -102,30 +102,14 @@
   margin-top: 40px;
   width: 320px;
   min-height: 200px;
-  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
+  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
   background-position: 44% 0, center 100%;
+  cursor: url("../img/icon-map-marker.svg"), auto;
 
-  &::after {
-    position: absolute;
-    content: "";
-    top: 48%;
-    left: 45%;
-    width: 36px;
-    height: 36px;
-    background-image: url("../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $breakpoint-tablet) {
-      top: 52%;
-      left: 47%;
-    }
-
-    @media (min-width: $breakpoint-desktop) {
-      top: 52%;
-      left: 48%;
-    }
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@2x.jpg");
   }
 
   @media (min-width: $breakpoint-tablet) {
@@ -135,6 +119,10 @@
     background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
     background-size: 100%, 100%;
     background-position: 0 0, 50% 73%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -143,5 +131,9 @@
     background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@1x.jpg");
     background-position: 0 0, 50% 58%;
     order: 2;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 }
