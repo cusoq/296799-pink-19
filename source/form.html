@@ -11,7 +11,6 @@
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
@@ -64,9 +63,9 @@
             </a>
             <!-- Кнопка закрытия модального меню -->
             <button class="main-nav__btn main-nav__btn--close" type="button"><svg class="main-nav__icon" width="24" height="24" aria-labelledby="title">
-              <use xlink:href="img/sprite.svg#s-icon-menu-cross"></use>
-              <title id="title">Кнопка закрытия меню</title>
-            </svg></button>
+                <use xlink:href="img/sprite.svg#s-icon-menu-cross"></use>
+                <title id="title">Кнопка закрытия меню</title>
+              </svg></button>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -87,8 +86,6 @@
       <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
     </header>
-    <!-- ///////////////////////////////////////////////// -->
-    <!-- /////////////////////////////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////////// -->
     <main class="main-form">
       <section class="feedback">
@@ -100,7 +97,6 @@
           <!-- Форма авторизации: -->
 
           <fieldset class="feedback__container feedback__container--name">
-            <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--name">Представьтесь:</legend> -->
             <p class="feedback__input-container feedback__input-container--name">
               <label class="feedback__field-description" for="surname">Фамилия:</label>
               <input class="feedback__field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
@@ -114,7 +110,6 @@
               <input class="feedback__field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-
 
           <!-- ////////////////////////////////////////////////////////////////// -->
           <!-- Форма достижений: -->
@@ -169,7 +164,6 @@
             <div class="feedback__fielset-wrapper feedback__fielseut-wrapper--formcontact">
               <p class="feedback__input-container feedback__input-container--formcontact">
                 <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
-                <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
                 <input class="feedback__field feedback__field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
               </p>
               <p class="feedback__input-container feedback__input-container--formcontact">
@@ -200,9 +194,7 @@
           <!-- Поле текстового отзыва: -->
           <fieldset class="feedback__container  feedback__container--emotions">
             <legend class="feedback__leader feedback__leader--emotions">Опишите свои эмоции:</legend>
-            <!-- <p class="feedback__input-container"> -->
             <textarea class="feedback__field feedback__field--text" rows="10" cols="30" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            <!-- </p> -->
           </fieldset>
           <div class="feedback__submit-wrapper">
             <button class="feedback__btn">
@@ -256,13 +248,19 @@
       <div class="page-footer__social">
 
         <a href="#" class="page-footer__social-link" title="Наш Твиттер">
-          <svg class="page-footer__social-icon" width="18" height="15" aria-labelledby="title"><use xlink:href="img/sprite.svg#s-icon-twitter"></use></svg>
+          <svg class="page-footer__social-icon" width="18" height="15" aria-labelledby="title">
+            <use xlink:href="img/sprite.svg#s-icon-twitter"></use>
+          </svg>
         </a>
         <a href="#" class="page-footer__social-link" title="Наш фейсбук">
-          <svg class="page-footer__social-icon" width="9" height="19" aria-labelledby="title"><use xlink:href="img/sprite.svg#s-icon-facebook"></use></svg>
+          <svg class="page-footer__social-icon" width="9" height="19" aria-labelledby="title">
+            <use xlink:href="img/sprite.svg#s-icon-facebook"></use>
+          </svg>
         </a>
         <a href="#" class="page-footer__social-link" title="Наш Ютуб">
-          <svg class="page-footer__social-icon" width="15" height="14" aria-labelledby="title"><use xlink:href="img/sprite.svg#s-icon-youtube"></use></svg>
+          <svg class="page-footer__social-icon" width="15" height="14" aria-labelledby="title">
+            <use xlink:href="img/sprite.svg#s-icon-youtube"></use>
+          </svg>
         </a>
 
       </div>
