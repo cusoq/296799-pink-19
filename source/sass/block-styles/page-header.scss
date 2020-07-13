@@ -1,8 +1,12 @@
 .page-header {
   background-color: $secondary-color--darken;
-  background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 30%, transparent 30% 40%), url("../img/bg-back-mobile@1x.jpg");
+  background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 28%, transparent 28% 40%), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0 0, 0 top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 28%, transparent 28% 40%), url("../img/bg-back-mobile@2x.jpg");
+  }
 
   &--showed-menu {
     margin-top: 255px;
@@ -16,13 +20,20 @@
     background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 25%, transparent 25% 40%), url("../img/bg-back-tablet@1x.jpg");
     background-position: 0 0, 50% top;
     min-height: 440px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 25%, transparent 25% 40%), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $breakpoint-desktop) {
     padding: 0 130px;
     background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 28%, transparent 28% 40%), url("../img/bg-back-desktop@1x.jpg");
-    // margin-bottom: 30px;
     min-height: 395px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 28%, transparent 28% 40%), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -31,16 +42,28 @@
   background-repeat: no-repeat;
   background-position: 0 0, 0 39%, 0 top;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 9%, transparent 9% 40%), url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
+
   @media (min-width: $breakpoint-tablet) {
     background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 15%, transparent 15% 40%), url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-position: 0 0, 42% bottom, 50% top;
     min-height: 730px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 15%, transparent 15% 40%), url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $breakpoint-desktop) {
     background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 13.5%, transparent 13.5% 40%), url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
     background-position: 0 0, 96% bottom, 50% top;
     min-height: 855px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: linear-gradient(to bottom, $secondary-color--darken-translucent 13.5%, transparent 13.5% 40%), url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 }
 

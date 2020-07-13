@@ -10,27 +10,41 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
-  <!-- <link rel="stylesheet" href="css/style.min.css">  -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__logo-container">
           <a class="main-nav__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1000px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
-            </picture>
+            <!-- Адаптивный логотип -->
+            <svg class="main-nav__logo-pic main-nav__logo-pic--mobile" width="75" height="22" aria-labelledby="title-nav__logo-mobile">
+              <use xlink:href="img/sprite.svg#s-logo-pink-white-mobile"></use>
+              <title id="title-nav__logo-mobile">Логотип</title>
+            </svg>
+            <svg class="main-nav__logo-pic main-nav__logo-pic--tablet" width="147" height="48" aria-labelledby="title-nav__logo-tablet">
+              <use xlink:href="img/sprite.svg#s-logo-pink-white-tablet"></use>
+              <title id="title-nav__logo-tablet">Логотип</title>
+            </svg>
+            <svg class="main-nav__logo-pic main-nav__logo-pic--desktop" width="147" height="48" aria-labelledby="title-nav__logo-desktop">
+              <use xlink:href="img/sprite.svg#s-logo-pink-white-desktop"></use>
+              <title id="title-nav__logo-desktop">Логотип</title>
+            </svg>
           </a>
 
           <!-- //////////////////////////////////////////////////////////////// -->
           <!-- Кнопка раскрытия-закрытия мобильного меню:     -->
-          <button class="main-nav__btn main-nav__btn--open" type="button">Раскрыть список меню</button>
-          <!-- <button class="main-nav__toggle main-nav__toggle--close" type="button">Закрыть</button> -->
+          <button class="main-nav__btn main-nav__btn--open" type="button">
+            <svg class="main-nav__icon" width="46" height="22" aria-labelledby="title-burger">
+              <use xlink:href="img/sprite.svg#s-icon-menu-burger"></use>
+              <title id="title-burger">Кнопка раскрытия меню</title>
+            </svg>
+          </button>
         </div>
 
         <!-- ////////////////////////////////////////////////////////////////////////// -->
@@ -38,12 +52,20 @@
         <ul class="main-nav__list popup">
           <li class="main-nav__logo-container main-nav__logo-container--popup">
             <a class="main-nav__logo" href="index.html">
-              <picture>
-                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-                <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип">
-              </picture>
+              <svg class="main-nav__logo-pic main-nav__logo-pic--mobile" width="75" height="22" aria-labelledby="title-nav__logo-popupmob">
+                <use xlink:href="img/sprite.svg#s-logo-pink-white-mobile"></use>
+                <title id="title-nav__logo-popupmob">Логотип</title>
+              </svg>
+              <svg class="main-nav__logo-pic main-nav__logo-pic--tablet" width="147" height="48" aria-labelledby="title-nav__logo-popuptab">
+                <use xlink:href="img/sprite.svg#s-logo-pink-white-tablet"></use>
+                <title id="title-nav__logo-popuptab">Логотип</title>
+              </svg>
             </a>
-            <button class="main-nav__btn main-nav__btn--close" type="button">Закрыть</button>
+            <!-- Кнопка закрытия модального меню -->
+            <button class="main-nav__btn main-nav__btn--close" type="button"><svg class="main-nav__icon" width="24" height="24" aria-labelledby="title">
+                <use xlink:href="img/sprite.svg#s-icon-menu-cross"></use>
+                <title id="title">Кнопка закрытия меню</title>
+              </svg></button>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -64,8 +86,6 @@
       <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
     </header>
-    <!-- ///////////////////////////////////////////////// -->
-    <!-- /////////////////////////////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////////// -->
     <main class="main-form">
       <section class="feedback">
@@ -77,63 +97,61 @@
           <!-- Форма авторизации: -->
 
           <fieldset class="feedback__container feedback__container--name">
-            <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--name">Представьтесь:</legend> -->
-            <p class="feedback__input-container">
-              <label class="feedback__field-description feedback__leader" for="surname">Фамилия:</label>
-              <input class="feedback-field" type="text" id="surname" name="surname" placeholder="Укажите фамилию <sup>&#9913;</sup>" required>
+            <p class="feedback__input-container feedback__input-container--name">
+              <label class="feedback__field-description" for="surname">Фамилия:</label>
+              <input class="feedback__field" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
             </p>
-            <p class="feedback__input-container">
+            <p class="feedback__input-container feedback__input-container--name">
               <label class="feedback__field-description" for="name">Имя:</label>
-              <input class="feedback-field" type="text" id="name" name="name" placeholder="Введите ваше имя *<sup>&#9913;</sup>" required>
+              <input class="feedback__field" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
             </p>
-            <p class="feedback__input-container">
+            <p class="feedback__input-container feedback__input-container--name">
               <label class="feedback__field-description" for="patronymic">Отчество:</label>
-              <input class="feedback-field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+              <input class="feedback__field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-
 
           <!-- ////////////////////////////////////////////////////////////////// -->
           <!-- Форма достижений: -->
 
           <fieldset class="feedback__container feedback__container--sights">
-            <legend class="feedback__leader feedback__leader--formtitle feedback__leader--sights">Ваши безбашенные
+            <legend class="feedback__leader feedback__leader--sights">Ваши безбашенные<br>
               достижения в путешествии</legend>
             <!-- /////////////////////////////////// -->
-            <div class="feedback__input-wrapper feedback__input-wrapper--change">
+            <div class="feedback__fielset-wrapper feedback__fielseut-wrapper--sights">
 
-              <p class="feedback__input-container feedback__input-container--change feedback__input-container--shark">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="shark" id="shark" checked>
+              <p class="feedback__input-container feedback__input-container--sights feedback__input-container--shark">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="shark" id="shark" checked>
                 <label class="feedback__field-description feedback__field-description--checkbox" for="shark" tabindex="0">Сделал селфи с акулой</label>
               </p>
               <!-- ///////////////////////////////// -->
 
-              <p class="feedback__input-container feedback__input-container--change feedback__input-container--beach">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
+              <p class="feedback__input-container feedback__input-container--sights feedback__input-container--beach">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="beach" id="beach" checked>
                 <label class="feedback__field-description feedback__field-description--checkbox" for="beach" tabindex="0">Обгорел на пляже</label>
               </p>
               <!-- ////////////////////////////////////////// -->
 
-              <p class="feedback__input-container  feedback__input-container--change feedback__input-container--chack">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="chack" id="chack">
+              <p class="feedback__input-container  feedback__input-container--sights feedback__input-container--chack">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="chack" id="chack">
                 <label class="feedback__field-description feedback__field-description--checkbox" for="chack" tabindex="0">Видел Чака Норриса</label>
               </p>
               <!-- //////////////////////////////////////////////////// -->
 
-              <p class="feedback__input-container feedback__input-container--change feedback__input-container--shop">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="shop" id="shop">
+              <p class="feedback__input-container feedback__input-container--sights feedback__input-container--shop">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="shop" id="shop">
                 <label class="feedback__field-description feedback__field-description--checkbox" for="shop" tabindex="0">Накупил сувениров</label>
               </p>
               <!-- ////////////////////////////////////////////////////////// -->
 
-              <p class="feedback__input-container feedback__input-container--change feedback__input-container--tower">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
+              <p class="feedback__input-container feedback__input-container--sights feedback__input-container--tower">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="tower" id="tower" checked>
                 <label class="feedback__field-description feedback__field-description--checkbox" for="tower" tabindex="0">Удержал башню</label>
               </p>
               <!-- ////////////////////////////////////////////////////////////////// -->
 
-              <p class="feedback__input-container feedback__input-container--change feedback__input-container--hotel">
-                <input class="feedback-field feedback-field--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
+              <p class="feedback__input-container feedback__input-container--sights feedback__input-container--hotel">
+                <input class="feedback__field feedback__field--checkbox visually-hidden" type="checkbox" name="hotel" id="hotel">
                 <label class="feedback__field-description feedback__field-description--checkbox" for="hotel" tabindex="0">Разгромил отель</label>
               </p>
             </div>
@@ -142,106 +160,123 @@
           <!-- Форма контактов: -->
 
           <fieldset class="feedback__container feedback__container--formcontact">
-            <!-- <legend class="feedback__leader feedback__leader--formtitle feedback__leader--formcontact">Контактная информация:</legend> -->
-            <!-- <div class="feedback__input-wrapper feedback__input-wrapper--formcontact"> -->
-            <p class="feedback__input-container feedback__input-container--formcontact">
-              <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
-              <!-- <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--desktop" for="tel">Телефон</label> -->
-              <input class="feedback-field feedback-field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" pattern="[0-9]{10}">
-            </p>
-            <p class="feedback__input-container feedback__input-container--formcontact">
-              <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
-              <input class="feedback-field feedback-field--email" type="email" name="email" id="email" placeholder="Введите почту <sup>&#9913;</sup>" required>
-            </p>
-            <!-- </div> -->
+            <legend class="feedback__leader feedback__leader--formcontact">Контактная информация:</legend>
+            <div class="feedback__fielset-wrapper feedback__fielseut-wrapper--formcontact">
+              <p class="feedback__input-container feedback__input-container--formcontact">
+                <label class="feedback__field-description feedback__field-description--formcontact feedback__field-description--mobile" for="tel">Номер телефона</label>
+                <input class="feedback__field feedback__field--tel" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="feedback__input-container feedback__input-container--formcontact">
+                <label class="feedback__field-description feedback__field-description--formcontact" for="email">адрес почты</label>
+                <input class="feedback__field feedback__field--email" type="email" name="email" id="email" placeholder="Введите почту *" required>
+              </p>
+            </div>
           </fieldset>
           <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
           <!-- Форма выбора платформы: -->
 
           <fieldset class="feedback__container feedback__container--os">
-            <legend class="feedback__leader feedback__leader--formtitle">С каким приложением
-              путешествовали?</legend>
+            <legend class="feedback__leader feedback__leader--os">С каким приложением путешествовали?</legend>
             <p class="feedback__input-container">
-              <input class="feedback-field visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
+              <input class="feedback__field feedback__field--radio visually-hidden" type="radio" name="platform" value="ios" id="ios" checked>
               <label class="feedback__field-description feedback__field-description--radio" for="ios" tabindex="0">Pink для iOS</label>
             </p>
             <p class="feedback__input-container">
-              <input class="feedback-field visually-hidden" type="radio" name="platform" value="android" id="android">
+              <input class="feedback__field feedback__field--radio visually-hidden" type="radio" name="platform" value="android" id="android">
               <label class="feedback__field-description feedback__field-description--radio" for="android" tabindex="0">Pink на Android</label>
             </p>
             <p class="feedback__input-container">
-              <input class="feedback-field visually-hidden" type="radio" name="platform" value="windows" id="windows">
+              <input class="feedback__field feedback__field--radio visually-hidden" type="radio" name="platform" value="windows" id="windows">
               <label class="feedback__field-description feedback__field-description--radio" for="windows" tabindex="0">Windows Phone</label>
             </p>
           </fieldset>
           <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
           <!-- Поле текстового отзыва: -->
           <fieldset class="feedback__container  feedback__container--emotions">
-            <legend class="feedback__leader feedback__leader--formtitle feedback__leader--emotions">Опишите свои эмоции:</legend>
-            <p class="feedback__input-container">
-              <textarea class="feedback-field feedback-field--text" rows="10" cols="30" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </p>
+            <legend class="feedback__leader feedback__leader--emotions">Опишите свои эмоции:</legend>
+            <textarea class="feedback__field feedback__field--text" rows="10" cols="30" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <div class="feedback__submit-wrapper">
-            <button class="btn feedback__btn feedback__btn--main btn--disabled">
+            <button class="feedback__btn">
               Отправить форму
             </button>
             <span class="feedback__note">
-              <sup class="feedback__sup">&#9913;</sup> &ndash; Обязательные поля
+              <sup class="feedback__sup">&#9913;</sup> &mdash; Обязательные <span class="feedback__fullnote">для заполнения</span> поля
             </span>
           </div>
         </form>
         <!-- /////////////////////////////////////////////////////////// -->
         <!-- Модальные окна: -->
         <div class="popup popup__form popup__form--success">
-          <b>
+          <b class="popup__message">
             Ваша заявка отправлена
           </b>
-          <p class="paragraph paragraph--popup">
-            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+          <p class="popup__paragraph popup__paragraph--success">
+            Спасибо за ваше участие, ваша заявка<br> уже поступила к нам. В ближайшее<br> время мы рассмотрим ее и<br>
             оповестим вас.
           </p>
-          <button class="btn feedback__btn feedback__btn--success">
-            ЗАКРЫТЬ ОКНО
+          <button class="popup__btn popup__btn--success">
+            Закрыть окно
           </button>
         </div>
         <div class="popup popup__form popup__form--fail">
-          <b>
-            Что-то пошло не так!
+          <b class="popup__message">
+            Что-то пошло<br> не так!
           </b>
-          <p class="paragraph paragraph--popup">
+          <p class="popup__paragraph">
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
-          <button class="btn feedback__btn feedback__btn--failure">
+          <button class="popup__btn popup__btn--fail">
             ок
           </button>
         </div>
       </section>
     </main>
-    <!-- /////////////////////////////////////////////////////////////////////// -->
-    <!-- /////////////////////////////////////////////////////////////////////// -->
     <!-- /////////////////////////////////////////////////////////// -->
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1000px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="Логотип">
-        </picture>
+        <!-- Адаптивный логотип -->
+        <svg class="page-footer__logo-pic page-footer__logo-pic--mobile" width="75" height="22" aria-labelledby="title-logo-footer-mobile">
+          <use xlink:href="img/sprite.svg#s-logo-pink-blue-mobile"></use>
+          <title id="title-logo-footer-mobile">Логотип</title>
+        </svg>
+        <svg class="page-footer__logo-pic page-footer__logo-pic--desktop" width="147" height="48" aria-labelledby="title-logo-footer-tablet">
+          <use xlink:href="img/sprite.svg#s-logo-pink-blue-desktop"></use>
+          <title id="title-logo-footer-tablet">Логотип</title>
+        </svg>
       </a>
       <div class="page-footer__social">
 
-        <a href="#" class="page-footer__social-link" title="Наш Твиттер"><img src="img/icon-twitter.svg" width="18" height="15" title="Логотип Твиттера"></a>
-        <a href="#" class="page-footer__social-link" title="Наш фейсбук"><img src="img/icon-facebook.svg" width="9" height="19" title="Логотип фейсбука"></a>
-        <a href="#" class="page-footer__social-link" title="Наш Ютуб"><img src="img/icon-youtube.svg" width="15" height="14" title="Логотип Ютуба"></a>
+        <a href="#" class="page-footer__social-link" title="Наш Твиттер">
+          <svg class="page-footer__social-icon" width="18" height="15" aria-labelledby="title">
+            <use xlink:href="img/sprite.svg#s-icon-twitter"></use>
+          </svg>
+        </a>
+        <a href="#" class="page-footer__social-link" title="Наш фейсбук">
+          <svg class="page-footer__social-icon" width="9" height="19" aria-labelledby="title">
+            <use xlink:href="img/sprite.svg#s-icon-facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="page-footer__social-link" title="Наш Ютуб">
+          <svg class="page-footer__social-icon" width="15" height="14" aria-labelledby="title">
+            <use xlink:href="img/sprite.svg#s-icon-youtube"></use>
+          </svg>
+        </a>
 
       </div>
       <p class="page-footer__copy">
         <span class="page-footer__copy-text">Разработано</span>
-        <a class="page-footer__copy-logo" href="https://htmlacademy.ru"><img src="img/htmlacademy.svg" width="27" height="34" title="Логотип разработчика"></a>
+        <a class="page-footer__copy-logo" href="https://htmlacademy.ru">
+          Htmlacademy<svg class="page-footer__copy-pic" width="26.943" height="34" aria-labelledby="title-dev-logo" tabindex="0">
+            <use xlink:href="img/sprite.svg#s-icon-htmlacademy"></use>
+            <title id="title-dev-logo">Логотип разработчика</title>
+          </svg>
+        </a>
       </p>
     </footer>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/showmenu-script.js"></script>
+  <script src="js/submitnote-script.js"></script>
 </body>
 
 </html>

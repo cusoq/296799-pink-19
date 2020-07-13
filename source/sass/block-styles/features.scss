@@ -1,5 +1,4 @@
 .features {
-  outline: lime 5px dotted;
   background-color: $secondary-color--fogged;
   padding-top: 78px;
   background-image: url("../img/bg-triangle-white.svg");
@@ -15,7 +14,6 @@
 
   @media (min-width: $breakpoint-desktop) {
     flex-direction: column-reverse;
-    // width: 940px;
     margin: 75px 0 0 0;
     padding: 0 130px 0 135px;
     background-position: 0 0;
@@ -63,8 +61,6 @@
     margin: 0 10px 0 40px;
     padding: 0 15px 15px 15px;
     font-size: $font-size--large;
-    // background-color: aqua;
-    // outline: 1px red dashed;
   }
 }
 
@@ -122,7 +118,6 @@
 
   @media (min-width: $breakpoint-desktop) {
     display: block;
-    outline: 3px orange dashed;
     margin: 0;
     width: 290px;
     height: 300px;

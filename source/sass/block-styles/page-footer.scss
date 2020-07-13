@@ -4,7 +4,7 @@
   box-sizing: border-box;
   min-height: 284px;
   padding: 42px 72px 0 72px;
-  background-color: tan;
+  background-color: $secondary-color;
 
   @media (min-width: $breakpoint-tablet) {
     flex-direction: row;
@@ -30,18 +30,51 @@
 
 .page-footer__logo {
   margin: 0 auto 35px;
-  outline: aqua dashed 1px;
 
   @media (min-width: $breakpoint-tablet) {
-    margin: 0;
-    align-self: auto;
+    align-self: flex-start;
+    margin: 30px 0;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    align-self: flex-start;
+    margin: 65px 0;
+  }
+}
+
+.page-footer__logo-pic {
+  fill: #283645;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-pic--mobile {
+  display: block;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.page-footer__logo-pic--desktop {
+  display: none;
+
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
   }
 }
 
 .page-footer__social {
   display: flex;
   justify-content: space-between;
-  outline: blue dashed 4px;
   margin-bottom: 25px;
 
   @media (min-width: $breakpoint-tablet) {
@@ -60,15 +93,32 @@
   justify-content: center;
   width: 46px;
   height: 46px;
-  border: solid 2px red;
+  border: solid 3px $form-border-color;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border: solid 3px $secondary-color--darken;
+  }
+
+  &:active {
+    border: solid 3px $form-border-color;
+  }
+}
+
+.page-footer__social-icon {
+  fill: $main-color;
+  margin: auto;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copy {
   display: flex;
-  min-height: 55px;
   margin: 0;
-  outline: magenta dashed 1px;
+  padding: 15px 0;
 
   @media (min-width: $breakpoint-tablet) {
     margin: 0;
@@ -76,8 +126,7 @@
 }
 
 .page-footer__copy-text {
-  margin: auto 5px auto 25px;
-  outline: aqua dashed 1px;
+  margin: auto 15px auto 25px;
 
   @media (min-width: $breakpoint-desktop) {
     font-size: 18px;
@@ -87,13 +136,19 @@
 }
 
 .page-footer__copy-logo {
-
-  height: auto;
-  width: 40px;
-  outline: aqua dashed 1px;
+  font-size: 0;
 }
 
-.page-footer__copy-logo img {
-  margin: 10px 0 0 0;
-  width: auto;
+.page-footer__copy-pic {
+  fill: $main-color;
+
+  &:hover,
+  &:focus {
+    fill: $secondary-color--darken;
+  }
+
+  &:active {
+    fill: $secondary-color--darken;
+    opacity: 0.3;
+  }
 }

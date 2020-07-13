@@ -34,6 +34,27 @@
   }
 }
 
+.main-photo__paragraph--video {
+  padding: 20px 20px 15px;
+  min-height: 155px;
+
+  @media (min-width: $breakpoint-tablet) {
+    padding: 45px 20px 15px;
+    min-height: 175px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    padding: 5px 20px 15px;
+    min-height: 130px;
+  }
+}
+
+.main-photo__paragraph--video br {
+  @media (min-width: $breakpoint-tablet) {
+    display: block;
+  }
+}
+
 .main-photo__photo-list {
   width: 280px;
   margin: 0 20px;
@@ -51,11 +72,10 @@
   }
   // Отрицательный внешний отступ добавлен для корректного
   // переноса карточек в многострочном флекс-контейнере
-  background-color: lime;
 }
 
 .main-photo__photo-item {
-  background: beige;
+  background: $secondary-color--fogged;
 
   @media (min-width: $breakpoint-tablet) {
     flex-basis: 300px;
@@ -64,8 +84,6 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    // flex-basis: 940px;
-    outline: 5px dotted magenta;
     min-height: 555px;
     margin: 0 20px 50px 0;
   }
@@ -87,7 +105,6 @@
 }
 
 .main-photo-list__pic {
-  // outline: 4px magenta solid;
   margin: 0;
 
   @media (min-width: $breakpoint-tablet) {
@@ -129,7 +146,6 @@
   }
 
   @media (min-width: $breakpoint-tablet) {
-    outline: dashed 3px coral;
     width: 700px;
     height: 509px;
     margin: 0 40px 0 -40px;
@@ -152,13 +168,17 @@
   box-sizing: border-box;
   width: 320px;
   min-height: 757px;
-  padding: 20px;
-  background-color: aqua;
+  padding: 20px 20px 0 20px;
+  background-color: $secondary-color--fogged;
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
     width: 660px;
     min-height: 509px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 940px;
   }
 }
 
@@ -170,28 +190,71 @@
   width: auto;
   height: 201px;
   margin: auto 0 0 0;
-  padding: 30px 20px;
-  background-color: khaki;
+  padding: 40px 0;
+  background-color: $secondary-color--fogged;
 
   @media (min-width: $breakpoint-tablet) {
     width: 100%;
-    padding: 0;
+    padding: 40px 12px 0 8px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    padding: 60px 0 0 0;
   }
 }
 
-.main-photo__buttons button {
-  margin: 0 auto;
-  width: 100%;
-  color: red;
+.main-photo__button {
+  box-sizing: border-box;
+  margin: 0;
+  width: 280px;
+
   font-size: $font-size--large;
   font-weight: bold;
-  line-height: 55px;
+  line-height: 50px;
   text-align: center;
-  border: 2px solid red;
+  border-radius: 50px;
 
   @media (min-width: $breakpoint-tablet) {
-    // width: inherit;
+    width: 260px;
     padding: 0;
     margin-top: auto;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    width: 180px;
+  }
+}
+
+.main-photo__button--upload {
+  color: $main-color;
+  border: 3px solid $main-color;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    background-color: $main-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $main-color;
+  }
+}
+
+.main-photo__button--cancel {
+  color: #283645;
+  border: 3px solid #283645;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #283645;
+    opacity: 0.3;
   }
 }

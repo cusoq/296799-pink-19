@@ -3,10 +3,19 @@
   margin-top: 45px;
   width: auto;
   min-height: 240px;
-  // background-color: tan;
 
   @media (min-width: $breakpoint-tablet) {
     min-height: 210px;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    position: relative;
+    margin-top: 0;
+    min-height: 410px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    background-color: $secondary-color;
   }
 }
 
@@ -29,11 +38,11 @@
 
   @media (min-width: $breakpoint-desktop) {
     font-size: $font-size--huge;
+    padding: 40px 0 10px 0;
   }
 }
 
 .references__user-data {
-  outline: 2px yellow dotted;
   display: none;
 
   @media (min-width: $breakpoint-tablet) {
@@ -56,11 +65,40 @@
   padding: 0 20px;
 
   @media (min-width: $breakpoint-tablet) {
+    font-size: $font-size--large;
     order: -1;
     line-height: 1.7;
   }
 
-  @media (min-width: $breakpoint-tablet) {
-    font-size: $font-size--large;
+  @media (min-width: $breakpoint-desktop) {
+    padding: 185px 257px 0 255px;
   }
+}
+
+.references__slider-control {
+  display: none;
+
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
+    position: absolute;
+    top: 52%;
+    fill: #dedede;
+
+    &:hover,
+    &:focus {
+      fill: $secondary-color--darken;
+    }
+
+    &:active {
+      fill: $secondary-color--fogged;
+    }
+  }
+}
+
+.references__slider-control--left {
+  left: 11%;
+}
+
+.references__slider-control--right {
+  right: 11%;
 }

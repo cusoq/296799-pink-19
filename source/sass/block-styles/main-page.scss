@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $breakpoint-desktop) {
-    padding-top: 40px;
+    padding-top: 65px;
   }
 }
 
@@ -31,23 +31,49 @@
 }
 
 .main-page__effect {
-  background-color: lime;
+  background-color: $secondary-color--fogged;
   display: none;
+  position: relative;
 
   @media (min-width: $breakpoint-tablet) {
     display: block;
     box-sizing: border-box;
     padding: 1px 36px 65px 50%;
-    background-image: url("../img/icon-timer.svg");
+    background-image: url("../img/timer.svg");
     background-repeat: no-repeat;
     background-position: 5% 0;
     background-size: 36%;
+
+    &::before {
+      position: absolute;
+      content: "24";
+      font-size: 96px;
+      color: $main-color;
+      font-weight: bold;
+      text-align: center;
+      top: 55px;
+      left: 40px;
+      width: 202px;
+      height: 202px;
+      border: 13px solid $main-color;
+      border-radius: 50%;
+    }
   }
 
   @media (min-width: $breakpoint-desktop) {
     padding: 90px 36px 80px 41%;
     background-size: 25%;
     background-position: 14.5% 35%;
+
+    &::before {
+      font-size: 120px;
+      color: $main-color;
+      top: 105px;
+      left: 155px;
+      width: 253px;
+      height: 253px;
+      border: 16px solid $main-color;
+    }
   }
 }
 
@@ -90,6 +116,17 @@
   line-height: 3.9;
   text-align: left;
   color: $main-color;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: $secondary-color--darken;
+  }
+
+  &:active {
+    color: $secondary-color--darken;
+    opacity: 0.3;
+  }
 
   @media (min-width: $breakpoint-desktop) {
     font-size: $font-size--large;

@@ -14,11 +14,6 @@
   margin: 0 0 1px 0;
   padding: 20px 20px 20px 20px;
   min-height: 66px;
-  // outline: yellow 3px dotted;
-
-  // @media (min-width: $breakpoint-desktop) {
-  //   padding: 20px 20px 20px 0;
-  // }
 
   &--popup {
     background-color: $secondary-color--darken;
@@ -32,7 +27,6 @@
   @media (min-width: $breakpoint-tablet) {
     width: 660px;
     height: 110px;
-    // background-color: $secondary-color--darken;
   }
 
   @media (min-width: $breakpoint-desktop) {
@@ -47,14 +41,46 @@
   }
 }
 
-.main-nav__logo img {
+.main-nav__logo-pic {
+  fill: $secondary-color;
   width: 75px;
   height: 22px;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    fill: $secondary-color;
+    opacity: 0.3;
+  }
 
   @media (min-width: $breakpoint-tablet) {
     width: 147px;
     height: 40px;
     padding-top: 6px;
+  }
+}
+
+.main-nav__logo-pic--mobile {
+  @media (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.main-nav__logo-pic--tablet {
+  display: none;
+
+  @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+    display: block;
+  }
+}
+
+.main-nav__logo-pic--desktop {
+  display: none;
+  @media (min-width: $breakpoint-desktop) {
+    display: block;
   }
 }
 
@@ -89,13 +115,22 @@
   min-width: 320px;
   margin-bottom: 1px;
   height: 63px;
-  background-color: #283645;
-  box-shadow: 0 1px 0 0 $primary-color, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
+  background-color: $secondary-color--darken;
+  box-shadow: 0 1px 0 0 $primary-color, inset 0 1px 0 0 $menu-shadow-color;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+
+  &:active {
+    color: $secondary-color;
+    opacity: 0.3;
+  }
 
   @media (min-width: $breakpoint-desktop) {
     min-width: auto;
-    height: auto;
-    outline: 1px tomato dashed;
+    height: 30px;
     background-color: transparent;
     text-transform: capitalize;
     font-weight: normal;
@@ -104,24 +139,34 @@
   }
 }
 
+.main-nav__link--current {
+  @media (min-width: $breakpoint-desktop) {
+    border-bottom: 2px solid $secondary-color;
+  }
+}
+
+
 .main-nav__btn {
   font-size: 0;
   display: block;
   border: none;
   box-sizing: border-box;
-  width: 46px;
-  height: 22px;
-  background-color: #283645;
-  background-image: url("../img/icon-menu-burger.svg");
-  background-size: contain;
+  background-color: transparent;
 
   @media (min-width: $breakpoint-desktop) {
     display: none;
   }
+}
 
-  &--close {
-    width: 24px;
-    height: 24px;
-    background-image: url("../img/icon-menu-cross.svg");
+.main-nav__icon {
+  fill: $secondary-color;
+
+  &:hover,
+  &:focus {
+    fill: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
