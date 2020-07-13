@@ -342,7 +342,7 @@
     }
 
     &:active {
-        background-image: url("../img/icon-phone.svg"), linear-gradient(to left, $main-color 58px, transparent 58px);
+      background-image: url("../img/icon-phone.svg"), linear-gradient(to left, $main-color 58px, transparent 58px);
     }
   }
 }
@@ -357,11 +357,11 @@
 
     &:hover,
     &:focus {
-      background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $secondary-color--darken 58px, transparent 58px);;
+      background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $secondary-color--darken 58px, transparent 58px);
     }
 
     &:active {
-        background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $main-color 58px, transparent 58px);
+      background-image: url("../img/icon-mail.svg"), linear-gradient(to left, $main-color 58px, transparent 58px);
     }
   }
 }
@@ -407,7 +407,7 @@
 }
 
 .feedback__field[type="checkbox"]:hover + .feedback__field-description--checkbox::before,
- .feedback__field[type="checkbox"]:focus + .feedback__field-description--checkbox::before {
+.feedback__field[type="checkbox"]:focus + .feedback__field-description--checkbox::before {
   border: 2px solid $secondary-color--darken;
 }
 
@@ -485,7 +485,7 @@
 
 .feedback__field[type="radio"]:hover + .feedback__field-description--radio::before,
 .feedback__field[type="radio"]:focus + .feedback__field-description--radio::before {
-border: 2px solid $secondary-color--darken;
+  border: 2px solid $secondary-color--darken;
 }
 
 .feedback__field[type="radio"]:active + .feedback__field-description--radio::before {

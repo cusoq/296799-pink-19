@@ -74,14 +74,13 @@
 }
 
 .video__control--crop {
-
   @media (min-width: $breakpoint-tablet) {
     margin-top: -12px;
   }
 }
 
 .video__control-pic {
-  fill: #231F20;
+  fill: #231f20;
   opacity: 0.3;
 
   &:hover,

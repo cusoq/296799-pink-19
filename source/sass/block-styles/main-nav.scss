@@ -79,6 +79,7 @@
 
 .main-nav__logo-pic--desktop {
   display: none;
+
   @media (min-width: $breakpoint-desktop) {
     display: block;
   }
